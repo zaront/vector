@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>0.5.0</Version>
+    <Authors>Zaron Thompson</Authors>
+    <Product>Anki Vector</Product>
+    <PackageTags>Anki Vector Robot API SDK</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/zaront/vector</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/zaront/vector/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Zaron Thompson</Copyright>
+    <Description>C# API for the Anki Vector robot.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0005" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vector.Communication\Vector.Communication.csproj" />
+  </ItemGroup>
+
+</Project>
