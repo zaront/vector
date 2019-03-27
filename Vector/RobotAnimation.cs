@@ -26,7 +26,7 @@ namespace Vector
 				var result = await _robot.Client.ListAnimationsAsync(new ListAnimationsRequest(), cancellationToken: cancellationToken);
 				if (result?.Status?.Code != ResponseStatus.Types.StatusCode.ResponseReceived)
 					throw new VectorCommunicationException($"communication error: {result?.Status?.Code}");
-				_animations = result.AnimationNames.Select(i => i.Name).ToArray();
+				_animations = result.AnimationNames.Select(i => i.Name).OrderBy(i => i).ToArray();
 			}
 			return _animations;
 		}

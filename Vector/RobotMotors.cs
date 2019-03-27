@@ -31,7 +31,7 @@ namespace Vector
 
 		public async Task TurnInPlaceAsync(float angle, float speed, float accel = 1f, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.TurnInPlaceAsync(new TurnInPlaceRequest() {  AngleRad = angle, SpeedRadPerSec = speed, AccelRadPerSec2 = accel, IdTag = _robot.GetActionTagID() }, cancellationToken: cancellationToken);
+			var result = await _robot.Client.TurnInPlaceAsync(new TurnInPlaceRequest() { AngleRad = angle, SpeedRadPerSec = speed, AccelRadPerSec2 = accel, IdTag = _robot.GetActionTagID() }, cancellationToken: cancellationToken);
 		}
 
 		public async Task DriveOffChargerAsync(CancellationToken cancellationToken = default(CancellationToken))
