@@ -19,6 +19,7 @@ namespace Vector
 		int _actionTagID;
 		IRobotConnectionInfoStorage _connectionStorage;
 
+		public bool IsConnected { get; private set; }
 		public RobotAudio Audio { get; }
 		public RobotMotors Motors { get; }
 		public RobotAnimation Animation { get; }
@@ -138,6 +139,7 @@ namespace Vector
 
 			//create client
 			Client = new ExternalInterfaceClient(_channel);
+			IsConnected = true;
 		}
 
 		AsyncAuthInterceptor GetAsyncAuthInterceptorFromAccessToken(string token)
@@ -155,6 +157,7 @@ namespace Vector
 			{
 				await _channel.ShutdownAsync();
 				Client = null;
+				IsConnected = false;
 			}
 		}
 
