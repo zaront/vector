@@ -12,35 +12,22 @@ namespace Vector.Explorer.ViewModel
 {
     public class VectorControlVM : ViewModelBase
 	{
-		Robot _robot;
-		INavigationService _nav;
-		IDialogService _dialog;
-
-		public ICommand ConnectCommand { get; }
+		internal Robot Robot;
+		internal INavigationService Navigation;
+		internal IDialogService Dialog;
 
 		public IGamepad Gamepad { get; }
+		public ConnectionVM Connection { get; }
 
 		public VectorControlVM(Robot robot, IGamepad gamepad, INavigationService Navigation, IDialogService dialog)
 		{
 			//set fields
-			_robot = robot;
+			Robot = robot;
 			Gamepad = gamepad;
-			_nav = Navigation;
-			_dialog = dialog;
-			ConnectCommand = new RelayCommandAsync<string>(Connect) { DisplayName = _robot.IsConnected ? "Disconnect" : "Connect" };
-		}
-
-		public async Task Connect(string robotName)
-		{
-			try
-			{
-				await _robot.ConnectAsync(robotName);
-			}
-			catch (MissingConnectionException)
-			{
-				if (await _dialog.ShowMessage("do cool stuff", "Authorize Robot", "OK", "Cancel", null))
-					_nav.NavigateTo(Pages.GrantApiAccess.ToString());
-			}
+			this.Navigation = Navigation;
+			Dialog = dialog;
+			Connection = new ConnectionVM(this);
+			
 		}
     }
 }

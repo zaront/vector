@@ -17,7 +17,7 @@
 				</TableRoot>
 			</TableView>
 			
-			<Button Command="{Binding ConnectCommand}" CommandParameter="{Binding Text, Source={x:Reference RobotName}}" Text="{Binding ConnectCommand.DisplayName}" />
+			<Button Command="{Binding ConnectCommand}" CommandParameter="{Binding Text, Source={x:Reference RobotName}}" Text="{Binding ConnectCommand.DisplayName}" HorizontalOptions="Center" />
 	</StackLayout>
 	</ContentView.Content>
 </ContentView>
