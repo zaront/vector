@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vector.Explorer.NewConnection"
+			 BindingContext="{Binding Connection}">
+    <ContentPage.Content>
+        <StackLayout>
+			<TableView Intent="Form">
+				<TableRoot>
+					<TableSection Title="Connect to your Vector">
+						<EntryCell Text="{Binding RobotName}" Label="Robot Name"/>
+						<TextCell Text="asdfdsfd" />
+						<EntryCell Text="{Binding IpAddress}" Label="IP Address"/>
+						<EntryCell Text="{Binding SerialNum}" Label="Serial Number"/>
+						<EntryCell Text="{Binding UserName}" Label="User Name"/>
+						<EntryCell Text="{Binding Password}" Label="Password"/>
+						<ViewCell>
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition/>
+									<ColumnDefinition/>
+								</Grid.ColumnDefinitions>
+								<Button Command="{Binding ConnectCommand}" Text="Connect" />
+								<Button Grid.Column="1" Command="{Binding CancelCommand}" Text="Cancel" />
+							</Grid>
+						</ViewCell>
+					</TableSection>
+				</TableRoot>
+			</TableView>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

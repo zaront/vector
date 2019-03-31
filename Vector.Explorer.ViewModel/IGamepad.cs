@@ -7,33 +7,36 @@ using System.Threading.Tasks;
 
 namespace Vector.Explorer.ViewModel
 {
-	public interface IGamepad : INotifyPropertyChanged
+	public interface IGamepad
 	{
-		Task BeginPolling(int interval = 100, CancellationToken cancellationToken = default(CancellationToken));
-		void Poll();
-		double LeftTrigger { get; set; }
-		double RightTrigger { get; set; }
-		double LeftThumbstickX { get; set; }
-		double LeftThumbstickY { get; set; }
-		double RightThumbstickX { get; set; }
-		double RightThumbstickY { get; set; }
-		bool Menu { get; set; }
-		bool View { get; set; }
-		bool A { get; set; }
-		bool B { get; set; }
-		bool X { get; set; }
-		bool Y { get; set; }
-		bool DPadUp { get; set; }
-		bool DPadDown { get; set; }
-		bool DPadLeft { get; set; }
-		bool DPadRight { get; set; }
-		bool LeftShoulder { get; set; }
-		bool RightShoulder { get; set; }
-		bool LeftThumbstick { get; set; }
-		bool RightThumbstick { get; set; }
-		bool Paddle1 { get; set; }
-		bool Paddle2 { get; set; }
-		bool Paddle3 { get; set; }
-		bool Paddle4 { get; set; }
+		GamepadValues? ReadValues();
+	}
+
+	public struct GamepadValues
+	{
+		public double LeftTrigger;
+		public double RightTrigger;
+		public double LeftThumbstickX;
+		public double LeftThumbstickY;
+		public double RightThumbstickX;
+		public double RightThumbstickY;
+		public bool Menu;
+		public bool View;
+		public bool A;
+		public bool B;
+		public bool X;
+		public bool Y;
+		public bool DPadUp;
+		public bool DPadDown;
+		public bool DPadLeft;
+		public bool DPadRight;
+		public bool LeftShoulder;
+		public bool RightShoulder;
+		public bool LeftThumbstick;
+		public bool RightThumbstick;
+		public bool Paddle1;
+		public bool Paddle2;
+		public bool Paddle3;
+		public bool Paddle4;
 	}
 }

@@ -1,19 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:dark="xa"
              x:Class="Vector.Explorer.App">
-    <Application.Resources>
+	<Application.Resources>
 
-		<Color x:Key="backgroundColor">#33302E</Color>
-		<Color x:Key="textColor">White</Color>
-
-		<Style x:Key="labelStyle" TargetType="Label">
-			<Setter Property="TextColor" Value="{DynamicResource textColor}" />
-		</Style>
-		<Style x:Key="backgroundStyle" TargetType="VisualElement">
-			<Setter Property="BackgroundColor" Value="{DynamicResource backgroundColor}" />
-		</Style>
-		
 	</Application.Resources>
 </Application>

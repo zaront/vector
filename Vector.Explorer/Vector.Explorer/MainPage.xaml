@@ -8,7 +8,18 @@
 		<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 			<!-- Place new controls here -->
 			<Label Text="Vector" />
-			<local:VectorControl />
+			<StackLayout Orientation="Horizontal">
+				<Label Text="A: " TextColor="Red" />
+				<Label Text="{Binding Gamepad.A }" />
+			</StackLayout>
+			<Button Text="Create new connection" Command="{Binding NewConnectionCommand}" />
+			<ListView ItemsSource="{Binding Robots}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<local:RobotControl />
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
 		</StackLayout>
 	</Grid>
 

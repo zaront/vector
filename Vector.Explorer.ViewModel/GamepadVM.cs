@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Vector.Explorer.ViewModel;
-using Windows.Gaming.Input;
 
-namespace Vector.Explorer.UWP.ViewModel
+namespace Vector.Explorer.ViewModel
 {
-	public class GamepadVM : ViewModelBase, IGamepad
+	public class GamepadVM : ViewModelBase
 	{
+		IGamepad _gamepad;
+
 		double _leftTrigger;
 		double _rightTrigger;
 		double _leftThumbstickX;
@@ -37,12 +37,18 @@ namespace Vector.Explorer.UWP.ViewModel
 		bool _paddle3;
 		bool _paddle4;
 
-		public GamepadVM()
+		public GamepadVM(IGamepad gamepad)
 		{
+			//set fields
+			_gamepad = gamepad;
 		}
 
 		public async Task BeginPolling(int interval = 20, CancellationToken cancellationToken = default(CancellationToken))
 		{
+			//validate
+			if (_gamepad == null)
+				return;
+
 			while(!cancellationToken.IsCancellationRequested)
 			{
 				Poll();
@@ -52,34 +58,34 @@ namespace Vector.Explorer.UWP.ViewModel
 
 		public void Poll()
 		{
-			var gamepad = Gamepad.Gamepads.FirstOrDefault();
-			if (gamepad != null)
+			var gamepadValues = _gamepad?.ReadValues();
+			if (gamepadValues != null)
 			{
-				var result = gamepad.GetCurrentReading();
+				var result = gamepadValues.Value;
 				LeftTrigger = result.LeftTrigger;
 				RightTrigger = result.RightTrigger;
 				LeftThumbstickX = result.LeftThumbstickX;
 				LeftThumbstickY = result.LeftThumbstickY;
 				RightThumbstickX = result.RightThumbstickX;
 				RightThumbstickY = result.RightThumbstickY;
-				Menu = result.Buttons.HasFlag(GamepadButtons.Menu);
-				View = result.Buttons.HasFlag(GamepadButtons.View);
-				A = result.Buttons.HasFlag(GamepadButtons.A);
-				B = result.Buttons.HasFlag(GamepadButtons.B);
-				X = result.Buttons.HasFlag(GamepadButtons.X);
-				Y = result.Buttons.HasFlag(GamepadButtons.Y);
-				DPadUp = result.Buttons.HasFlag(GamepadButtons.DPadUp);
-				DPadDown = result.Buttons.HasFlag(GamepadButtons.DPadDown);
-				DPadLeft = result.Buttons.HasFlag(GamepadButtons.DPadLeft);
-				DPadRight = result.Buttons.HasFlag(GamepadButtons.DPadRight);
-				LeftShoulder = result.Buttons.HasFlag(GamepadButtons.LeftShoulder);
-				RightShoulder = result.Buttons.HasFlag(GamepadButtons.RightShoulder);
-				LeftThumbstick = result.Buttons.HasFlag(GamepadButtons.LeftThumbstick);
-				RightThumbstick = result.Buttons.HasFlag(GamepadButtons.RightThumbstick);
-				Paddle1 = result.Buttons.HasFlag(GamepadButtons.Paddle1);
-				Paddle2 = result.Buttons.HasFlag(GamepadButtons.Paddle2);
-				Paddle3 = result.Buttons.HasFlag(GamepadButtons.Paddle3);
-				Paddle4 = result.Buttons.HasFlag(GamepadButtons.Paddle4);
+				Menu = result.Menu;
+				View = result.View;
+				A = result.A;
+				B = result.B;
+				X = result.X;
+				Y = result.Y;
+				DPadUp = result.DPadUp;
+				DPadDown = result.DPadDown;
+				DPadLeft = result.DPadLeft;
+				DPadRight = result.DPadRight;
+				LeftShoulder = result.LeftShoulder;
+				RightShoulder = result.RightShoulder;
+				LeftThumbstick = result.LeftThumbstick;
+				RightThumbstick = result.RightThumbstick;
+				Paddle1 = result.Paddle1;
+				Paddle2 = result.Paddle2;
+				Paddle3 = result.Paddle3;
+				Paddle4 = result.Paddle4;
 			}
 		}
 

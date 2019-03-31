@@ -1,16 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Vector.Explorer.VectorControl">
+             x:Class="Vector.Explorer.RobotControl">
   <ContentView.Content>
 		<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
-			<StackLayout Orientation="Horizontal">
-			<Label Text="A: " TextColor="Red" />
-			<Label Text="{Binding Gamepad.A }" />
-				
-			</StackLayout>
+			
 
-			<Button Text="Create new connection" Command="NewConnectionCommand"/>
+			<Label Text="{Binding Connection.RobotName }" />
+
+			<Button Text="{Binding ConnectCommand.DisplayName}" Command="{Binding ConnectCommand}"/>
 
 		</StackLayout>
 	</ContentView.Content>

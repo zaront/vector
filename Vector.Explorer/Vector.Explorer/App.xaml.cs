@@ -11,7 +11,7 @@ namespace Vector.Explorer
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new MainPage()) { Title = "Vector Explorer" };
+			MainPage = new MainPage();
 		}
 
 		protected override void OnStart()

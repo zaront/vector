@@ -27,7 +27,7 @@ namespace Vector.Explorer.ViewModel
 			return new Dictionary<string, Type>()
 			{
 				//register pages
-				{"GrantApiAccess", typeof(GrantApiAccess) }
+				{Pages.NewConnection.ToString(), typeof(NewConnection) }
 			};
 		}
 
@@ -47,7 +47,7 @@ namespace Vector.Explorer.ViewModel
 
 		public void GoBack()
 		{
-			_nav.PopAsync();
+			_nav.PopModalAsync();
 		}
 
 		public void NavigateTo(string pageKey)

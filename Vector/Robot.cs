@@ -17,8 +17,8 @@ namespace Vector
 		internal ExternalInterfaceClient Client { get; private set; }
 		Channel _channel;
 		int _actionTagID;
-		IRobotConnectionInfoStorage _connectionStorage;
 
+		public IRobotConnectionInfoStorage ConnectionStorage { get; }
 		public bool IsConnected { get; private set; }
 		public RobotAudio Audio { get; }
 		public RobotMotors Motors { get; }
@@ -50,7 +50,7 @@ namespace Vector
 			}
 
 			//set fields
-			_connectionStorage = connectionStorage ?? new RobotConnectionInfoStorage();
+			ConnectionStorage = connectionStorage ?? new RobotConnectionInfoStorage();
 			Audio = new RobotAudio(this);
 			Motors = new RobotMotors(this);
 			Animation = new RobotAnimation(this);
@@ -67,7 +67,7 @@ namespace Vector
 			if (Client == null)
 			{
 				//get connection info
-				var connectionInfo = _connectionStorage.Get(robotName);
+				var connectionInfo = ConnectionStorage.Get(robotName);
 				if (connectionInfo == null)
 				{
 					throw new MissingConnectionException("No Connection Info found. (call GrantApiAccessAsync first).  If this is the first time you have connected, you must grant access for this device to communicate with Vector.");
@@ -80,7 +80,7 @@ namespace Vector
 				if (ipAddress != null && connectionInfo.IpAddress != ipAddress)
 				{
 					connectionInfo.IpAddress = ipAddress;
-					_connectionStorage.Save(connectionInfo);
+					ConnectionStorage.Save(connectionInfo);
 				}
 			}
 		}
@@ -112,7 +112,7 @@ namespace Vector
 			var connectionInfo = await ApiAccess.GrantAsync(robotName, ipAddress, serialNumber, userName, password);
 
 			//save the connection info
-			_connectionStorage.Save(connectionInfo);
+			ConnectionStorage.Save(connectionInfo);
 		}
 
 		async Task CreateClientConnection(RobotConnectionInfo connectionInfo, string ipAddress)

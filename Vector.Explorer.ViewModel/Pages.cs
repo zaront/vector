@@ -6,6 +6,6 @@ namespace Vector.Explorer.ViewModel
 {
 	public enum Pages
 	{
-		GrantApiAccess
+		NewConnection
 	}
 }

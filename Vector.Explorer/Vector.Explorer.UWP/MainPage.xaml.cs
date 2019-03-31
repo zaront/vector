@@ -23,17 +23,9 @@ namespace Vector.Explorer.UWP
         {
             this.InitializeComponent();
 
-			//wire up
+			//wire up and databind
 			var app = new Vector.Explorer.App();
-			var gamepad = new GamepadVM();
-			var g = gamepad.BeginPolling();
-			var nav = new NavigationService(app.MainPage.Navigation);
-			var dialog = new DialogService(app.MainPage);
-			var settings = new SettingsService();
-			var vector = new VectorControlVM(new Robot(), gamepad, nav, dialog, settings);
-
-			//databind
-			app.BindingContext = vector;
+			app.WireupViewModel(new GamepadReader());
 
 			//start app
 			LoadApplication(app);

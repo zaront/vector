@@ -21,10 +21,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="GrantApiAccess.xaml">
+    <Compile Update="NewConnection.xaml.cs">
+      <DependentUpon>NewConnection.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="RobotControl.xaml.cs">
+      <DependentUpon>RobotControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="NewConnection.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="VectorControl.xaml">
+    <EmbeddedResource Update="RobotControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

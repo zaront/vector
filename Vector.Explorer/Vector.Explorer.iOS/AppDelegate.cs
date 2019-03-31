@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Vector.Explorer.ViewModel;
 
 using Foundation;
 using UIKit;
@@ -23,7 +24,9 @@ namespace Vector.Explorer.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+			var application = new App();
+			application.WireupViewModel();
+			LoadApplication(application);
 
             return base.FinishedLaunching(app, options);
         }
