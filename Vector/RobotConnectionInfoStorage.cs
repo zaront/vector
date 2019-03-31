@@ -38,4 +38,12 @@ namespace Vector
 			return Path.Combine(root, robotName + ".json");
 		}
 	}
+
+
+	public interface IRobotConnectionInfoStorage
+	{
+		void Save(RobotConnectionInfo connection);
+		RobotConnectionInfo Get(string robotName);
+		void Remove(string robotName);
+	}
 }

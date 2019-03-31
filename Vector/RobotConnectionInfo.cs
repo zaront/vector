@@ -20,11 +20,4 @@ namespace Vector
 		public string RobotName;
 		public string IpAddress;
 	}
-
-	public interface IRobotConnectionInfoStorage
-	{
-		void Save(RobotConnectionInfo connection);
-		RobotConnectionInfo Get(string robotName);
-		void Remove(string robotName);
-	}
 }

@@ -29,7 +29,8 @@ namespace Vector.Explorer.UWP
 			var g = gamepad.BeginPolling();
 			var nav = new NavigationService(app.MainPage.Navigation);
 			var dialog = new DialogService(app.MainPage);
-			var vector = new VectorControlVM(new Robot(), gamepad, nav, dialog);
+			var settings = new SettingsService();
+			var vector = new VectorControlVM(new Robot(), gamepad, nav, dialog, settings);
 
 			//databind
 			app.BindingContext = vector;

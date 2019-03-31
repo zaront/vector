@@ -3,21 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Vector.Explorer.VectorControl">
   <ContentView.Content>
-	<StackLayout>
-		<StackLayout Orientation="Horizontal">
+		<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+			<StackLayout Orientation="Horizontal">
 			<Label Text="A: " TextColor="Red" />
-				<Label Text="{Binding Gamepad.A }" />
+			<Label Text="{Binding Gamepad.A }" />
+				
 			</StackLayout>
-		
-			<TableView>
-				<TableRoot>
-					<TableSection>
-						<EntryCell x:Name="RobotName" Text="Vector-G7K2" Label="Robot Name"/>
-					</TableSection>
-				</TableRoot>
-			</TableView>
-			
-			<Button Command="{Binding ConnectCommand}" CommandParameter="{Binding Text, Source={x:Reference RobotName}}" Text="{Binding ConnectCommand.DisplayName}" HorizontalOptions="Center" />
-	</StackLayout>
+
+			<Button Text="Create new connection" Command="NewConnectionCommand"/>
+
+		</StackLayout>
 	</ContentView.Content>
 </ContentView>

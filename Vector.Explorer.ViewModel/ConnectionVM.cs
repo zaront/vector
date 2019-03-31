@@ -13,20 +13,38 @@ namespace Vector.Explorer.ViewModel
 		string _robotName;
 		string _ipAddress;
 		string _serialNum;
-		//string _
+		string _userName;
+		string _password;
+		RobotConnectionStorage _robotConnectionStorage;
 
-		public ICommand ConnectCommand { get; }
+		public RelayCommand ConnectCommand { get; }
+
+		public string RobotName { get => _robotName; set { Set(ref _robotName, value); ValidateConnect(); } }
+		public string IpAddress { get => _ipAddress; set { Set(ref _ipAddress, value); ValidateConnect(); } }
+		public string SerialNum { get => _serialNum; set { Set(ref _serialNum, value); ValidateConnect(); } }
+		public string UserName { get => _userName; set { Set(ref _userName, value); ValidateConnect(); } }
+		public string Password { get => _password; set { Set(ref _password, value); ValidateConnect(); } }
 
 		public ConnectionVM(VectorControlVM vectorVM)
 		{
 			//set fields
 			_vectorVM = vectorVM;
-			ConnectCommand = new RelayCommandAsync(Connect) { DisplayName = GetConnectAction() };
+			_robotConnectionStorage = new RobotConnectionStorage(_vectorVM.Settings);
+			ConnectCommand = new RelayCommandAsync(Connect) { DisplayName = GetConnectAction(), Enabled = false };
 		}
 
 		string GetConnectAction()
 		{
 			return _vectorVM.Robot.IsConnected ? "Disconnect" : "Connect";
+		}
+
+		void ValidateConnect()
+		{
+			ConnectCommand.Enabled = !string.IsNullOrWhiteSpace(RobotName) &&
+				!string.IsNullOrWhiteSpace(IpAddress) &&
+				!string.IsNullOrWhiteSpace(SerialNum) &&
+				!string.IsNullOrWhiteSpace(UserName) &&
+				!string.IsNullOrWhiteSpace(Password);
 		}
 
 		public async Task Connect()
@@ -45,6 +63,38 @@ namespace Vector.Explorer.ViewModel
 		public async Task GrantApiAccess()
 		{
 			//await Robot.GrantApiAccessAsync()
+		}
+
+
+		class RobotConnectionStorage : IRobotConnectionInfoStorage
+		{
+			ISettingsService _settings;
+
+			public RobotConnectionStorage(ISettingsService settings)
+			{
+				//set fields
+				_settings = settings;
+			}
+
+			public RobotConnectionInfo Get(string robotName)
+			{
+				return _settings.Get<RobotConnectionInfo>(GetKey(robotName));
+			}
+
+			public void Remove(string robotName)
+			{
+				_settings.Remove(GetKey(robotName));
+			}
+
+			public void Save(RobotConnectionInfo connection)
+			{
+				_settings.Set(GetKey(connection.RobotName), connection);
+			}
+
+			string GetKey(string robotName)
+			{
+				return $"{robotName}_RobotConnectionInfo";
+			}
 		}
 	}
 }
