@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Vector.Explorer.ViewModel
 {
-	public class SettingsRobotConnection : IRobotConnectionInfoStorage
+	public class ConnectionStorage : IRobotConnectionInfoStorage
 	{
 		ISettingsService _settings;
 
-		public SettingsRobotConnection(ISettingsService settings)
+		public ConnectionStorage(ISettingsService settings)
 		{
 			//set fields
 			_settings = settings;

@@ -10,10 +10,10 @@ namespace Vector.Explorer.ViewModel
 {
 	public class RobotVM : ViewModelBase
 	{
-		Robot _robot;
-		INavigationService _navigation;
-		IDialogService _dialog;
-		ISettingsService _settings;
+		protected Robot Robot;
+		protected INavigationService Navigation;
+		protected IDialogService Dialog;
+		protected ISettingsService Settings;
 
 		public RobotConnectionInfo Connection { get; }
 		public RelayCommand ConnectCommand { get; }
@@ -21,24 +21,24 @@ namespace Vector.Explorer.ViewModel
 		public RobotVM(Robot robot, RobotConnectionInfo connection, INavigationService navigation, IDialogService dialog, ISettingsService settings)
 		{
 			//set fields
-			_robot = robot;
+			Robot = robot;
 			Connection = connection;
-			_navigation = navigation;
-			_dialog = dialog;
-			_settings = settings;
+			Navigation = navigation;
+			Dialog = dialog;
+			Settings = settings;
 			ConnectCommand = new RelayCommandAsync(Connect) { DisplayName = GetConnectAction() };
 		}
 
 		string GetConnectAction()
 		{
-			return _robot.IsConnected ? "Disconnect" : "Connect";
+			return Robot.IsConnected ? "Disconnect" : "Connect";
 		}
 
 		async Task Connect()
 		{
 			try
 			{
-				await _robot.ConnectAsync(Connection);
+				await Robot.ConnectAsync(Connection);
 				ConnectCommand.DisplayName = GetConnectAction();
 			}
 			catch

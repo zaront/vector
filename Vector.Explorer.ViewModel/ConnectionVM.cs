@@ -10,15 +10,16 @@ namespace Vector.Explorer.ViewModel
 {
 	public class ConnectionVM : ViewModelBase
 	{
-		INavigationService _navigation;
-		IDialogService _dialog;
-		ISettingsService _settings;
-		Action<RobotConnectionInfo> _newConnectionCreated;
+		protected INavigationService Navigation;
+		protected IDialogService Dialog;
+		protected ISettingsService Settings;
 		string _robotName;
 		string _ipAddress;
 		string _serialNum;
 		string _userName;
 		string _password;
+
+		public event Action<RobotConnectionInfo> NewConnectionCreated;
 
 		public RelayCommand ConnectCommand { get; }
 		public ICommand CancelCommand { get; }
@@ -29,14 +30,13 @@ namespace Vector.Explorer.ViewModel
 		public string UserName { get => _userName; set { Set(ref _userName, value); ValidateConnect(); } }
 		public string Password { get => _password; set { Set(ref _password, value); ValidateConnect(); } }
 
-		public ConnectionVM(INavigationService navigation, IDialogService dialog, ISettingsService settings, Action<RobotConnectionInfo> newConnectionCreated)
+		public ConnectionVM(INavigationService navigation, IDialogService dialog, ISettingsService settings)
 		{
 			//set fields
-			_navigation = navigation;
-			_dialog = dialog;
-			_settings = settings;
-			_newConnectionCreated = newConnectionCreated;
-			ConnectCommand = new RelayCommandAsync(Connect) { Enabled = false };
+			Navigation = navigation;
+			Dialog = dialog;
+			Settings = settings;
+			ConnectCommand = new RelayCommandAsync(Connect) { Enabled = true };
 			CancelCommand = new RelayCommand(Cancel);
 		}
 
@@ -53,13 +53,14 @@ namespace Vector.Explorer.ViewModel
 		{
 			try
 			{
+				RobotName = "Vector-G7K2"; IpAddress = "192.168.1.189"; SerialNum = "00506620"; UserName = "zaron.thompson@gmail.com"; Password = "VectorRocks1!";
 				var conn = await ApiAccess.GrantAsync(RobotName, IpAddress, SerialNum, UserName, Password);
-				_newConnectionCreated(conn);
-				_navigation.GoBack();
+				NewConnectionCreated?.Invoke(conn);
+				Navigation.GoBack();
 			}
 			catch (MissingConnectionException)
 			{
-				if (await _dialog.ShowMessage("do cool stuff", "Authorize Robot", "OK", "Cancel", null))
+				if (await Dialog.ShowMessage("do cool stuff", "Authorize Robot", "OK", "Cancel", null))
 				{
 				}
 			}
@@ -67,7 +68,7 @@ namespace Vector.Explorer.ViewModel
 
 		void Cancel()
 		{
-			_navigation.GoBack();
+			Navigation.GoBack();
 		}
 	}
 }
