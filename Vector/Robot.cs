@@ -17,6 +17,8 @@ namespace Vector
 		internal ExternalInterfaceClient Client { get; private set; }
 		Channel _channel;
 		int _actionTagID;
+		CancellationTokenSource _cancelSuppressPersonality;
+
 
 		public IRobotConnectionInfoStorage ConnectionStorage { get; }
 		public bool IsConnected { get; private set; }
@@ -134,7 +136,7 @@ namespace Vector
 			}
 			catch (TaskCanceledException ex)
 			{
-				throw new TimeoutException("could not connect to vector.  insure IP address is correct", ex);
+				throw new TimeoutException("could not connect to Vector.  insure IP address is correct and that Vector is turned on", ex);
 			}
 
 			//create client
@@ -248,7 +250,24 @@ namespace Vector
 			}
 		}
 
-		public async Task SuppressPersonalityAsync(bool overrideSafty = false, CancellationToken cancellationToken = default(CancellationToken))
+		public void SuppressPersonality(bool overrideSafty = false)
+		{
+			//cancel prev task
+			CancelSuppressPersonality();
+
+			//start task
+			_cancelSuppressPersonality = new CancellationTokenSource();
+			Task.Run(() => SuppressPersonalityAsync(overrideSafty, _cancelSuppressPersonality.Token));
+	}
+
+		public void CancelSuppressPersonality()
+		{
+			//cancel suppression task
+			if (_cancelSuppressPersonality != null && !_cancelSuppressPersonality.IsCancellationRequested)
+				_cancelSuppressPersonality.Cancel();
+		}
+
+		async Task SuppressPersonalityAsync(bool overrideSafty = false, CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var stream = Client.BehaviorControl();
 			var priority = overrideSafty ? ControlRequest.Types.Priority.OverrideAll : ControlRequest.Types.Priority.TopPriorityAi;
