@@ -8,24 +8,21 @@ using System.Threading.Tasks;
 
 namespace Vector
 {
-	public class RobotAnimation
+	public class RobotAnimation : RobotModule
 	{
-		Robot _robot;
 		string[] _animations;
 
-		internal RobotAnimation(Robot robot)
+		internal RobotAnimation(RobotConnection connection) : base(connection)
 		{
-			//set fields
-			_robot = robot;
 		}
 
 		public async Task<string[]> ListAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			if (_animations == null)
 			{
-				var result = await _robot.Client.ListAnimationsAsync(new ListAnimationsRequest(), cancellationToken: cancellationToken);
+				var result = await Client.ListAnimationsAsync(new ListAnimationsRequest(), cancellationToken: cancellationToken);
 				if (result?.Status?.Code != ResponseStatus.Types.StatusCode.ResponseReceived)
-					throw new VectorCommunicationException($"communication error: {result?.Status?.Code}");
+					throw new VectorCommandException($"communication error: {result?.Status?.Code}");
 				_animations = result.AnimationNames.Select(i => i.Name).OrderBy(i => i).ToArray();
 			}
 			return _animations;
@@ -33,7 +30,7 @@ namespace Vector
 
 		public async Task PlayAsync(string animationName, bool ignoreBodyTrack = false, bool ignoreHeadTrack = false, bool ignoreLiftTrack = false, int loops = 1, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.PlayAnimationAsync(new PlayAnimationRequest() { Animation = new Animation() { Name = animationName }, IgnoreBodyTrack = ignoreBodyTrack, IgnoreHeadTrack = ignoreHeadTrack, IgnoreLiftTrack = ignoreLiftTrack, Loops = (uint)loops }, cancellationToken: cancellationToken);
+			var result = await Client.PlayAnimationAsync(new PlayAnimationRequest() { Animation = new Animation() { Name = animationName }, IgnoreBodyTrack = ignoreBodyTrack, IgnoreHeadTrack = ignoreHeadTrack, IgnoreLiftTrack = ignoreLiftTrack, Loops = (uint)loops }, cancellationToken: cancellationToken);
 		}
 	}
 }

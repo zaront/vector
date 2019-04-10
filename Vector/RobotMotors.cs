@@ -7,14 +7,10 @@ using System.Threading.Tasks;
 
 namespace Vector
 {
-	public class RobotMotors
+	public class RobotMotors : RobotModule
 	{
-		Robot _robot;
-
-		internal RobotMotors(Robot robot)
+		internal RobotMotors(RobotConnection connection) : base(connection)
 		{
-			//set fields
-			_robot = robot;
 		}
 
 		/// <summary>
@@ -28,64 +24,60 @@ namespace Vector
 		/// <returns></returns>
 		public async Task DriveAsync(float leftWheelSpeed, float rightWheelSpeed, float leftWheelAccel = 0f, float rightWheelAccel = 0f, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.DriveWheelsAsync(new DriveWheelsRequest() { LeftWheelMmps = leftWheelSpeed, LeftWheelMmps2 = leftWheelAccel, RightWheelMmps = rightWheelSpeed, RightWheelMmps2 = rightWheelAccel }, cancellationToken: cancellationToken);
+			var result = await Client.DriveWheelsAsync(new DriveWheelsRequest() { LeftWheelMmps = leftWheelSpeed, LeftWheelMmps2 = leftWheelAccel, RightWheelMmps = rightWheelSpeed, RightWheelMmps2 = rightWheelAccel }, cancellationToken: cancellationToken);
 			//if (result?.Status?.Code != ResponseStatus.Types.StatusCode.ResponseReceived)
 			//	throw new VectorCommunicationException($"communication error: {result?.Status?.Code}");
 		}
 
 		public async Task DriveStraightAsync(float distance, float speed, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.DriveStraightAsync(new DriveStraightRequest() { DistMm = distance, SpeedMmps = speed, IdTag = _robot.GetActionTagID() }, cancellationToken: cancellationToken);
+			var result = await Client.DriveStraightAsync(new DriveStraightRequest() { DistMm = distance, SpeedMmps = speed, IdTag = GetActionTagID() }, cancellationToken: cancellationToken);
 		}
 
 		public async Task TurnInPlaceAsync(float angle, float speed, float accel = 1f, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.TurnInPlaceAsync(new TurnInPlaceRequest() { AngleRad = angle, SpeedRadPerSec = speed, AccelRadPerSec2 = accel, IdTag = _robot.GetActionTagID() }, cancellationToken: cancellationToken);
+			var result = await Client.TurnInPlaceAsync(new TurnInPlaceRequest() { AngleRad = angle, SpeedRadPerSec = speed, AccelRadPerSec2 = accel, IdTag = GetActionTagID() }, cancellationToken: cancellationToken);
 		}
 
 		public async Task DriveOffChargerAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.DriveOffChargerAsync(new DriveOffChargerRequest(), cancellationToken: cancellationToken);
+			var result = await Client.DriveOffChargerAsync(new DriveOffChargerRequest(), cancellationToken: cancellationToken);
 		}
 
 		public async Task DriveOnChargerAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.DriveOnChargerAsync(new DriveOnChargerRequest(), cancellationToken: cancellationToken);
+			var result = await Client.DriveOnChargerAsync(new DriveOnChargerRequest(), cancellationToken: cancellationToken);
 		}
 
-		ConnectCubeResponse _cube;
 		public async Task<bool> DockWithCubeAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
-			//if (_cube == null)
-			//	_cube = await _robot.Client.ConnectCubeAsync(new ConnectCubeRequest(), cancellationToken: cancellationToken);
-			//if (_cube.ObjectId == 0)
-			//	return false;
-
-			var result = await _robot.Client.DockWithCubeAsync(new DockWithCubeRequest() { IdTag = _robot.GetActionTagID(), ObjectId = 1 }, cancellationToken: cancellationToken);
+			var result = await Client.DockWithCubeAsync(new DockWithCubeRequest() { IdTag = GetActionTagID(), ObjectId = 1 }, cancellationToken: cancellationToken);
 			return (result.Result.Code == ActionResult.Types.ActionResultCode.ActionResultSuccess);
 		}
 
 		public async Task MoveHeadAsync(float speed, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.MoveHeadAsync(new MoveHeadRequest() { SpeedRadPerSec = speed }, cancellationToken: cancellationToken);
+			var result = await Client.MoveHeadAsync(new MoveHeadRequest() { SpeedRadPerSec = speed }, cancellationToken: cancellationToken);
 		}
 
-		/// <param name="speed">rad/s</param>
-		/// <returns></returns>
 		public async Task MoveLiftAsync(float speed, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.MoveLiftAsync(new MoveLiftRequest() { SpeedRadPerSec = speed }, cancellationToken: cancellationToken);
+			var result = await Client.MoveLiftAsync(new MoveLiftRequest() { SpeedRadPerSec = speed }, cancellationToken: cancellationToken);
 		}
 
 		public async Task MoveHeadToAsync(float angle, float duration = 1f, float accel = 1f, float maxSpeed = 1f, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.SetHeadAngleAsync(new SetHeadAngleRequest() { AngleRad = angle, DurationSec = duration, AccelRadPerSec2 = accel, MaxSpeedRadPerSec = maxSpeed, IdTag = _robot.GetActionTagID() }, cancellationToken: cancellationToken);
+			var result = await Client.SetHeadAngleAsync(new SetHeadAngleRequest() { AngleRad = angle, DurationSec = duration, AccelRadPerSec2 = accel, MaxSpeedRadPerSec = maxSpeed, IdTag = GetActionTagID() }, cancellationToken: cancellationToken);
 		}
 
 		public async Task MoveLiftToAsync(float height, float duration = 1f, float accel = 1f, float maxSpeed = 1f, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.SetLiftHeightAsync(new SetLiftHeightRequest() { HeightMm = height, DurationSec = duration, AccelRadPerSec2 = accel, MaxSpeedRadPerSec = maxSpeed, IdTag = _robot.GetActionTagID() }, cancellationToken: cancellationToken);
+			var result = await Client.SetLiftHeightAsync(new SetLiftHeightRequest() { HeightMm = height, DurationSec = duration, AccelRadPerSec2 = accel, MaxSpeedRadPerSec = maxSpeed, IdTag = GetActionTagID() }, cancellationToken: cancellationToken);
 		}
 
+		public async Task GoToPoseAsync(float x, float y, float angle, CancellationToken cancellationToken = default(CancellationToken))
+		{
+			var result = await Client.GoToPoseAsync(new GoToPoseRequest() { IdTag = GetActionTagID(), XMm = x, YMm = y, Rad = angle }, cancellationToken: cancellationToken);
+		}
 	}
 }

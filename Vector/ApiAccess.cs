@@ -12,6 +12,7 @@ using Newtonsoft.Json.Linq;
 using static Anki.Vector.ExternalInterface.ExternalInterface;
 using Anki.Vector.ExternalInterface;
 using Google.Protobuf;
+using System.Linq;
 
 namespace Vector
 {
@@ -31,13 +32,15 @@ namespace Vector
 		public static async Task<RobotConnectionInfo> GrantAsync(string robotName, string ipAddress, string serialNumber, string userName, string password)
 		{
 			var result = new RobotConnectionInfo();
+			robotName = FormatRobotName(robotName);
+			serialNumber = FormatSerialNumber(serialNumber);
 
 			//get the certificate
 			var client = new HttpClient();
 			var response = await client.GetAsync(@"https://session-certs.token.global.anki-services.com/vic/" + serialNumber);
 			if (!response.IsSuccessStatusCode)
 			{
-				throw new ApplicationException("invalid serial number");
+				throw new VectorAuthorizationException("invalid serial number");
 			}
 			result.Certificate = await response.Content.ReadAsStringAsync();
 
@@ -47,7 +50,7 @@ namespace Vector
 			var commonName = certSubject.First(i => i.Key == "CN").Value;
 			if (commonName != robotName)
 			{
-				throw new ApplicationException($"The name of the certificate ({commonName}) does not match the name provided robotName ({robotName}) Please verify the name, and try again.");
+				throw new VectorAuthorizationException($"The name of the certificate ({commonName}) does not match the name provided robotName ({robotName}) Please verify the name, and try again.");
 			}
 			result.RobotName = robotName;
 
@@ -58,7 +61,7 @@ namespace Vector
 				Content = new FormUrlEncodedContent(new Dictionary<string, string>() { { "username", userName }, { "password", password } }),
 			});
 			if (!response.IsSuccessStatusCode)
-				throw new ApplicationException("invalid userName and password");
+				throw new VectorAuthorizationException("invalid userName and password");
 			var userSession = JsonConvert.DeserializeObject(await response.Content.ReadAsStringAsync()) as JObject;
 			var sessionToken = userSession["session"]["session_token"].Value<string>();
 
@@ -71,19 +74,33 @@ namespace Vector
 			}
 			catch (TaskCanceledException ex)
 			{
-				throw new TimeoutException("could not connect to vector.  insure IP address is correct", ex);
+				throw new VectorAuthorizationException("Timeout.  Could not connect to vector.  insure IP address is correct", ex);
 			}
 			var robotClient = new ExternalInterfaceClient(channel);
 			var hostname = System.Net.Dns.GetHostName();
 			var authRequest = new UserAuthenticationRequest() { ClientName = ByteString.CopyFromUtf8(hostname), UserSessionId = ByteString.CopyFromUtf8(sessionToken) };
 			var authResult = await robotClient.UserAuthenticationAsync(authRequest);
 			if (authResult.Code == UserAuthenticationResponse.Types.Code.Unauthorized)
-				throw new ApplicationException("unauthorized");
+				throw new VectorAuthorizationException("unauthorized");
 			result.Token = authResult.ClientTokenGuid.ToStringUtf8();
 			result.IpAddress = ipAddress;
 			await channel.ShutdownAsync();
 
 			return result;
+		}
+
+		static internal string FormatRobotName(string robotName)
+		{
+			if (robotName.Length == 4)
+				return $"Vector-{robotName.ToUpper()}";
+			if (robotName.StartsWith("Vector ", StringComparison.OrdinalIgnoreCase))
+				return $"Vector-{robotName.Split(' ').Last().ToUpper()}";
+			return robotName;
+		}
+
+		static internal string FormatSerialNumber(string serialNumber)
+		{
+			return serialNumber.ToLower();
 		}
 	}
 }

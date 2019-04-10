@@ -11,53 +11,36 @@ using AutoMapper;
 
 namespace Vector
 {
-	public class Robot : IDisposable
+	public class Robot : RobotModule, IDisposable
 	{
-		static bool _mappingInit;
-		internal ExternalInterfaceClient Client { get; private set; }
-		Channel _channel;
-		int _actionTagID;
 		CancellationTokenSource _cancelSuppressPersonality;
-
-
-		public IRobotConnectionInfoStorage ConnectionStorage { get; }
-		public bool IsConnected { get; private set; }
+		CancellationTokenSource _cancelEventListening;
 		public RobotAudio Audio { get; }
 		public RobotMotors Motors { get; }
 		public RobotAnimation Animation { get; }
 		public RobotScreen Screen { get; }
+		public RobotCamera Camera { get; }
+		public RobotWorld World { get; }
+		public IRobotConnectionInfoStorage ConnectionInfoStorage { get; }
 
 		public event EventHandler<EventArgs> OnAnyEvent;
 		public event EventHandler<WakeWordEventArgs> OnWakeWord;
 		public event EventHandler<RobotStateEventArgs> OnStateChanged;
 		public event EventHandler<SuppressPersonalityEventArgs> OnSuppressPersonality;
 
-		public Robot(IRobotConnectionInfoStorage connectionStorage = null)
+		public Robot(IRobotConnectionInfoStorage connectionInfoStorage = null) : base(new RobotConnection())
 		{
-			//setup entity mapping
-			if (!_mappingInit)
-			{
-				Mapper.Initialize(i =>
-				{
-					i.CreateMap<BatteryStateResponse, BatteryState>();
-					i.CreateMap<NetworkStateResponse, NetworkState>();
-					i.CreateMap<VersionStateResponse, VersionState>();
-					i.CreateMap<Anki.Vector.ExternalInterface.WakeWord, WakeWord>()
-						.ForMember(d => d.IntentHeard, m => m.MapFrom(s => s.WakeWordEnd.IntentHeard))
-						.ForMember(d => d.IntentJson, m => m.MapFrom(s => s.WakeWordEnd.IntentJson))
-						.ForMember(d => d.Begin, m => m.MapFrom(s => s.WakeWordBegin != null));
-					i.CreateMap<RobotState, Anki.Vector.ExternalInterface.RobotState>();
-				});
-				_mappingInit = true;
-			}
-
 			//set fields
-			ConnectionStorage = connectionStorage ?? new RobotConnectionInfoStorage();
-			Audio = new RobotAudio(this);
-			Motors = new RobotMotors(this);
-			Animation = new RobotAnimation(this);
-			Screen = new RobotScreen(this);
+			ConnectionInfoStorage = connectionInfoStorage ?? new RobotConnectionInfoStorage();
+			Audio = new RobotAudio(Connection);
+			Motors = new RobotMotors(Connection);
+			Animation = new RobotAnimation(Connection);
+			Screen = new RobotScreen(Connection);
+			Camera = new RobotCamera(Connection);
+			World = new RobotWorld(Connection);
 		}
+
+		public bool IsConnected { get => Connection.IsConnected; }
 
 		/// <summary>
 		/// use IRobotConnectionInfoStorage to retreave connection information to connect to your robot 
@@ -66,24 +49,25 @@ namespace Vector
 		/// <param name="ipAddress">Update your robots IP address, otherwise leave blank.  Find your robot ip address (ex. 192.168.42.42) by placing Vector on the charger, double-clicking Vector's backpack button, then raising and lowering his arms.If you see XX.XX.XX.XX on his face, reconnect Vector to your WiFi using the Vector Companion App.</param>
 		public async Task ConnectAsync(string robotName, string ipAddress = null)
 		{
-			if (Client == null)
+			if (!Connection.IsConnected)
 			{
+				robotName = ApiAccess.FormatRobotName(robotName);
+
 				//get connection info
-				var connectionInfo = ConnectionStorage.Get(robotName);
+				var connectionInfo = ConnectionInfoStorage.Get(robotName);
 				if (connectionInfo == null)
 				{
-					throw new MissingConnectionException("No Connection Info found. (call GrantApiAccessAsync first).  If this is the first time you have connected, you must grant access for this device to communicate with Vector.");
+					throw new VectorMissingConnectionInfoException("No Connection Info found. (call GrantApiAccessAsync first).  If this is the first time you have connected, you must grant access for this device to communicate with Vector.");
 				}
+				if (ipAddress != null)
+					connectionInfo.IpAddress = ipAddress;
 
 				//connect
-				await CreateClientConnection(connectionInfo, ipAddress ?? connectionInfo.IpAddress);
+				await Connection.ConnectAsync(connectionInfo);
 
 				//update the IP address
-				if (ipAddress != null && connectionInfo.IpAddress != ipAddress)
-				{
-					connectionInfo.IpAddress = ipAddress;
-					ConnectionStorage.Save(connectionInfo);
-				}
+				if (ipAddress != null)
+					ConnectionInfoStorage.Save(connectionInfo);
 			}
 		}
 
@@ -94,10 +78,7 @@ namespace Vector
 		/// <returns></returns>
 		public async Task ConnectAsync(RobotConnectionInfo connectionInfo)
 		{
-			if (Client == null)
-			{
-				await CreateClientConnection(connectionInfo, connectionInfo.IpAddress);
-			}
+			await Connection.ConnectAsync(connectionInfo);
 		}
 
 		/// <summary>
@@ -114,98 +95,102 @@ namespace Vector
 			var connectionInfo = await ApiAccess.GrantAsync(robotName, ipAddress, serialNumber, userName, password);
 
 			//save the connection info
-			ConnectionStorage.Save(connectionInfo);
-		}
-
-		async Task CreateClientConnection(RobotConnectionInfo connectionInfo, string ipAddress)
-		{
-			//create channel
-			var ssl = new SslCredentials(connectionInfo.Certificate);
-			var interceptor = new AsyncAuthInterceptor((context, metadata) =>
-			{
-				metadata.Add("authorization", $"Bearer {connectionInfo.Token}");
-				return Task.CompletedTask;
-			});
-			var cred = ChannelCredentials.Create(ssl, CallCredentials.FromInterceptor(interceptor));
-			_channel = new Channel(ipAddress, 443, cred, new ChannelOption[] { new ChannelOption("grpc.ssl_target_name_override", connectionInfo.RobotName) });
-
-			//connect to client
-			try
-			{
-				await _channel.ConnectAsync(DateTime.UtcNow.AddSeconds(10));
-			}
-			catch (TaskCanceledException ex)
-			{
-				throw new TimeoutException("could not connect to Vector.  insure IP address is correct and that Vector is turned on", ex);
-			}
-
-			//create client
-			Client = new ExternalInterfaceClient(_channel);
-			IsConnected = true;
-		}
-
-		AsyncAuthInterceptor GetAsyncAuthInterceptorFromAccessToken(string token)
-		{
-			return new AsyncAuthInterceptor((context, metadata) =>
-			{
-				metadata.Add("authorization", $"Bearer {token}");
-				return Task.CompletedTask;
-			});
+			ConnectionInfoStorage.Save(connectionInfo);
 		}
 
 		public async Task DisconnectAsync()
 		{
-			if (Client != null)
-			{
-				await _channel.ShutdownAsync();
-				Client = null;
-				IsConnected = false;
-			}
+			await Connection.DisconnectAsync();
 		}
 
-		public void Dispose()
+		void IDisposable.Dispose()
 		{
-			DisconnectAsync().Wait();
+			//dispose of connection
+			(Connection as IDisposable).Dispose();
 		}
 
-		internal int GetActionTagID()
-		{
-			if (_actionTagID == (int)ActionTagConstants.InvalidSdkTag)
-				_actionTagID = (int)ActionTagConstants.FirstSdkTag;
-			else
-				_actionTagID++;
-			if (_actionTagID > (int)ActionTagConstants.LastSdkTag)
-				_actionTagID = (int)ActionTagConstants.FirstSdkTag;
-			return _actionTagID;
-		}
+		
 
 		public async Task<BatteryState> GetBatteryStateAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var result = await Client.BatteryStateAsync(new BatteryStateRequest(), cancellationToken: cancellationToken);
-			if (result?.Status?.Code == ResponseStatus.Types.StatusCode.ResponseReceived)
-				return Mapper.Map<BatteryState>(result);
-			throw new VectorCommunicationException($"communication error: {result?.Status?.Code}");
+			ValidateStatus(result.Status);
+			return Mapper.Map<BatteryState>(result);
 		}
 
 		[Obsolete("doesn't appear fully implimented yet")]
 		public async Task<NetworkState> GetNetworkStateAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var result = await Client.NetworkStateAsync(new NetworkStateRequest(), cancellationToken: cancellationToken);
-			if (result?.Status?.Code == ResponseStatus.Types.StatusCode.ResponseReceived)
-				return Mapper.Map<NetworkState>(result);
-			throw new VectorCommunicationException($"communication error: {result?.Status?.Code}");
+			ValidateStatus(result.Status);
+			return Mapper.Map<NetworkState>(result);
 		}
 
 		public async Task<VersionState> GetVersionStateAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var result = await Client.VersionStateAsync(new VersionStateRequest(), cancellationToken: cancellationToken);
-			if (result?.Status?.Code == ResponseStatus.Types.StatusCode.ResponseReceived)
-				return Mapper.Map<VersionState>(result);
-			throw new VectorCommunicationException($"communication error: {result?.Status?.Code}");
+			ValidateStatus(result.Status);
+			return Mapper.Map<VersionState>(result);
 		}
 
-		public async Task StartEventListeningAsync(CancellationToken cancellationToken = default(CancellationToken))
+		public void StartSuppressingPersonality(bool overrideSafty = false)
 		{
+			//cancel prev task
+			StopSuppressingPersonality();
+
+			//start task
+			_cancelSuppressPersonality = new CancellationTokenSource();
+			Task.Run(() => SuppressPersonalityAsync(overrideSafty, _cancelSuppressPersonality.Token));
+	}
+
+		public void StopSuppressingPersonality()
+		{
+			//cancel task
+			if (_cancelSuppressPersonality != null && !_cancelSuppressPersonality.IsCancellationRequested)
+				_cancelSuppressPersonality.Cancel();
+		}
+
+		async Task SuppressPersonalityAsync(bool overrideSafty = false, CancellationToken cancellationToken = default(CancellationToken))
+		{
+			var stream = Client.BehaviorControl();
+			var priority = overrideSafty ? ControlRequest.Types.Priority.OverrideAll : ControlRequest.Types.Priority.TopPriorityAi;
+			await stream.RequestStream.WriteAsync(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = priority } });
+			while(await stream.ResponseStream.MoveNext(cancellationToken))
+			{
+				var result = stream.ResponseStream.Current;
+				if (result.ControlLostEvent != null)
+				{
+					OnSuppressPersonality?.Invoke(this, new SuppressPersonalityEventArgs() { IsSuppressed = false });
+					await stream.RequestStream.WriteAsync(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = priority } });
+				}
+				else if (result.ControlGrantedResponse != null)
+					OnSuppressPersonality?.Invoke(this, new SuppressPersonalityEventArgs() { IsSuppressed = true });
+			}
+		}
+
+		public void StartEventListening()
+		{
+			//cancel prev task
+			StopEventListening();
+
+			//start task
+			_cancelEventListening = new CancellationTokenSource();
+			Task.Run(() => EventListeningAsync(_cancelEventListening.Token));
+		}
+
+		public void StopEventListening()
+		{
+			//cancel task
+			if (_cancelEventListening != null && !_cancelEventListening.IsCancellationRequested)
+				_cancelEventListening.Cancel();
+		}
+
+		async Task EventListeningAsync(CancellationToken cancellationToken = default(CancellationToken))
+		{
+			var r = await Client.EnableFaceDetectionAsync(new EnableFaceDetectionRequest() { Enable = true, EnableGazeDetection = true });
+			var t = await Client.EnableMarkerDetectionAsync(new EnableMarkerDetectionRequest() { Enable = true });
+			var t2 = await Client.DefineCustomObjectAsync(new DefineCustomObjectRequest() { IsUnique = true, CustomType = CustomType._00, CustomWall = new CustomWallDefinition() { HeightMm = 50, WidthMm = 50, MarkerHeightMm = 30, MarkerWidthMm = 30, Marker = CustomObjectMarker.CustomMarkerCircles2 } });
+
 			var stream = Client.EventStream(new EventRequest() { ConnectionId = Guid.NewGuid().ToString() });
 			while (await stream.ResponseStream.MoveNext(cancellationToken))
 			{
@@ -232,9 +217,8 @@ namespace Vector
 					case Event.EventTypeOneofCase.PhotoTaken:
 						break;
 					case Event.EventTypeOneofCase.RobotState:
-							var e2 = new RobotStateEventArgs() { Data = Mapper.Map<RobotState>(result.Event.RobotState) };
-							OnStateChanged?.Invoke(this, e2);
-							OnStateChanged?.Invoke(this, e2);
+						var e2 = new RobotStateEventArgs() { Data = Mapper.Map<RobotState>(result.Event.RobotState) };
+						OnStateChanged?.Invoke(this, e2);
 						break;
 					case Event.EventTypeOneofCase.CubeBattery:
 						break;
@@ -247,43 +231,16 @@ namespace Vector
 					case Event.EventTypeOneofCase.VisionModesAutoDisabled:
 						break;
 				}
-			}
-		}
-
-		public void SuppressPersonality(bool overrideSafty = false)
-		{
-			//cancel prev task
-			CancelSuppressPersonality();
-
-			//start task
-			_cancelSuppressPersonality = new CancellationTokenSource();
-			Task.Run(() => SuppressPersonalityAsync(overrideSafty, _cancelSuppressPersonality.Token));
-	}
-
-		public void CancelSuppressPersonality()
-		{
-			//cancel suppression task
-			if (_cancelSuppressPersonality != null && !_cancelSuppressPersonality.IsCancellationRequested)
-				_cancelSuppressPersonality.Cancel();
-		}
-
-		async Task SuppressPersonalityAsync(bool overrideSafty = false, CancellationToken cancellationToken = default(CancellationToken))
-		{
-			var stream = Client.BehaviorControl();
-			var priority = overrideSafty ? ControlRequest.Types.Priority.OverrideAll : ControlRequest.Types.Priority.TopPriorityAi;
-			await stream.RequestStream.WriteAsync(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = priority } });
-			while(await stream.ResponseStream.MoveNext(cancellationToken))
-			{
-				var result = stream.ResponseStream.Current;
-				if (result.ControlLostEvent != null)
+				if (result.Event.EventTypeCase != Event.EventTypeOneofCase.RobotState && 
+					result.Event.EventTypeCase != Event.EventTypeOneofCase.KeepAlive &&
+					result.Event.EventTypeCase != Event.EventTypeOneofCase.StimulationInfo)
 				{
-					OnSuppressPersonality?.Invoke(this, new SuppressPersonalityEventArgs() { IsSuppressed = false });
-					await stream.RequestStream.WriteAsync(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = priority } });
+
 				}
-				else if (result.ControlGrantedResponse != null)
-					OnSuppressPersonality?.Invoke(this, new SuppressPersonalityEventArgs() { IsSuppressed = true });
 			}
 		}
+
+
 
 		//public async Task ChangeBehaviorAsync(float frequency = .5f, CancellationToken cancellationToken = default(CancellationToken))
 		//{
@@ -372,7 +329,7 @@ namespace Vector
 		//	//var p = _client.PlayAnimationAsync(new PlayAnimationRequest() {  Animation = new Animation() { Name =  } })
 		//}
 
-		
+
 	}
 
 
@@ -393,11 +350,4 @@ namespace Vector
 		public bool IsSuppressed { get; set; }
 	}
 
-	public class MissingConnectionException : ApplicationException
-	{
-		public MissingConnectionException(string message)
-			:base(message)
-		{
-		}
-	}
 }

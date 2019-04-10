@@ -7,21 +7,46 @@ using System.Threading.Tasks;
 
 namespace Vector
 {
-	public class RobotAudio
+	public class RobotAudio : RobotModule
 	{
-		Robot _robot;
+		CancellationTokenSource _cancelAudioFeed;
 
-		internal RobotAudio(Robot robot)
+		internal RobotAudio(RobotConnection connection) : base(connection)
 		{
-			//set fields
-			_robot = robot;
 		}
 
 		public async Task SayTextAsync(string text, float duration = 1f, bool useVectorVoice = true,  CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await _robot.Client.SayTextAsync(new SayTextRequest() { Text = text, DurationScalar = duration, UseVectorVoice = useVectorVoice }, cancellationToken: cancellationToken);
-			if (result?.Status?.Code != ResponseStatus.Types.StatusCode.ResponseReceived)
-				throw new VectorCommunicationException($"communication error: {result?.Status?.Code}");
+			var result = await Client.SayTextAsync(new SayTextRequest() { Text = text, DurationScalar = duration, UseVectorVoice = useVectorVoice }, cancellationToken: cancellationToken);
+			ValidateStatus(result.Status);
+		}
+
+		public void StartAudioFeed()
+		{
+			//cancel prev task
+			StopAudioFeed();
+
+			//start task
+			_cancelAudioFeed = new CancellationTokenSource();
+			Task.Run(() => AudioFeedAsync(_cancelAudioFeed.Token));
+		}
+
+		public void StopAudioFeed()
+		{
+			//cancel task
+			if (_cancelAudioFeed != null && !_cancelAudioFeed.IsCancellationRequested)
+				_cancelAudioFeed.Cancel();
+		}
+
+		async Task AudioFeedAsync(CancellationToken cancellationToken = default(CancellationToken))
+		{
+			var stream = Client.AudioFeed(new AudioFeedRequest());
+			while (await stream.ResponseStream.MoveNext(cancellationToken))
+			{
+				var result = stream.ResponseStream.Current;
+
+				//TODO: impliment
+			}
 		}
 	}
 }

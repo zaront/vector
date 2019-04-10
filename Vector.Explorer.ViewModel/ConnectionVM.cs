@@ -58,7 +58,7 @@ namespace Vector.Explorer.ViewModel
 				NewConnectionCreated?.Invoke(conn);
 				Navigation.GoBack();
 			}
-			catch (MissingConnectionException)
+			catch (VectorConnectionException)
 			{
 				if (await Dialog.ShowMessage("do cool stuff", "Authorize Robot", "OK", "Cancel", null))
 				{
