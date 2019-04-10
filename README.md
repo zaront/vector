@@ -16,7 +16,7 @@ This script will enable this device to authenticate with your Vector robot for u
 ```cs
 //connect
 var robot = new Robot();
-await robot.ConnectAsync("[your robot name]");
+await robot.ConnectAsync("[your robot name]"); //example: M9W4
 
 //drive off Charger
 await robot.Motors.DriveOffChargerAsync();
@@ -50,7 +50,36 @@ by default the connection info is stored automaticly for you and you can reconne
 ```cs
 await robot.ConnectAsync("[your robot name]");
 ```
+
 for up to a year before your authentication token in the connection info expires, and you will need to grant new access.
+
+**suppress its personality**\
+Sometimes you want Vector to act like a zombie drone and do exactly what you say.  to do this you can suppress its personality
+```cs
+robot.OnSuppressPersonality += (sender, e) =>
+{
+    //do stuff each time its personality is suppressed
+};
+robot.StartSuppressingPersonality();
+```
+
+**get the camera feed**\
+the camera feed comes back as a stream of System.Drawing.Image
+```cs
+robot.Camera.ImageReceived += (sender, e) =>
+{
+	//show my image.  NOTE: on a diffrent thread
+};
+robot.Camera.StartCameraFeed();
+```
+
+**show an image on the screen**\
+images are automaticly resized
+```cs
+robot.Screen.SetScreenImage(@"c:\mycoolimage.jpg");
+```
+
+
 ## How to regenerate the gRPC
 Vector uses a gRPC service definition to communicate.  You can regenerate a c# library (Vector.Communication) that matches their service definition using .proto files.  This may need to be regenerated as their firmware evolves for their robot.
 
