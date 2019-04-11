@@ -35,6 +35,9 @@ await robot.Motors.TurnInPlaceAsync(1.5708f, 5);
 //play an animation
 await robot.Animation.PlayAsync("anim_vc_laser_lookdown_01");
 
+//say something
+await robot.Audio.SayTextAsync("all done");
+
 //disconnect
 await robot.DisconnectAsync();
 ```
