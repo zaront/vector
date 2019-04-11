@@ -1,5 +1,4 @@
 ﻿using Anki.Vector.ExternalInterface;
-using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,40 +10,54 @@ namespace Vector
 	public class RobotWorld : RobotModule
 	{
 		CancellationTokenSource _cancelNavFeed;
-		bool _enableCustomMarkerDetection;
+		int _customTypeID;
 
-		public event EventHandler<RobotMapEventArgs> MapChanged;
+		public event EventHandler<RobotMapEventArgs> OnMapChanged;
+		public event EventHandler<RobotObjectObservedEventArgs> OnObjectObserved;
 
 		internal RobotWorld(RobotConnection connection) : base(connection)
 		{
 		}
 
-		public bool EnableCustomMarkerDetection
+		public async Task AddWallAsync(ObjectMarker objectMarker, bool isUnique, float markerWidth, float markerHight, float wallWidth, float wallHeight, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			get { return _enableCustomMarkerDetection; }
-			set
+			var result = await Client.DefineCustomObjectAsync(new DefineCustomObjectRequest()
 			{
-				if (_enableCustomMarkerDetection != value)
+				IsUnique = isUnique,
+				CustomType = GetNextCustomType(),
+				CustomWall = new CustomWallDefinition()
 				{
-					Client.EnableMarkerDetection(new EnableMarkerDetectionRequest() { Enable = value });
-					_enableCustomMarkerDetection = value;
-
-					if (value)
-					{
-						var t = Client.DefineCustomObject(new DefineCustomObjectRequest() { IsUnique = true, CustomWall = new CustomWallDefinition() { HeightMm = 50, WidthMm = 50, MarkerHeightMm = 30, MarkerWidthMm = 30, Marker = CustomObjectMarker.CustomMarkerCircles2 } });
-					}
+					HeightMm = wallHeight,
+					WidthMm = wallWidth,
+					MarkerHeightMm = markerHight,
+					MarkerWidthMm = markerWidth,
+					Marker = (CustomObjectMarker)objectMarker
 				}
-			}
+			});
+			ValidateStatus(result.Status);
+			SaveNextCustomType();
 		}
-		
+
+		CustomType GetNextCustomType()
+		{
+			var next = _customTypeID + 1;
+
+			//allow only 20
+			if (next > 20)
+				throw new VectorArgumentException("max quantity of object tracking reached");
+
+			return (CustomType)next;
+		}
+
+		void SaveNextCustomType()
+		{
+			_customTypeID++;
+		}
+
 		public void StartMapFeed(TimeSpan updateFrequency = default(TimeSpan))
 		{
 			//cancel prev task
 			StopMapFeed();
-
-			//default map update frequency
-			if (updateFrequency == default(TimeSpan))
-				updateFrequency = TimeSpan.FromSeconds(0.5);
 
 			//start task
 			_cancelNavFeed = new CancellationTokenSource();
@@ -58,18 +71,37 @@ namespace Vector
 				_cancelNavFeed.Cancel();
 		}
 
-		async Task MapFeedAsync(TimeSpan updateFrequency, CancellationToken cancellationToken = default(CancellationToken))
+		public async Task MapFeedAsync(TimeSpan updateFrequency = default(TimeSpan), CancellationToken cancellationToken = default(CancellationToken))
 		{
+			//default map update frequency
+			if (updateFrequency == default(TimeSpan))
+				updateFrequency = TimeSpan.FromSeconds(1);
+			
 			var stream = Client.NavMapFeed(new NavMapFeedRequest() { Frequency = (float)updateFrequency.TotalSeconds });
 			while (await stream.ResponseStream.MoveNext(cancellationToken))
 			{
 				var result = stream.ResponseStream.Current;
 
 				//TODO: impliment
-				//var map = Mapper.Map<Map>(result);
+				var map = Map<Map>(result);
 
 				//send event
-				//MapChanged?.Invoke(this, new RobotMapEventArgs() { Map = map });
+				OnMapChanged?.Invoke(this, new RobotMapEventArgs() { Map = map });
+			}
+		}
+
+		internal void ObjectEvent(ObjectEvent eventData)
+		{
+			if (eventData.ObjectEventTypeCase == Anki.Vector.ExternalInterface.ObjectEvent.ObjectEventTypeOneofCase.RobotObservedObject)
+			{
+				//map entity
+				var data = Map<ObservedObject>(eventData.RobotObservedObject);
+
+				//update local state
+				//_currentState = data;
+
+				//send event
+				OnObjectObserved?.Invoke(this, new RobotObjectObservedEventArgs() { Object = data });
 			}
 		}
 	}
@@ -79,5 +111,9 @@ namespace Vector
 	public class RobotMapEventArgs : EventArgs
 	{
 		public Map Map { get; set; }
+	}
+	public class RobotObjectObservedEventArgs : EventArgs
+	{
+		public ObservedObject Object { get; set; }
 	}
 }

@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using static Anki.Vector.ExternalInterface.ExternalInterface;
-using AutoMapper;
 
 namespace Vector
 {
@@ -15,6 +14,7 @@ namespace Vector
 	{
 		CancellationTokenSource _cancelSuppressPersonality;
 		CancellationTokenSource _cancelEventListening;
+		RobotState _currentState;
 		public RobotAudio Audio { get; }
 		public RobotMotors Motors { get; }
 		public RobotAnimation Animation { get; }
@@ -23,8 +23,6 @@ namespace Vector
 		public RobotWorld World { get; }
 		public IRobotConnectionInfoStorage ConnectionInfoStorage { get; }
 
-		public event EventHandler<EventArgs> OnAnyEvent;
-		public event EventHandler<WakeWordEventArgs> OnWakeWord;
 		public event EventHandler<RobotStateEventArgs> OnStateChanged;
 		public event EventHandler<SuppressPersonalityEventArgs> OnSuppressPersonality;
 
@@ -109,13 +107,14 @@ namespace Vector
 			(Connection as IDisposable).Dispose();
 		}
 
-		
+
+		public RobotState CurrentState { get => _currentState; }
 
 		public async Task<BatteryState> GetBatteryStateAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var result = await Client.BatteryStateAsync(new BatteryStateRequest(), cancellationToken: cancellationToken);
 			ValidateStatus(result.Status);
-			return Mapper.Map<BatteryState>(result);
+			return Map<BatteryState>(result);
 		}
 
 		[Obsolete("doesn't appear fully implimented yet")]
@@ -123,14 +122,14 @@ namespace Vector
 		{
 			var result = await Client.NetworkStateAsync(new NetworkStateRequest(), cancellationToken: cancellationToken);
 			ValidateStatus(result.Status);
-			return Mapper.Map<NetworkState>(result);
+			return Map<NetworkState>(result);
 		}
 
 		public async Task<VersionState> GetVersionStateAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var result = await Client.VersionStateAsync(new VersionStateRequest(), cancellationToken: cancellationToken);
 			ValidateStatus(result.Status);
-			return Mapper.Map<VersionState>(result);
+			return Map<VersionState>(result);
 		}
 
 		public void StartSuppressingPersonality(bool overrideSafty = false)
@@ -150,7 +149,7 @@ namespace Vector
 				_cancelSuppressPersonality.Cancel();
 		}
 
-		async Task SuppressPersonalityAsync(bool overrideSafty = false, CancellationToken cancellationToken = default(CancellationToken))
+		public async Task SuppressPersonalityAsync(bool overrideSafty = false, CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var stream = Client.BehaviorControl();
 			var priority = overrideSafty ? ControlRequest.Types.Priority.OverrideAll : ControlRequest.Types.Priority.TopPriorityAi;
@@ -185,12 +184,8 @@ namespace Vector
 				_cancelEventListening.Cancel();
 		}
 
-		async Task EventListeningAsync(CancellationToken cancellationToken = default(CancellationToken))
+		public async Task EventListeningAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var r = await Client.EnableFaceDetectionAsync(new EnableFaceDetectionRequest() { Enable = true, EnableGazeDetection = true });
-			var t = await Client.EnableMarkerDetectionAsync(new EnableMarkerDetectionRequest() { Enable = true });
-			var t2 = await Client.DefineCustomObjectAsync(new DefineCustomObjectRequest() { IsUnique = true, CustomType = CustomType._00, CustomWall = new CustomWallDefinition() { HeightMm = 50, WidthMm = 50, MarkerHeightMm = 30, MarkerWidthMm = 30, Marker = CustomObjectMarker.CustomMarkerCircles2 } });
-
 			var stream = Client.EventStream(new EventRequest() { ConnectionId = Guid.NewGuid().ToString() });
 			while (await stream.ResponseStream.MoveNext(cancellationToken))
 			{
@@ -200,58 +195,60 @@ namespace Vector
 				switch (result.Event.EventTypeCase)
 				{
 					case Event.EventTypeOneofCase.TimeStampedStatus:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.WakeWord:
-						var e1 = new WakeWordEventArgs() { Data = Mapper.Map<WakeWord>(result.Event.WakeWord) };
-						OnWakeWord?.Invoke(this, e1);
-						OnAnyEvent?.Invoke(this, e1);
+						Audio.WakeWordEvent(result.Event.WakeWord);
 						break;
 					case Event.EventTypeOneofCase.RobotObservedFace:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.RobotChangedObservedFaceId:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.ObjectEvent:
+						World.ObjectEvent(result.Event.ObjectEvent);
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.StimulationInfo:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.PhotoTaken:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.RobotState:
-						var e2 = new RobotStateEventArgs() { Data = Mapper.Map<RobotState>(result.Event.RobotState) };
-						OnStateChanged?.Invoke(this, e2);
+						RobotStateEvent(result.Event.RobotState);
 						break;
 					case Event.EventTypeOneofCase.CubeBattery:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.KeepAlive:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.ConnectionResponse:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.MirrorModeDisabled:
+						//TODO: impliment
 						break;
 					case Event.EventTypeOneofCase.VisionModesAutoDisabled:
+						//TODO: impliment
 						break;
-				}
-				if (result.Event.EventTypeCase != Event.EventTypeOneofCase.RobotState && 
-					result.Event.EventTypeCase != Event.EventTypeOneofCase.KeepAlive &&
-					result.Event.EventTypeCase != Event.EventTypeOneofCase.StimulationInfo)
-				{
-
 				}
 			}
 		}
 
+		void RobotStateEvent(Anki.Vector.ExternalInterface.RobotState eventData)
+		{
+			//map entity
+			var data = Map<RobotState>(eventData);
 
+			//update local state
+			_currentState = data;
 
-		//public async Task ChangeBehaviorAsync(float frequency = .5f, CancellationToken cancellationToken = default(CancellationToken))
-		//{
-		//	var stream = Client.NavMapFeed(new NavMapFeedRequest() { Frequency = frequency });
-		//	while (await stream.ResponseStream.MoveNext(cancellationToken))
-		//	{
-		//		var result = stream.ResponseStream.Current;
-		//		if (result. != null)
-		//			await stream.RequestStream.WriteAsync(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = (ControlRequest.Types.Priority)500 } });
-		//	}
-		//}
+			//send event
+			OnStateChanged?.Invoke(this, new RobotStateEventArgs() { Data = data });
+		}
 
 
 
@@ -265,82 +262,11 @@ namespace Vector
 
 		//}
 
-		//public async Task Test()
-		//{
-		//	var p = await Client.VersionStateAsync(new VersionStateRequest());
-		//	var p2 = await Client.ProtocolVersionAsync(new ProtocolVersionRequest());
-		//	var p3 = await Client.ListAnimationsAsync(new ListAnimationsRequest());
-		//	//var p4 = await _client.DisplayFaceImageRGBAsync(new DisplayFaceImageRGBRequest() { DurationMs = 5000, InterruptRunning = true, FaceData = Google.Protobuf.ByteString.CopyFrom(System.IO.File.ReadAllBytes(@"C:\Projects\RocDemo\RocClient\test.jpg")) });
-		//	var id = Guid.NewGuid().ToString();
-		//	var tt = new EventRequest() { ConnectionId = id };
-		//	var c = new CancellationTokenSource();
-		//	var p5 = Client.EventStream(tt, cancellationToken: c.Token);
-		//	while (await p5.ResponseStream.MoveNext())
-		//	{
-		//		var d = p5.ResponseStream.Current;
-		//		var data = d.Event?.RobotState?.ProxData;
-		//		if (data != null)
-		//			Console.WriteLine(data);
-		//		//c.Cancel();
-		//	}
-		//}
-
-		//public async Task Test4()
-		//{
-		//	var c = new CancellationTokenSource();
-		//	var p = Client.NavMapFeed(new NavMapFeedRequest() { Frequency = 0.5f, }, cancellationToken: c.Token);
-		//	while (await p.ResponseStream.MoveNext())
-		//	{
-		//		var d = p.ResponseStream.Current;
-		//	}
-		//}
-
-		//public async Task Test5()
-		//{
-		//	var p2 = Client.AssumeBehaviorControl(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = ControlRequest.Types.Priority.OverrideAll } });
-		//	while (await p2.ResponseStream.MoveNext())
-		//	{
-		//		var d = p2.ResponseStream.Current;
-		//	}
-		//	//var p = _client.BehaviorControl();
-		//	//while(await p.ResponseStream.MoveNext())
-		//	//{
-		//	//	var d = p.ResponseStream.Current;
-		//	//}
-		//}
-
-		//public async Task Test6()
-		//{
-		//	var p2 = Client.CameraFeed(new CameraFeedRequest());
-		//	while (await p2.ResponseStream.MoveNext())
-		//	{
-		//		var d = p2.ResponseStream.Current;
-		//	}
-
-		//	var p = Client.AudioFeed(new AudioFeedRequest());
-		//	while (await p.ResponseStream.MoveNext())
-		//	{
-		//		var d = p.ResponseStream.Current;
-		//	}
-		//}
-
-		//public async Task Test7()
-		//{
-		//	//var p = _client.PlayAnimationAsync(new PlayAnimationRequest() {  Animation = new Animation() { Name =  } })
-		//}
-
 
 	}
 
 
-	public class AnyEventArgs : EventArgs
-	{
-		public object Data { get; set; }
-	}
-	public class WakeWordEventArgs : EventArgs
-	{
-		public WakeWord Data { get; set; }
-	}
+
 	public class RobotStateEventArgs : EventArgs
 	{
 		public RobotState Data { get; set; }

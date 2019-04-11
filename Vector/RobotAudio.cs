@@ -11,6 +11,8 @@ namespace Vector
 	{
 		CancellationTokenSource _cancelAudioFeed;
 
+		public event EventHandler<WakeWordEventArgs> OnWakeWord;
+
 		internal RobotAudio(RobotConnection connection) : base(connection)
 		{
 		}
@@ -38,7 +40,7 @@ namespace Vector
 				_cancelAudioFeed.Cancel();
 		}
 
-		async Task AudioFeedAsync(CancellationToken cancellationToken = default(CancellationToken))
+		public async Task AudioFeedAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var stream = Client.AudioFeed(new AudioFeedRequest());
 			while (await stream.ResponseStream.MoveNext(cancellationToken))
@@ -48,5 +50,20 @@ namespace Vector
 				//TODO: impliment
 			}
 		}
+
+		internal void WakeWordEvent(Anki.Vector.ExternalInterface.WakeWord eventData)
+		{
+			//map entity
+			var data = Map<WakeWord>(eventData);
+
+			//send event
+			OnWakeWord?.Invoke(this, new WakeWordEventArgs() { Data = data });
+		}
+	}
+
+
+	public class WakeWordEventArgs : EventArgs
+	{
+		public WakeWord Data { get; set; }
 	}
 }

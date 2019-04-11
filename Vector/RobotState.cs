@@ -85,4 +85,24 @@ namespace Vector
 		IS_BEING_HELD = 0x10000,
 		IS_MOTION_DETECTED = 0x20000
 	}
+
+	public enum ObjectMarker
+	{
+		Circles2 = 1,
+		Circles3 = 2,
+		Circles4 = 3,
+		Circles5 = 4,
+		Diamonds2 = 5,
+		Diamonds3 = 6,
+		Diamonds4 = 7,
+		Diamonds5 = 8,
+		Hexagons2 = 9,
+		Hexagons3 = 10,
+		Hexagons4 = 11,
+		Hexagons5 = 12,
+		Triangles2 = 13,
+		Triangles3 = 14,
+		Triangles4 = 15,
+		Triangles5 = 16
+	}
 }

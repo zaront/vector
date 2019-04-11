@@ -1,33 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace Vector
 {
 	public class Map
 	{
-		public Vector3 Center { get; set; }
-		public float Depth { get; set; }
-		public float Size { get; set; }
-		public IList<Quad> Quads { get; set; }
+		public MapInfo MapInfo { get; set; }
+		public IList<Quad> QuadInfos { get; set; }
+		public uint OriginId { get; set; }
+	}
+
+	public class MapInfo
+	{
+		public float RootCenterX { get; set; }
+		public float RootCenterY { get; set; }
+		public float RootCenterZ { get; set; }
+		public int RootDepth { get; set; }
+		public float RootSizeMm { get; set; }
 	}
 
 	public class Quad
 	{
-
+		public uint ColorRgba { get; set; }
+		public uint Depth { get; set; }
+		public MapNodeType Content { get; set; }
 	}
 
-	public enum NavNodeContentType
+	public enum MapNodeType
 	{
-		NavNodeUnknown = 0,
-		NavNodeClearOfObstacle = 1,
-		NavNodeClearOfCliff = 2,
-		NavNodeObstacleCube = 3,
-		NavNodeObstacleProximity = 4,
-		NavNodeObstacleProximityExplored = 5,
-		NavNodeObstacleUnrecognized = 6,
-		NavNodeCliff = 7,
-		NavNodeInterestingEdge = 8,
-		NavNodeNonInterestingEdge = 9,
+		Unknown = 0,
+		ClearOfObstacle = 1,
+		ClearOfCliff = 2,
+		ObstacleCube = 3,
+		ObstacleProximity = 4,
+		ObstacleProximityExplored = 5,
+		ObstacleUnrecognized = 6,
+		Cliff = 7,
+		InterestingEdge = 8,
+		NonInterestingEdge = 9,
 	}
 }

@@ -14,7 +14,7 @@ namespace Vector
 	{
 		CancellationTokenSource _cancelCameraFeed;
 
-		public event EventHandler<RobotImageEventArgs> ImageReceived;
+		public event EventHandler<RobotImageEventArgs> OnImageReceived;
 
 		internal RobotCamera(RobotConnection connection) : base(connection)
 		{
@@ -37,11 +37,11 @@ namespace Vector
 				_cancelCameraFeed.Cancel();
 		}
 
-		async Task CameraFeedAsync(CancellationToken cancellationToken = default(CancellationToken))
+		public async Task CameraFeedAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			//get camera images
 			var cameraFeed = Client.CameraFeed(new CameraFeedRequest());
-			while(await cameraFeed.ResponseStream.MoveNext(_cancelCameraFeed.Token))
+			while(await cameraFeed.ResponseStream.MoveNext(cancellationToken))
 			{
 				var response = cameraFeed.ResponseStream.Current;
 				if (response.Data != null && !response.Data.IsEmpty)
@@ -52,7 +52,7 @@ namespace Vector
 						image = Image.FromStream(stream);
 
 					//send event
-					ImageReceived?.Invoke(this, new RobotImageEventArgs() { Image = image });
+					OnImageReceived?.Invoke(this, new RobotImageEventArgs() { Image = image });
 				}
 			}
 		}

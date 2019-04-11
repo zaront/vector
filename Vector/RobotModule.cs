@@ -8,12 +8,19 @@ namespace Vector
 {
 	public abstract class RobotModule
 	{
+		EntityMapper _mapper;
 		internal RobotConnection Connection { get; }
 
 		internal RobotModule(RobotConnection connection)
 		{
 			//set fields
 			Connection = connection;
+			_mapper = new EntityMapper();
+		}
+
+		protected T Map<T>(object source)
+		{
+			return _mapper.Map<T>(source);
 		}
 
 		protected ExternalInterfaceClient Client

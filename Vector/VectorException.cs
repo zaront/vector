@@ -46,5 +46,10 @@ namespace Vector
 		public VectorCommandException(string message) : base(message) { }
 		public VectorCommandException(string message, Exception innerException) : base(message, innerException) { }
 	}
+	public class VectorArgumentException : VectorCommandException //base
+	{
+		public VectorArgumentException(string message) : base(message) { }
+		public VectorArgumentException(string message, Exception innerException) : base(message, innerException) { }
+	}
 
 }

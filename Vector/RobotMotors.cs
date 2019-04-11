@@ -77,7 +77,7 @@ namespace Vector
 
 		public async Task GoToPoseAsync(float x, float y, float angle, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await Client.GoToPoseAsync(new GoToPoseRequest() { IdTag = GetActionTagID(), XMm = x, YMm = y, Rad = angle }, cancellationToken: cancellationToken);
+			var result = await Client.GoToPoseAsync(new GoToPoseRequest() { IdTag = GetActionTagID(), XMm = x, YMm = y, Rad = angle  }, cancellationToken: cancellationToken);
 		}
 	}
 }
