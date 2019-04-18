@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>0.5.3.0</Version>
+    <Version>0.5.4.0</Version>
     <Authors>Zaron Thompson</Authors>
     <Product>Anki Vector</Product>
     <PackageTags>Anki Vector Robot API SDK</PackageTags>
@@ -14,7 +14,7 @@
     <Copyright>Zaron Thompson</Copyright>
     <Description>C# API for the Anki Vector robot.</Description>
     <RepositoryUrl>https://github.com/zaront/vector</RepositoryUrl>
-    <AssemblyVersion>0.5.3.0</AssemblyVersion>
+    <AssemblyVersion>0.5.4.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
