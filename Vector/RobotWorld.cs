@@ -1,5 +1,6 @@
 ﻿using Anki.Vector.ExternalInterface;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
@@ -9,22 +10,30 @@ namespace Vector
 {
 	public class RobotWorld : RobotModule
 	{
+		readonly TimeSpan _objectExpires = TimeSpan.FromSeconds(2.4);
+		readonly int _maxObjectCount = 20;
+
 		CancellationTokenSource _cancelNavFeed;
 		int _customTypeID;
+
+		public ObservedObject[] ObservedObjects { get; }
 
 		public event EventHandler<RobotMapEventArgs> OnMapChanged;
 		public event EventHandler<RobotObjectObservedEventArgs> OnObjectObserved;
 
 		internal RobotWorld(RobotConnection connection) : base(connection)
 		{
+			//set fields
+			ObservedObjects = new ObservedObject[_maxObjectCount + 1];
 		}
 
-		public async Task AddWallAsync(ObjectMarker objectMarker, bool isUnique, float markerWidth, float markerHight, float wallWidth, float wallHeight, CancellationToken cancellationToken = default(CancellationToken))
+		public async Task<int> AddWallAsync(ObjectMarker objectMarker, bool isUnique, float markerWidth, float markerHight, float wallWidth, float wallHeight, CancellationToken cancellationToken = default(CancellationToken))
 		{
+			var customType = GetNextCustomType();
 			var result = await Client.DefineCustomObjectAsync(new DefineCustomObjectRequest()
 			{
 				IsUnique = isUnique,
-				CustomType = GetNextCustomType(),
+				CustomType = customType,
 				CustomWall = new CustomWallDefinition()
 				{
 					HeightMm = wallHeight,
@@ -36,6 +45,8 @@ namespace Vector
 			});
 			ValidateStatus(result.Status);
 			SaveNextCustomType();
+			ObservedObjects[(int)customType] = new ObservedObject() { ObjectId = (int)customType };
+			return (int)customType;
 		}
 
 		CustomType GetNextCustomType()
@@ -43,7 +54,7 @@ namespace Vector
 			var next = _customTypeID + 1;
 
 			//allow only 20
-			if (next > 20)
+			if (next > _maxObjectCount)
 				throw new VectorArgumentException("max quantity of object tracking reached");
 
 			return (CustomType)next;
@@ -97,11 +108,26 @@ namespace Vector
 				//map entity
 				var data = Map<ObservedObject>(eventData.RobotObservedObject);
 
+				//add extended data
+				data.LastSeen = DateTime.Now;
+				data.IsVisible = true;
+
 				//update local state
-				//_currentState = data;
+				ObservedObjects[data.ObjectId] = data;
 
 				//send event
 				OnObjectObserved?.Invoke(this, new RobotObjectObservedEventArgs() { Object = data });
+			}
+		}
+
+		internal void ObjectEventExpire()
+		{
+			//expire old objects
+			var now = DateTime.Now;
+			foreach (var obj in ObservedObjects)
+			{
+				if (obj != null && obj.LastSeen.Add(_objectExpires) < now && obj.IsVisible)
+					obj.IsVisible = false;
 			}
 		}
 	}

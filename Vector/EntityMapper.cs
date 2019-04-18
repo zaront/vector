@@ -1,4 +1,4 @@
-﻿using Anki.Vector.ExternalInterface;
+﻿using Ank = Anki.Vector.ExternalInterface;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -18,23 +18,37 @@ namespace Vector
 			{
 				Mapper.Initialize(i =>
 				{
-					i.CreateMap<BatteryStateResponse, BatteryState>();
+					i.CreateMap<Ank.PoseStruct, System.Numerics.Vector3>()
+						.ForMember(d => d.X, m => m.MapFrom(s => s.X))
+						.ForMember(d => d.Y, m => m.MapFrom(s => s.Y))
+						.ForMember(d => d.Z, m => m.MapFrom(s => s.Z));
+					i.CreateMap<Ank.PoseStruct, System.Numerics.Quaternion>()
+						.ForMember(d => d.W, m => m.MapFrom(s => s.Q0))
+						.ForMember(d => d.X, m => m.MapFrom(s => s.Q1))
+						.ForMember(d => d.Y, m => m.MapFrom(s => s.Q2))
+						.ForMember(d => d.Z, m => m.MapFrom(s => s.Q3));
+					i.CreateMap<Ank.PoseStruct, Pose>()
+						.ForPath(d => d.Translation, m => m.MapFrom(s => s))
+						.ForPath(d => d.Rotation, m => m.MapFrom(s => s));
 
-					i.CreateMap<NetworkStateResponse, NetworkState>();
+					i.CreateMap<Ank.BatteryStateResponse, BatteryState>();
 
-					i.CreateMap<VersionStateResponse, VersionState>();
+					i.CreateMap<Ank.NetworkStateResponse, NetworkState>();
 
-					i.CreateMap<Anki.Vector.ExternalInterface.WakeWord, WakeWord>()
+					i.CreateMap<Ank.VersionStateResponse, VersionState>();
+
+					i.CreateMap<Ank.WakeWord, WakeWord>()
 						.ForMember(d => d.IntentHeard, m => m.MapFrom(s => s.WakeWordEnd.IntentHeard))
 						.ForMember(d => d.IntentJson, m => m.MapFrom(s => s.WakeWordEnd.IntentJson))
 						.ForMember(d => d.Begin, m => m.MapFrom(s => s.WakeWordBegin != null));
 
-					i.CreateMap<Anki.Vector.ExternalInterface.RobotState, RobotState>();
+					i.CreateMap<Ank.RobotState, RobotState>();
 
-					i.CreateMap<NavMapFeedResponse, Map>();
+					i.CreateMap<Ank.NavMapFeedResponse, Map>();
 
-					i.CreateMap<RobotObservedObject, ObservedObject>();
+					i.CreateMap<Ank.RobotObservedObject, ObservedObject>();
 				});
+
 				_mappingInit = true;
 			}
 		}

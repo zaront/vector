@@ -235,6 +235,8 @@ namespace Vector
 						//TODO: impliment
 						break;
 				}
+
+				World.ObjectEventExpire(); //expire old objects
 			}
 		}
 

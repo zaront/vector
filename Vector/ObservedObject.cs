@@ -13,6 +13,9 @@ namespace Vector
 		public Pose Pose { get; set; }
 		public float TopFaceOrientationRad { get; set; }
 		public Rect ImgRect { get; set; }
+		//extended properties
+		public bool IsVisible { get; set; }
+		public DateTime LastSeen { get; set; }
 	}
 
 	public enum ObjectFamily

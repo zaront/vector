@@ -12,8 +12,8 @@ namespace Vector.Explorer.ViewModel
 			var nav = new NavigationService(app.MainPage.Navigation);
 			var dialog = new DialogService(app.MainPage);
 			var settings = new SettingsService();
-			var settingsRobotConnection = new SettingsRobotConnection(settings);
-			var robot = new Robot(settingsRobotConnection);
+			var connectionStorage = new ConnectionStorage(settings);
+			var robot = new Robot(connectionStorage);
 			var managerVM = new RobotManagerVM(gamepad, nav, dialog, settings);
 			var g = managerVM.Gamepad.BeginPolling();
 

@@ -12,6 +12,11 @@ namespace Vector
 {
 	public class RobotCamera : RobotModule
 	{
+		public const int CameraWidth = 360;
+		public const int CameraHeight = 640;
+		public const int CameraInternalWidth = CameraWidth / 2;
+		public const int CameraInternalHeight = CameraHeight / 2;
+
 		CancellationTokenSource _cancelCameraFeed;
 
 		public event EventHandler<RobotImageEventArgs> OnImageReceived;

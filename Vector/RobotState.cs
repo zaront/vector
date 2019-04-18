@@ -25,6 +25,12 @@ namespace Vector
 		public TouchData TouchData;
 	}
 
+	public struct Vector2
+	{
+		public float X;
+		public float Y;
+	}
+
 	public struct Vector3
 	{
 		public float X;
@@ -35,11 +41,13 @@ namespace Vector
 	public struct Pose
 	{
 		// Translation
+		public System.Numerics.Vector3 Translation;
 		public float X;
 		public float Y;
 		public float Z;
 
 		// Rotation quaternion
+		public System.Numerics.Quaternion Rotation;
 		public float Q0;
 		public float Q1;
 		public float Q2;
