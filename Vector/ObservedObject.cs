@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace Vector
@@ -12,7 +13,8 @@ namespace Vector
 		public ObjectType ObjectType { get; set; }
 		public Pose Pose { get; set; }
 		public float TopFaceOrientationRad { get; set; }
-		public Rect ImgRect { get; set; }
+		public RectangleF ImgRect { get; set; }
+
 		//extended properties
 		public bool IsVisible { get; set; }
 		public DateTime LastSeen { get; set; }
@@ -34,13 +36,5 @@ namespace Vector
 		UnknownObject = 1,
 		BlockLightcube1 = 2,
 		FirstCustomObjectType = 15
-	}
-
-	public class Rect
-	{
-		public float Height { get; set; }
-		public float Width { get; set; }
-		public float XTopLeft { get; set; }
-		public float YTopLeft { get; set; }
 	}
 }

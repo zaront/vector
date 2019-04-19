@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 
 namespace Vector
@@ -18,15 +19,19 @@ namespace Vector
 			return source;
 		}
 
-		public static double Distance(this Vector2 source, Vector2 dest)
-		{
-			
-			return Math.Sqrt(Math.Pow(source.X - dest.X, 2) + Math.Pow(source.Y - dest.Y, 2));
-		}
-
 		public static double ToDegrees(this double rad)
 		{
 			return rad * 180 / Math.PI;
+		}
+
+		public static Vector2 ToVector2(this Vector3 source)
+		{
+			return new Vector2(source.X, source.Y);
+		}
+
+		public static Vector3 ToVector3(this Vector2 source)
+		{
+			return new Vector3(source.X, source.Y, 0);
 		}
 	}
 }

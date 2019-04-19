@@ -31,7 +31,7 @@ namespace Vector
 			//set fields
 			ConnectionInfoStorage = connectionInfoStorage ?? new RobotConnectionInfoStorage();
 			Audio = new RobotAudio(Connection);
-			Motors = new RobotMotors(Connection);
+			Motors = new RobotMotors(Connection, this);
 			Animation = new RobotAnimation(Connection);
 			Screen = new RobotScreen(Connection);
 			Camera = new RobotCamera(Connection);

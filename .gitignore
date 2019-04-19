@@ -8,3 +8,4 @@ obj/
 *.log
 ~*
 /packages
+*.nupkg

@@ -30,6 +30,11 @@ namespace Vector
 					i.CreateMap<Ank.PoseStruct, Pose>()
 						.ForPath(d => d.Translation, m => m.MapFrom(s => s))
 						.ForPath(d => d.Rotation, m => m.MapFrom(s => s));
+					i.CreateMap<Ank.CladRect, RectangleF>()
+						.ForMember(d => d.X, m => m.MapFrom(s => s.XTopLeft))
+						.ForMember(d => d.Y, m => m.MapFrom(s => s.YTopLeft))
+						.ForMember(d => d.Width, m => m.MapFrom(s => s.Width))
+						.ForMember(d => d.Height, m => m.MapFrom(s => s.Height));
 
 					i.CreateMap<Ank.BatteryStateResponse, BatteryState>();
 
@@ -47,6 +52,8 @@ namespace Vector
 					i.CreateMap<Ank.NavMapFeedResponse, Map>();
 
 					i.CreateMap<Ank.RobotObservedObject, ObservedObject>();
+
+					i.CreateMap<MotionSettings, Ank.PathMotionProfile>();
 				});
 
 				_mappingInit = true;

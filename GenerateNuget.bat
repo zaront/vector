@@ -1,0 +1,1 @@
+nuget pack vector -IncludeReferencedProjects -Build -Properties Configuration=Release

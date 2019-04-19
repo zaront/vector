@@ -4,14 +4,20 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Vector
 {
 	public class RobotMotors : RobotModule
 	{
-		internal RobotMotors(RobotConnection connection) : base(connection)
+		Robot _robot;
+		internal RobotMotors(RobotConnection connection, Robot robot) : base(connection)
 		{
+			//set fields
+			_robot = robot;
 		}
+
+		public MotionSettings DefaultMotionSettings { get; set; }
 
 		/// <summary>
 		/// set the speed of the wheels
@@ -49,9 +55,13 @@ namespace Vector
 			var result = await Client.DriveOnChargerAsync(new DriveOnChargerRequest(), cancellationToken: cancellationToken);
 		}
 
-		public async Task<bool> DockWithCubeAsync(CancellationToken cancellationToken = default(CancellationToken))
+		public async Task<bool> DockWithCubeAsync(MotionSettings motionSettings = null, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await Client.DockWithCubeAsync(new DockWithCubeRequest() { IdTag = GetActionTagID(), ObjectId = 1 }, cancellationToken: cancellationToken);
+			//get visible cube id
+			var cubeID = _robot.World.ObservedObjects.Where(i => i != null && i.IsVisible && i.ObjectType == ObjectType.BlockLightcube1).Select(i => i.ObjectId).FirstOrDefault();
+
+			var motion = Map<PathMotionProfile>(motionSettings ?? DefaultMotionSettings);
+			var result = await Client.DockWithCubeAsync(new DockWithCubeRequest() { IdTag = GetActionTagID(), ObjectId = cubeID, MotionProf = motion }, cancellationToken: cancellationToken);
 			return (result.Result.Code == ActionResult.Types.ActionResultCode.ActionResultSuccess);
 		}
 
@@ -75,9 +85,10 @@ namespace Vector
 			var result = await Client.SetLiftHeightAsync(new SetLiftHeightRequest() { HeightMm = height, DurationSec = duration, AccelRadPerSec2 = accel, MaxSpeedRadPerSec = maxSpeed, IdTag = GetActionTagID() }, cancellationToken: cancellationToken);
 		}
 
-		public async Task GoToPoseAsync(float x, float y, float angle, CancellationToken cancellationToken = default(CancellationToken))
+		public async Task GoToPoseAsync(float x, float y, float angle, MotionSettings motionSettings = null, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			var result = await Client.GoToPoseAsync(new GoToPoseRequest() { IdTag = GetActionTagID(), XMm = x, YMm = y, Rad = angle  }, cancellationToken: cancellationToken);
+			var motion = Map<PathMotionProfile>(motionSettings ?? DefaultMotionSettings);
+			var result = await Client.GoToPoseAsync(new GoToPoseRequest() { IdTag = GetActionTagID(), XMm = x, YMm = y, Rad = angle, MotionProf = motion }, cancellationToken: cancellationToken);
 		}
 	}
 }

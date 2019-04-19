@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>Vector</id>
+		<version>$version$</version>
+		<title>Vector</title>
+		<authors>Zaron Thompson</authors>
+		<owners>Zaron Thompson</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>C# API for the Anki Vector robot.</description>
+		<copyright>Zaron Thompson</copyright>
+		<projectUrl>https://github.com/zaront/vector</projectUrl>
+		<license type="expression">MIT</license>
+		<tags>anki vector robot api sdk c#</tags>
+		<repository type="git" url="https://github.com/zaront/vector" />
+		<iconUrl>https://github.com/zaront/vector/raw/master/icon.png</iconUrl>
+		<dependencies />
+	</metadata>
+</package>

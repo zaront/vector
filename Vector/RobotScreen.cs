@@ -20,8 +20,10 @@ namespace Vector
 		{
 		}
 
-		public async Task SetEyeColor(float hue, float saturation, CancellationToken cancellationToken = default(CancellationToken))
+		public async Task SetEyeColor(Color color, CancellationToken cancellationToken = default(CancellationToken))
 		{
+			var hue = color.GetHue()/255f;
+			var saturation = color.GetSaturation()/255f;
 			var result = await Client.SetEyeColorAsync(new SetEyeColorRequest() { Hue = hue, Saturation = saturation }, cancellationToken: cancellationToken);
 		}
 
