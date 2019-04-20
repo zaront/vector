@@ -14,6 +14,15 @@
 		<tags>anki vector robot api sdk c#</tags>
 		<repository type="git" url="https://github.com/zaront/vector" />
 		<iconUrl>https://github.com/zaront/vector/raw/master/icon.png</iconUrl>
-		<dependencies />
+		<dependencies>
+			<group targetFramework=".NETStandard2.0">
+				<dependency id="AutoMapper" version="8.0.0" exclude="Build,Analyzers" />
+				<dependency id="System.Drawing.Common" version="4.5.1" exclude="Build,Analyzers" />
+				<dependency id="System.Numerics.Vectors" version="4.5.0" exclude="Build,Analyzers" />
+				<dependency id="Google.Api.Gax.Grpc" version="2.6.0" exclude="Build,Analyzers" />
+				<dependency id="Google.Protobuf" version="3.7.0" exclude="Build,Analyzers" />
+				<dependency id="Grpc" version="1.20.0" exclude="Build,Analyzers" />
+			</group>
+		</dependencies>
 	</metadata>
 </package>

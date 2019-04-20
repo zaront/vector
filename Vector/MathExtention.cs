@@ -25,7 +25,7 @@ namespace Vector
 		}
 
 		public static Vector2 ToVector2(this Vector3 source)
-		{
+		{ 
 			return new Vector2(source.X, source.Y);
 		}
 

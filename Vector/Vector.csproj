@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>0.5.5</Version>
+    <Version>0.5.8</Version>
     <Authors>Zaron Thompson</Authors>
     <Product>Anki Vector</Product>
     <PackageTags>Anki Vector Robot API SDK</PackageTags>
@@ -14,9 +14,17 @@
     <Copyright>Zaron Thompson</Copyright>
     <Description>C# API for the Anki Vector robot.</Description>
     <RepositoryUrl>https://github.com/zaront/vector</RepositoryUrl>
-    <AssemblyVersion>0.5.5.0</AssemblyVersion>
+    <AssemblyVersion>0.5.8.0</AssemblyVersion>
     <PackageId />
-    <FileVersion>0.5.5.0</FileVersion>
+    <FileVersion>0.5.8.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Projects\RocDemo\vector\Vector\Vector.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Projects\RocDemo\vector\Vector\Vector.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

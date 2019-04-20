@@ -14,6 +14,7 @@ namespace Vector
 	{
 		CancellationTokenSource _cancelSuppressPersonality;
 		CancellationTokenSource _cancelEventListening;
+		TaskCompletionSource<bool> _isPersonalitySuppressed;
 		RobotState _currentState;
 		public RobotAudio Audio { get; }
 		public RobotMotors Motors { get; }
@@ -29,6 +30,7 @@ namespace Vector
 		public Robot(IRobotConnectionInfoStorage connectionInfoStorage = null) : base(new RobotConnection())
 		{
 			//set fields
+			_isPersonalitySuppressed = new TaskCompletionSource<bool>();
 			ConnectionInfoStorage = connectionInfoStorage ?? new RobotConnectionInfoStorage();
 			Audio = new RobotAudio(Connection);
 			Motors = new RobotMotors(Connection, this);
@@ -163,8 +165,17 @@ namespace Vector
 					await stream.RequestStream.WriteAsync(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = priority } });
 				}
 				else if (result.ControlGrantedResponse != null)
+				{
 					OnSuppressPersonality?.Invoke(this, new SuppressPersonalityEventArgs() { IsSuppressed = true });
+					_isPersonalitySuppressed.TrySetResult(true); //indicates the first time personality is suppressed
+				}
 			}
+		}
+
+		public async Task WaitTillPersonalitySuppressedAsync(CancellationToken cancellationToken = default(CancellationToken))
+		{
+			cancellationToken.Register(() => _isPersonalitySuppressed.TrySetCanceled());
+			await _isPersonalitySuppressed.Task;
 		}
 
 		public void StartEventListening()

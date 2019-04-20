@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Api.Gax.Grpc" Version="2.6.0" />
     <PackageReference Include="Google.Protobuf" Version="3.7.0" />
-    <PackageReference Include="Grpc" Version="1.19.0" />
+    <PackageReference Include="Grpc" Version="1.20.0" />
   </ItemGroup>
 
 </Project>

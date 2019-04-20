@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Vector</name>
+    </assembly>
+    <members>
+        <member name="M:Vector.ApiAccess.GrantAsync(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Required for first time use.  Used to grant this device access to a Vector robot.  The robot must be joined to the wifi network using the Vector Companion App before running this.
+            </summary>
+            <param name="robotName">Find your robot name (ex. Vector-A1B2) by placing Vector on the charger and double-clicking Vector's backpack button.</param>
+            <param name="ipAddress">Find your robot ip address (ex. 192.168.42.42) by placing Vector on the charger, double-clicking Vector's backpack button, then raising and lowering his arms.If you see XX.XX.XX.XX on his face, reconnect Vector to your WiFi using the Vector Companion App.</param>
+            <param name="serialNumber">Please find your robot serial number (ex. 00e20100) located on the underside of Vector, or accessible from Vector's debug screen.</param>
+            <param name="userName">Enter your email. Make sure to use the same account that was used to set up your Vector through the Companion app.</param>
+            <param name="password">Enter your password. Make sure to use the same account that was used to set up your Vector through the Companion app.</param>
+            <returns>used to connect to the robot</returns>
+        </member>
+        <member name="M:Vector.Robot.ConnectAsync(System.String,System.String)">
+            <summary>
+            use IRobotConnectionInfoStorage to retreave connection information to connect to your robot 
+            </summary>
+            <param name="robotName">Find your robot name (ex. Vector-A1B2) by placing Vector on the charger and double-clicking Vector's backpack button.</param>
+            <param name="ipAddress">Update your robots IP address, otherwise leave blank.  Find your robot ip address (ex. 192.168.42.42) by placing Vector on the charger, double-clicking Vector's backpack button, then raising and lowering his arms.If you see XX.XX.XX.XX on his face, reconnect Vector to your WiFi using the Vector Companion App.</param>
+        </member>
+        <member name="M:Vector.Robot.ConnectAsync(Vector.RobotConnectionInfo)">
+            <summary>
+            connect to your robot by passing in a connectionInfo
+            </summary>
+            <param name="connectionInfo">call ApiAccess.Grant() to generate a connectionInfo.  Once access is granted the conncetionInfo should be reused.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Vector.Robot.GrantApiAccessAsync(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Required for first time use.  Used to grant this device access to a Vector robot.  The robot must be joined to the wifi network using the Vector Companion App before running this.  Once access is granted you can connect via robotName
+            </summary>
+            <param name="robotName">Find your robot name (ex. Vector-A1B2) by placing Vector on the charger and double-clicking Vector's backpack button.</param>
+            <param name="ipAddress">Find your robot ip address (ex. 192.168.42.42) by placing Vector on the charger, double-clicking Vector's backpack button, then raising and lowering his arms.If you see XX.XX.XX.XX on his face, reconnect Vector to your WiFi using the Vector Companion App.</param>
+            <param name="serialNumber">Please find your robot serial number (ex. 00e20100) located on the underside of Vector, or accessible from Vector's debug screen.</param>
+            <param name="userName">Enter your email. Make sure to use the same account that was used to set up your Vector through the Companion app.</param>
+            <param name="password">Enter your password. Make sure to use the same account that was used to set up your Vector through the Companion app.</param>
+        </member>
+        <member name="F:Vector.RobotConnectionInfo.Token">
+            <summary>
+            call Robot.GrantApiAccess() or ApiAccess.Grant() to get this the first time
+            </summary>
+        </member>
+        <member name="F:Vector.RobotConnectionInfo.Certificate">
+            <summary>
+            call Robot.GrantApiAccess() or ApiAccess.Grant() to get this the first time
+            </summary>
+        </member>
+        <member name="M:Vector.RobotMotors.DriveAsync(System.Single,System.Single,System.Single,System.Single,System.Threading.CancellationToken)">
+            <summary>
+            set the speed of the wheels
+            </summary>
+            <param name="leftWheelSpeed">250 to -250 in mm/s</param>
+            <param name="rightWheelSpeed">250 to -250 in mm/s</param>
+            <param name="leftWheelAccel">250 to -250 in mm/s^2</param>
+            <param name="rightWheelAccel">250 to -250 in mm/s^2</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

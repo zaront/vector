@@ -66,6 +66,17 @@ robot.OnSuppressPersonality += (sender, e) =>
 robot.StartSuppressingPersonality();
 ```
 
+## Text to speach
+Saying something is as simple as `robot.Audio.SayTextAsync("all done")`.  However some commands require suppressing the robots personality before you can have it accept your commands.  Speaking is one of them.
+If you are trying to speak shortly after connecting to the robot, you will need to insure that its personality is suppress first.
+```cs
+var robot = new Robot();
+await robot.ConnectAsync("A5A7");
+robot.SuppressPersonalityAsync().ThrowFeedException(); //attempt to suppress its personality
+await robot.WaitTillPersonalitySuppressedAsync(); //wait intil its personality is suppressed
+await robot.Audio.SayTextAsync("all done");  //now you are free to talk
+```
+
 ## Get the camera feed
 The camera feed comes back as a stream of System.Drawing.Image
 ##### Return on same thread
