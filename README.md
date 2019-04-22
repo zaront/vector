@@ -18,6 +18,10 @@ This script will enable this device to authenticate with your Vector robot for u
 var robot = new Robot();
 await robot.ConnectAsync("[your robot name]"); //example: M9W4
 
+//gain control over the robot by suppressing its personality
+robot.StartSuppressingPersonality();
+await robot.WaitTillPersonalitySuppressedAsync();
+
 //drive off Charger
 await robot.Motors.DriveOffChargerAsync();
 await robot.Motors.DriveStraightAsync(50, 50);
