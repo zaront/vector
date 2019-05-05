@@ -155,6 +155,19 @@ images are automaticly resized
 robot.Screen.SetScreenImage(@"c:\mycoolimage.jpg");
 ```
 
+## Recognize custom markers
+You size and print these [custom markers](https://github.com/anki/vector-python-sdk/tree/master/docs/source/images/custom_markers) then you can tell vector to recognize them.  here is how:
+```cs
+robot.World.OnObjectObserved += (sender, e) =>
+{
+	if (e.Object.Name == "My Marker")
+	{
+		//Found my marker
+	}
+};
+await robot.World.AddWallMarkerAsync("My Marker", ObjectMarker.Circles2, true, 30, 30, 30, 30); //register a 30mm custom marker
+robot.EventListeningAsync().ThrowFeedException(); //start listening for recognized markers
+```
 
 ## How to regenerate the gRPC
 Vector uses a gRPC service definition to communicate.  You can regenerate a c# library (Vector.Communication) that matches their service definition using .proto files.  This may need to be regenerated as their firmware evolves for their robot.

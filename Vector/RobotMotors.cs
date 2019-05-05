@@ -57,8 +57,8 @@ namespace Vector
 
 		public async Task<bool> DockWithCubeAsync(MotionSettings motionSettings = null, CancellationToken cancellationToken = default(CancellationToken))
 		{
-			//get visible cube id
-			var cubeID = _robot.World.ObservedObjects.Where(i => i != null && i.IsVisible && i.ObjectType == ObjectType.BlockLightcube1).Select(i => i.ObjectId).FirstOrDefault();
+			//get last visible cube id
+			var cubeID = _robot.World.ObservedCube.ObjectId;
 
 			var motion = Map<PathMotionProfile>(motionSettings ?? DefaultMotionSettings);
 			var result = await Client.DockWithCubeAsync(new DockWithCubeRequest() { IdTag = GetActionTagID(), ObjectId = cubeID, MotionProf = motion }, cancellationToken: cancellationToken);

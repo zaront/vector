@@ -18,6 +18,8 @@ namespace Vector
 		//extended properties
 		public bool IsVisible { get; set; }
 		public DateTime LastSeen { get; set; }
+		public string Name { get; set; }
+		public int indexId { get; set; }
 	}
 
 	public enum ObjectFamily
