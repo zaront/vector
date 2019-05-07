@@ -65,7 +65,16 @@ namespace Vector
 			await SetScreenImage(data, duration, cancellationToken);
 		}
 
-		ByteString ConvertToRGB565(Image image)
+		public async Task SetScreenImage(Image image, TimeSpan? duration = null, CancellationToken cancellationToken = default(CancellationToken))
+		{
+			//convert image
+			ByteString data = ConvertToRGB565(image);
+
+			//send image
+			await SetScreenImage(data, duration, cancellationToken);
+		}
+
+			ByteString ConvertToRGB565(Image image)
 		{
 			//resize
 			if (image.Width != ScreenWidth || image.Height != ScreenHeight)
