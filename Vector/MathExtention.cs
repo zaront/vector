@@ -24,7 +24,12 @@ namespace Vector
 			return rad * 180 / Math.PI;
 		}
 
-		public static Vector2 ToVector2(this Vector3 source)
+        public static double ToRadians(this double degrees)
+        {
+            return degrees * Math.PI / 180;
+        }
+
+        public static Vector2 ToVector2(this Vector3 source)
 		{ 
 			return new Vector2(source.X, source.Y);
 		}
