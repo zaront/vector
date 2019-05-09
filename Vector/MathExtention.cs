@@ -38,5 +38,34 @@ namespace Vector
 		{
 			return new Vector3(source.X, source.Y, 0);
 		}
+
+		public static double Distance(this Vector3 source, Vector3 dest)
+		{
+			return Vector3.Distance(source, dest);
+		}
+
+		public static double Distance2D(this Vector3 source, Vector3 dest)
+		{
+			return Distance(source.ToVector2(), dest.ToVector2());
+		}
+
+		public static double Distance(this Vector2 source, Vector2 dest)
+		{
+			return Vector2.Distance(source, dest);
+		}
+
+		/// <summary>
+		/// get a caliberated distance from an observed object, to the robots lift
+		/// </summary>
+		public static double Distance(this ObservedObject observedObject, Vector3 robotTranslation)
+		{
+			var distance = observedObject.Pose.Translation.Distance2D(robotTranslation);
+
+			//caliberated marker distance
+			//y = 0.8119x - 31.938   R² = 1
+			distance = 0.8119 * distance - 31.938;
+
+			return distance;
+		}
 	}
 }

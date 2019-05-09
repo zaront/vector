@@ -37,7 +37,7 @@ namespace Vector
 			Animation = new RobotAnimation(Connection);
 			Screen = new RobotScreen(Connection);
 			Camera = new RobotCamera(Connection);
-			World = new RobotWorld(Connection);
+			World = new RobotWorld(Connection, this);
 		}
 
 		public bool IsConnected { get => Connection.IsConnected; }

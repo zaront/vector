@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Vector
 		readonly int _maxObjectCount = 20;
 		readonly int _firstCustomObject = 15;
 		ConcurrentDictionary<int, string> _customNames;
+		Robot _robot;
 
 		CancellationTokenSource _cancelNavFeed;
 		int _customTypeID;
@@ -26,9 +28,10 @@ namespace Vector
 		public event EventHandler<RobotObjectObservedEventArgs> OnObjectObserved;
 		public event EventHandler<RobotObjectObservedEventArgs> OnObjectExpired;
 
-		internal RobotWorld(RobotConnection connection) : base(connection)
+		internal RobotWorld(RobotConnection connection, Robot robot) : base(connection)
 		{
 			//set fields
+			_robot = robot;
 			ObservedObjects = new ObservedObject[_maxObjectCount + 2];
 			ObservedObjects[0] = new ObservedObject() { indexId = 0 }; //default charger
 			ObservedObjects[1] = new ObservedObject() { indexId = 1 }; //default cube

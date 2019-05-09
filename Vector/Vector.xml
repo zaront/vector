@@ -15,6 +15,11 @@
             <param name="password">Enter your password. Make sure to use the same account that was used to set up your Vector through the Companion app.</param>
             <returns>used to connect to the robot</returns>
         </member>
+        <member name="M:Vector.MathExtention.Distance(Vector.ObservedObject,System.Numerics.Vector3)">
+            <summary>
+            get a caliberated distance from an observed object, to the robots lift
+            </summary>
+        </member>
         <member name="M:Vector.Robot.ConnectAsync(System.String,System.String)">
             <summary>
             use IRobotConnectionInfoStorage to retreave connection information to connect to your robot 
