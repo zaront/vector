@@ -67,5 +67,30 @@ namespace Vector
 
 			return distance;
 		}
+
+		public static double Rotation(this Matrix3x2 matrix)
+		{
+			return Math.Atan2(matrix.M12, matrix.M22);
+		}
+
+		public static double Yaw(this Quaternion q)
+		{
+			return Math.Atan2(2.0 * (q.Y * q.Z + q.W * q.X), q.W * q.W - q.X * q.X - q.Y * q.Y + q.Z * q.Z);
+		}
+
+		public static double Pitch(this Quaternion q)
+		{
+			return Math.Asin(-2.0 * (q.X * q.Z - q.W * q.Y));
+		}
+
+		public static double Roll(this Quaternion q)
+		{
+			return Math.Atan2(2.0 * (q.X * q.Y + q.W * q.Z), q.W * q.W + q.X * q.X - q.Y * q.Y - q.Z * q.Z);
+		}
+
+		public static double Angle2D(this Quaternion q)
+		{
+			return 2 * Math.Acos(q.W);
+		}
 	}
 }

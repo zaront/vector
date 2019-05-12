@@ -263,19 +263,6 @@ namespace Vector
 			OnStateChanged?.Invoke(this, new RobotStateEventArgs() { Data = data });
 		}
 
-
-
-		//public async Task Test2()
-		//{
-		//	var p = await Client.PhotosInfoAsync(new PhotosInfoRequest());
-		//	var r = p.PhotoInfos.ToList();
-		//	var p1 = await Client.PhotoAsync(new PhotoRequest() { PhotoId = 3 });
-		//	using (var f = System.IO.File.Create(@"C:\Projects\RocDemo\RocClient\test.jpg"))
-		//		p1.Image.WriteTo(f);
-
-		//}
-
-
 	}
 
 
