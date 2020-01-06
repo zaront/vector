@@ -16,5 +16,15 @@ namespace Vector.Tests
             var robot = await RobotTests.GetRobot();
             await robot.Audio.SayTextAsync("good morning world!  It's a beautiful day");
         }
+
+        [TestMethod()]
+        public async Task SetMasterVolumeAsyncTest()
+        {
+            var robot = await RobotTests.GetRobot();
+            await robot.Audio.SetMasterVolumeAsync(5);
+            await robot.Audio.SayTextAsync("Master Volume at 5");
+            await robot.Audio.SetMasterVolumeAsync(1);
+            await robot.Audio.SayTextAsync("Master Volume at 1");
+        }
     }
 }

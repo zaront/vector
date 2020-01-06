@@ -44,6 +44,14 @@
             <param name="userName">Enter your email. Make sure to use the same account that was used to set up your Vector through the Companion app.</param>
             <param name="password">Enter your password. Make sure to use the same account that was used to set up your Vector through the Companion app.</param>
         </member>
+        <member name="M:Vector.RobotAudio.SetMasterVolumeAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Set the master volume level
+            </summary>
+            <param name="volume">value between 1 - 5</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
         <member name="F:Vector.RobotConnectionInfo.Token">
             <summary>
             call Robot.GrantApiAccess() or ApiAccess.Grant() to get this the first time

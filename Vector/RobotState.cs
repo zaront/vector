@@ -41,10 +41,7 @@ namespace Vector
 	{
 		public int DistanceMM;
 		public float SignalQuality;
-		public bool IsInValidRange; // Distance is within valid range
-		public bool IsValidSignalQuality; // Signal quality is sufficiently strong to trust that something was detected
 		public bool IsLiftInFov; // Lift (or object on lift) is occluding the sensor
-		public bool IsTooPitched; // Robot is too far pitched up or down
 	}
 
 	public class TouchData

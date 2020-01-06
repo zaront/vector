@@ -10,7 +10,12 @@ namespace Vector
 	{
 		public static void ThrowFeedException(this Task task)
 		{
-			task.ContinueWith(i =>
+			ThrowFeedExceptionTask(task);
+		}
+
+		public static Task ThrowFeedExceptionTask(this Task task)
+		{
+			return task.ContinueWith(i =>
 			{
 				if (i.IsFaulted && i.Exception != null)
 				{
@@ -21,7 +26,7 @@ namespace Vector
 
 					throw i.Exception;
 				}
-					
+
 			}, TaskContinuationOptions.NotOnCanceled);
 		}
 	}

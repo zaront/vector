@@ -23,6 +23,21 @@ namespace Vector
 			ValidateStatus(result.Status);
 		}
 
+		/// <summary>
+		/// Set the master volume level
+		/// </summary>
+		/// <param name="volume">value between 1 - 5</param>
+		/// <param name="cancellationToken"></param>
+		/// <returns></returns>
+		public async Task SetMasterVolumeAsync(int volume, CancellationToken cancellationToken = default(CancellationToken))
+		{
+			//convert to volume level
+			var volumeLevel = (MasterVolumeLevel)(((double)volume).Clamp(1, 5) - 1);
+
+			var result = await Client.SetMasterVolumeAsync(new MasterVolumeRequest() { VolumeLevel = volumeLevel }, cancellationToken: cancellationToken);
+			ValidateStatus(result.Status);
+		}
+
 		public void StartAudioFeed()
 		{
 			//cancel prev task

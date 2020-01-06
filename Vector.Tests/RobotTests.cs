@@ -3,8 +3,10 @@ using Vector;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 using System.Collections.Concurrent;
+using System.Threading.Tasks;
+using System.Threading;
+using AutoMapper;
 
 namespace Vector.Tests
 {
@@ -62,6 +64,27 @@ namespace Vector.Tests
             var robot = await GetRobot();
             var result = await robot.GetVersionStateAsync();
             Assert.IsNotNull(result);
+        }
+
+        [TestMethod()]
+        public async Task EventListeningAsyncTest()
+        {
+            var robot = await GetRobot();
+            var resultSource = new TaskCompletionSource<RobotState>();
+            var cancel = new CancellationTokenSource();
+            robot.OnStateChanged += (sender, e) => { resultSource.TrySetResult(e.Data); cancel.Cancel(); };
+            await robot.EventListeningAsync(cancel.Token).ThrowFeedExceptionTask();
+            Assert.IsTrue(resultSource.Task.IsCompleted);
+            var result = resultSource.Task.Result;
+
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public async Task ValidateMapping()
+        {
+            var robot = await GetRobot();
+            Mapper.Configuration.AssertConfigurationIsValid();
         }
     }
 }
