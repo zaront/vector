@@ -27,133 +27,156 @@ namespace Anki.Vector.ExternalInterface {
             "CiRhbmtpX3ZlY3Rvci9tZXNzYWdpbmcvbWVzc2FnZXMucHJvdG8SHkFua2ku",
             "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZRorYW5raV92ZWN0b3IvbWVzc2Fn",
             "aW5nL3Jlc3BvbnNlX3N0YXR1cy5wcm90bxomYW5raV92ZWN0b3IvbWVzc2Fn",
-            "aW5nL2V4dGVuc2lvbnMucHJvdG8iDwoNS2VlcEFsaXZlUGluZyIZCglBbmlt",
-            "YXRpb24SDAoEbmFtZRgBIAEoCSJ8ChJEcml2ZVdoZWVsc1JlcXVlc3QSFwoP",
-            "bGVmdF93aGVlbF9tbXBzGAEgASgCEhgKEHJpZ2h0X3doZWVsX21tcHMYAiAB",
-            "KAISGAoQbGVmdF93aGVlbF9tbXBzMhgDIAEoAhIZChFyaWdodF93aGVlbF9t",
-            "bXBzMhgEIAEoAiJVChNEcml2ZVdoZWVsc1Jlc3BvbnNlEj4KBnN0YXR1cxgB",
-            "IAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25z",
-            "ZVN0YXR1cyIsCg9Nb3ZlSGVhZFJlcXVlc3QSGQoRc3BlZWRfcmFkX3Blcl9z",
-            "ZWMYASABKAIiUgoQTW92ZUhlYWRSZXNwb25zZRI+CgZzdGF0dXMYASABKAsy",
-            "Li5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0",
-            "dXMiLAoPTW92ZUxpZnRSZXF1ZXN0EhkKEXNwZWVkX3JhZF9wZXJfc2VjGAEg",
-            "ASgCIlIKEE1vdmVMaWZ0UmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5r",
-            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIrQB",
-            "ChRQbGF5QW5pbWF0aW9uUmVxdWVzdBI8CglhbmltYXRpb24YASABKAsyKS5B",
-            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQW5pbWF0aW9uEg0KBWxv",
-            "b3BzGAIgASgNEhkKEWlnbm9yZV9ib2R5X3RyYWNrGAMgASgIEhkKEWlnbm9y",
-            "ZV9oZWFkX3RyYWNrGAQgASgIEhkKEWlnbm9yZV9saWZ0X3RyYWNrGAUgASgI",
-            "IpgBChVQbGF5QW5pbWF0aW9uUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4u",
-            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVz",
-            "Ej8KBnJlc3VsdBgCIAEoDjIvLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVy",
-            "ZmFjZS5CZWhhdmlvclJlc3VsdHMiFwoVTGlzdEFuaW1hdGlvbnNSZXF1ZXN0",
-            "IpwBChZMaXN0QW5pbWF0aW9uc1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIu",
-            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1",
-            "cxJCCg9hbmltYXRpb25fbmFtZXMYAiADKAsyKS5BbmtpLlZlY3Rvci5leHRl",
-            "cm5hbF9pbnRlcmZhY2UuQW5pbWF0aW9uIl8KGkRpc3BsYXlGYWNlSW1hZ2VS",
-            "R0JSZXF1ZXN0EhEKCWZhY2VfZGF0YRgBIAEoDBITCgtkdXJhdGlvbl9tcxgC",
-            "IAEoDRIZChFpbnRlcnJ1cHRfcnVubmluZxgDIAEoCCJdChtEaXNwbGF5RmFj",
-            "ZUltYWdlUkdCUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0",
-            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIhsKGU1lZXRW",
-            "aWN0b3JGYWNlU2NhblN0YXJ0ZWQiHAoaTWVldFZpY3RvckZhY2VTY2FuQ29t",
-            "cGxldGUivwIKBlN0YXR1cxJiCh1tZWV0X3ZpY3Rvcl9mYWNlX3NjYW5fc3Rh",
-            "cnRlZBgCIAEoCzI5LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5N",
-            "ZWV0VmljdG9yRmFjZVNjYW5TdGFydGVkSAASZAoebWVldF92aWN0b3JfZmFj",
-            "ZV9zY2FuX2NvbXBsZXRlGAMgASgLMjouQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
-            "aW50ZXJmYWNlLk1lZXRWaWN0b3JGYWNlU2NhbkNvbXBsZXRlSAASXAoZZmFj",
-            "ZV9lbnJvbGxtZW50X2NvbXBsZXRlZBgEIAEoCzI3LkFua2kuVmVjdG9yLmV4",
-            "dGVybmFsX2ludGVyZmFjZS5GYWNlRW5yb2xsbWVudENvbXBsZXRlZEgAQg0K",
-            "C3N0YXR1c190eXBlIqwBCghXYWtlV29yZBJICg93YWtlX3dvcmRfYmVnaW4Y",
-            "ASABKAsyLS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuV2FrZVdv",
-            "cmRCZWdpbkgAEkQKDXdha2Vfd29yZF9lbmQYAiABKAsyKy5BbmtpLlZlY3Rv",
-            "ci5leHRlcm5hbF9pbnRlcmZhY2UuV2FrZVdvcmRFbmRIAEIQCg53YWtlX3dv",
-            "cmRfdHlwZSJiChFUaW1lU3RhbXBlZFN0YXR1cxI2CgZzdGF0dXMYASABKAsy",
-            "Ji5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuU3RhdHVzEhUKDXRp",
-            "bWVzdGFtcF91dGMYAiABKA0icAoKUG9zZVN0cnVjdBIJCgF4GAEgASgCEgkK",
-            "AXkYAiABKAISCQoBehgDIAEoAhIKCgJxMBgEIAEoAhIKCgJxMRgFIAEoAhIK",
-            "CgJxMhgGIAEoAhIKCgJxMxgHIAEoAhIRCglvcmlnaW5faWQYCCABKA0iLAoJ",
-            "QWNjZWxEYXRhEgkKAXgYASABKAISCQoBeRgCIAEoAhIJCgF6GAMgASgCIisK",
-            "CEd5cm9EYXRhEgkKAXgYASABKAISCQoBeRgCIAEoAhIJCgF6GAMgASgCIqMB",
-            "CghQcm94RGF0YRITCgtkaXN0YW5jZV9tbRgBIAEoDRIWCg5zaWduYWxfcXVh",
-            "bGl0eRgCIAEoAhIZChFpc19pbl92YWxpZF9yYW5nZRgDIAEoCBIfChdpc192",
-            "YWxpZF9zaWduYWxfcXVhbGl0eRgEIAEoCBIWCg5pc19saWZ0X2luX2ZvdhgF",
-            "IAEoCBIWCg5pc190b29fcGl0Y2hlZBgGIAEoCCI+CglUb3VjaERhdGESFwoP",
-            "cmF3X3RvdWNoX3ZhbHVlGAEgASgNEhgKEGlzX2JlaW5nX3RvdWNoZWQYAiAB",
-            "KAgiggUKClJvYm90U3RhdGUSOAoEcG9zZRgBIAEoCzIqLkFua2kuVmVjdG9y",
-            "LmV4dGVybmFsX2ludGVyZmFjZS5Qb3NlU3RydWN0EhYKDnBvc2VfYW5nbGVf",
-            "cmFkGAIgASgCEhYKDnBvc2VfcGl0Y2hfcmFkGAMgASgCEh0KFWxlZnRfd2hl",
-            "ZWxfc3BlZWRfbW1wcxgEIAEoAhIeChZyaWdodF93aGVlbF9zcGVlZF9tbXBz",
-            "GAUgASgCEhYKDmhlYWRfYW5nbGVfcmFkGAYgASgCEhYKDmxpZnRfaGVpZ2h0",
-            "X21tGAcgASgCEjgKBWFjY2VsGAggASgLMikuQW5raS5WZWN0b3IuZXh0ZXJu",
-            "YWxfaW50ZXJmYWNlLkFjY2VsRGF0YRI2CgRneXJvGAkgASgLMiguQW5raS5W",
-            "ZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkd5cm9EYXRhEhoKEmNhcnJ5aW5n",
-            "X29iamVjdF9pZBgKIAEoBRIhChljYXJyeWluZ19vYmplY3Rfb25fdG9wX2lk",
-            "GAsgASgFEh8KF2hlYWRfdHJhY2tpbmdfb2JqZWN0X2lkGAwgASgFEh4KFmxv",
-            "Y2FsaXplZF90b19vYmplY3RfaWQYDSABKAUSHQoVbGFzdF9pbWFnZV90aW1l",
-            "X3N0YW1wGA4gASgNEg4KBnN0YXR1cxgPIAEoDRI7Cglwcm94X2RhdGEYECAB",
-            "KAsyKC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUHJveERhdGES",
-            "PQoKdG91Y2hfZGF0YRgRIAEoCzIpLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5Ub3VjaERhdGEiIQoJQ2xhZFBvaW50EgkKAXgYASABKAISCQoB",
-            "eRgCIAEoAiJRCghDbGFkUmVjdBISCgp4X3RvcF9sZWZ0GAEgASgCEhIKCnlf",
-            "dG9wX2xlZnQYAiABKAISDQoFd2lkdGgYAyABKAISDgoGaGVpZ2h0GAQgASgC",
-            "IooEChFSb2JvdE9ic2VydmVkRmFjZRIPCgdmYWNlX2lkGAEgASgFEhEKCXRp",
-            "bWVzdGFtcBgCIAEoDRI4CgRwb3NlGAMgASgLMiouQW5raS5WZWN0b3IuZXh0",
-            "ZXJuYWxfaW50ZXJmYWNlLlBvc2VTdHJ1Y3QSOgoIaW1nX3JlY3QYBCABKAsy",
-            "KC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQ2xhZFJlY3QSDAoE",
-            "bmFtZRgFIAEoCRJECgpleHByZXNzaW9uGAYgASgOMjAuQW5raS5WZWN0b3Iu",
-            "ZXh0ZXJuYWxfaW50ZXJmYWNlLkZhY2lhbEV4cHJlc3Npb24SGQoRZXhwcmVz",
-            "c2lvbl92YWx1ZXMYByADKA0SOwoIbGVmdF9leWUYCCADKAsyKS5BbmtpLlZl",
-            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQ2xhZFBvaW50EjwKCXJpZ2h0X2V5",
-            "ZRgJIAMoCzIpLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5DbGFk",
-            "UG9pbnQSNwoEbm9zZRgKIAMoCzIpLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5DbGFkUG9pbnQSOAoFbW91dGgYCyADKAsyKS5BbmtpLlZlY3Rv",
-            "ci5leHRlcm5hbF9pbnRlcmZhY2UuQ2xhZFBvaW50IjwKGlJvYm90Q2hhbmdl",
-            "ZE9ic2VydmVkRmFjZUlEEg4KBm9sZF9pZBgBIAEoBRIOCgZuZXdfaWQYAiAB",
-            "KAUiMQoQQXBwSW50ZW50UmVxdWVzdBIOCgZpbnRlbnQYASABKAkSDQoFcGFy",
-            "YW0YAiABKAkiEQoPQXBwRGlzY29ubmVjdGVkIlMKEUFwcEludGVudFJlc3Bv",
-            "bnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5SZXNwb25zZVN0YXR1cyJ+ChdGYWNlRW5yb2xsbWVudENvbXBs",
-            "ZXRlZBJECgZyZXN1bHQYASABKA4yNC5BbmtpLlZlY3Rvci5leHRlcm5hbF9p",
-            "bnRlcmZhY2UuRmFjZUVucm9sbG1lbnRSZXN1bHQSDwoHZmFjZV9pZBgCIAEo",
-            "BRIMCgRuYW1lGAMgASgJIh0KG0NhbmNlbEZhY2VFbnJvbGxtZW50UmVxdWVz",
-            "dCJeChxDYW5jZWxGYWNlRW5yb2xsbWVudFJlc3BvbnNlEj4KBnN0YXR1cxgB",
-            "IAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25z",
-            "ZVN0YXR1cyIdChtSZXF1ZXN0RW5yb2xsZWROYW1lc1JlcXVlc3QiwgEKD0xv",
-            "YWRlZEtub3duRmFjZRIkChxzZWNvbmRzX3NpbmNlX2ZpcnN0X2Vucm9sbGVk",
-            "GAEgASgDEiIKGnNlY29uZHNfc2luY2VfbGFzdF91cGRhdGVkGAIgASgDEh8K",
-            "F3NlY29uZHNfc2luY2VfbGFzdF9zZWVuGAMgASgDEiUKHWxhc3Rfc2Vlbl9z",
-            "ZWNvbmRzX3NpbmNlX2Vwb2NoGAQgASgDEg8KB2ZhY2VfaWQYBSABKAUSDAoE",
-            "bmFtZRgGIAEoCSI5ChhSb2JvdFJlbmFtZWRFbnJvbGxlZEZhY2USDwoHZmFj",
-            "ZV9pZBgBIAEoBRIMCgRuYW1lGAIgASgJIp4BChxSZXF1ZXN0RW5yb2xsZWRO",
-            "YW1lc1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4",
-            "dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxI+CgVmYWNlcxgCIAMo",
-            "CzIvLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Mb2FkZWRLbm93",
-            "bkZhY2UiVAodVXBkYXRlRW5yb2xsZWRGYWNlQnlJRFJlcXVlc3QSDwoHZmFj",
-            "ZV9pZBgBIAEoBRIQCghvbGRfbmFtZRgCIAEoCRIQCghuZXdfbmFtZRgDIAEo",
-            "CSJgCh5VcGRhdGVFbnJvbGxlZEZhY2VCeUlEUmVzcG9uc2USPgoGc3RhdHVz",
+            "aW5nL2V4dGVuc2lvbnMucHJvdG8iDwoNS2VlcEFsaXZlUGluZyIgChBBbmlt",
+            "YXRpb25UcmlnZ2VyEgwKBG5hbWUYASABKAkiGQoJQW5pbWF0aW9uEgwKBG5h",
+            "bWUYASABKAkifAoSRHJpdmVXaGVlbHNSZXF1ZXN0EhcKD2xlZnRfd2hlZWxf",
+            "bW1wcxgBIAEoAhIYChByaWdodF93aGVlbF9tbXBzGAIgASgCEhgKEGxlZnRf",
+            "d2hlZWxfbW1wczIYAyABKAISGQoRcmlnaHRfd2hlZWxfbW1wczIYBCABKAIi",
+            "VQoTRHJpdmVXaGVlbHNSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5Bbmtp",
+            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMiLAoP",
+            "TW92ZUhlYWRSZXF1ZXN0EhkKEXNwZWVkX3JhZF9wZXJfc2VjGAEgASgCIlIK",
+            "EE1vdmVIZWFkUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0",
+            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIiwKD01vdmVM",
+            "aWZ0UmVxdWVzdBIZChFzcGVlZF9yYWRfcGVyX3NlYxgBIAEoAiJSChBNb3Zl",
+            "TGlmdFJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4",
+            "dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyIWChRTdG9wQWxsTW90",
+            "b3JzUmVxdWVzdCJXChVTdG9wQWxsTW90b3JzUmVzcG9uc2USPgoGc3RhdHVz",
             "GAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3Bv",
-            "bnNlU3RhdHVzIi8KHEVyYXNlRW5yb2xsZWRGYWNlQnlJRFJlcXVlc3QSDwoH",
-            "ZmFjZV9pZBgBIAEoBSJfCh1FcmFzZUVucm9sbGVkRmFjZUJ5SURSZXNwb25z",
-            "ZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
-            "cmZhY2UuUmVzcG9uc2VTdGF0dXMiHgocRXJhc2VBbGxFbnJvbGxlZEZhY2Vz",
-            "UmVxdWVzdCJfCh1FcmFzZUFsbEVucm9sbGVkRmFjZXNSZXNwb25zZRI+CgZz",
-            "dGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
-            "UmVzcG9uc2VTdGF0dXMiiAEKFlNldEZhY2VUb0Vucm9sbFJlcXVlc3QSDAoE",
-            "bmFtZRgBIAEoCRITCgtvYnNlcnZlZF9pZBgCIAEoBRIPCgdzYXZlX2lkGAMg",
-            "ASgFEhUKDXNhdmVfdG9fcm9ib3QYBCABKAgSEAoIc2F5X25hbWUYBSABKAgS",
-            "EQoJdXNlX211c2ljGAYgASgIIlkKF1NldEZhY2VUb0Vucm9sbFJlc3BvbnNl",
-            "Ej4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVy",
-            "ZmFjZS5SZXNwb25zZVN0YXR1cyIYChZEcml2ZU9mZkNoYXJnZXJSZXF1ZXN0",
-            "IpoBChdEcml2ZU9mZkNoYXJnZXJSZXNwb25zZRI+CgZzdGF0dXMYASABKAsy",
-            "Li5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0",
-            "dXMSPwoGcmVzdWx0GAIgASgOMi8uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50",
-            "ZXJmYWNlLkJlaGF2aW9yUmVzdWx0cyIXChVEcml2ZU9uQ2hhcmdlclJlcXVl",
-            "c3QimQEKFkRyaXZlT25DaGFyZ2VyUmVzcG9uc2USPgoGc3RhdHVzGAEgASgL",
-            "Mi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3Rh",
-            "dHVzEj8KBnJlc3VsdBgCIAEoDjIvLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5CZWhhdmlvclJlc3VsdHMiDwoNV2FrZVdvcmRCZWdpbiI4CgtX",
-            "YWtlV29yZEVuZBIUCgxpbnRlbnRfaGVhcmQYASABKAgSEwoLaW50ZW50X2pz",
-            "b24YAiABKAkibgoJUGhvdG9JbmZvEhAKCHBob3RvX2lkGAEgASgNEhUKDXRp",
+            "bnNlU3RhdHVzIuEBChtQbGF5QW5pbWF0aW9uVHJpZ2dlclJlcXVlc3QSSwoR",
+            "YW5pbWF0aW9uX3RyaWdnZXIYASABKAsyMC5BbmtpLlZlY3Rvci5leHRlcm5h",
+            "bF9pbnRlcmZhY2UuQW5pbWF0aW9uVHJpZ2dlchINCgVsb29wcxgCIAEoDRIV",
+            "Cg11c2VfbGlmdF9zYWZlGAMgASgIEhkKEWlnbm9yZV9ib2R5X3RyYWNrGAQg",
+            "ASgIEhkKEWlnbm9yZV9oZWFkX3RyYWNrGAUgASgIEhkKEWlnbm9yZV9saWZ0",
+            "X3RyYWNrGAYgASgIIrQBChRQbGF5QW5pbWF0aW9uUmVxdWVzdBI8Cglhbmlt",
+            "YXRpb24YASABKAsyKS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
+            "QW5pbWF0aW9uEg0KBWxvb3BzGAIgASgNEhkKEWlnbm9yZV9ib2R5X3RyYWNr",
+            "GAMgASgIEhkKEWlnbm9yZV9oZWFkX3RyYWNrGAQgASgIEhkKEWlnbm9yZV9s",
+            "aWZ0X3RyYWNrGAUgASgIItYBChVQbGF5QW5pbWF0aW9uUmVzcG9uc2USPgoG",
+            "c3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
+            "LlJlc3BvbnNlU3RhdHVzEj8KBnJlc3VsdBgCIAEoDjIvLkFua2kuVmVjdG9y",
+            "LmV4dGVybmFsX2ludGVyZmFjZS5CZWhhdmlvclJlc3VsdHMSPAoJYW5pbWF0",
+            "aW9uGAMgASgLMikuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFu",
+            "aW1hdGlvbiIXChVMaXN0QW5pbWF0aW9uc1JlcXVlc3QinAEKFkxpc3RBbmlt",
+            "YXRpb25zUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3Iu",
+            "ZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzEkIKD2FuaW1hdGlv",
+            "bl9uYW1lcxgCIAMoCzIpLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFj",
+            "ZS5BbmltYXRpb24iHgocTGlzdEFuaW1hdGlvblRyaWdnZXJzUmVxdWVzdCKy",
+            "AQodTGlzdEFuaW1hdGlvblRyaWdnZXJzUmVzcG9uc2USPgoGc3RhdHVzGAEg",
+            "ASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNl",
+            "U3RhdHVzElEKF2FuaW1hdGlvbl90cmlnZ2VyX25hbWVzGAIgAygLMjAuQW5r",
+            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFuaW1hdGlvblRyaWdnZXIi",
+            "XwoaRGlzcGxheUZhY2VJbWFnZVJHQlJlcXVlc3QSEQoJZmFjZV9kYXRhGAEg",
+            "ASgMEhMKC2R1cmF0aW9uX21zGAIgASgNEhkKEWludGVycnVwdF9ydW5uaW5n",
+            "GAMgASgIIl0KG0Rpc3BsYXlGYWNlSW1hZ2VSR0JSZXNwb25zZRI+CgZzdGF0",
+            "dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVz",
+            "cG9uc2VTdGF0dXMiGwoZTWVldFZpY3RvckZhY2VTY2FuU3RhcnRlZCIcChpN",
+            "ZWV0VmljdG9yRmFjZVNjYW5Db21wbGV0ZSK/AgoGU3RhdHVzEmIKHW1lZXRf",
+            "dmljdG9yX2ZhY2Vfc2Nhbl9zdGFydGVkGAIgASgLMjkuQW5raS5WZWN0b3Iu",
+            "ZXh0ZXJuYWxfaW50ZXJmYWNlLk1lZXRWaWN0b3JGYWNlU2NhblN0YXJ0ZWRI",
+            "ABJkCh5tZWV0X3ZpY3Rvcl9mYWNlX3NjYW5fY29tcGxldGUYAyABKAsyOi5B",
+            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuTWVldFZpY3RvckZhY2VT",
+            "Y2FuQ29tcGxldGVIABJcChlmYWNlX2Vucm9sbG1lbnRfY29tcGxldGVkGAQg",
+            "ASgLMjcuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkZhY2VFbnJv",
+            "bGxtZW50Q29tcGxldGVkSABCDQoLc3RhdHVzX3R5cGUirAEKCFdha2VXb3Jk",
+            "EkgKD3dha2Vfd29yZF9iZWdpbhgBIAEoCzItLkFua2kuVmVjdG9yLmV4dGVy",
+            "bmFsX2ludGVyZmFjZS5XYWtlV29yZEJlZ2luSAASRAoNd2FrZV93b3JkX2Vu",
+            "ZBgCIAEoCzIrLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5XYWtl",
+            "V29yZEVuZEgAQhAKDndha2Vfd29yZF90eXBlImIKEVRpbWVTdGFtcGVkU3Rh",
+            "dHVzEjYKBnN0YXR1cxgBIAEoCzImLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
+            "dGVyZmFjZS5TdGF0dXMSFQoNdGltZXN0YW1wX3V0YxgCIAEoDSJwCgpQb3Nl",
+            "U3RydWN0EgkKAXgYASABKAISCQoBeRgCIAEoAhIJCgF6GAMgASgCEgoKAnEw",
+            "GAQgASgCEgoKAnExGAUgASgCEgoKAnEyGAYgASgCEgoKAnEzGAcgASgCEhEK",
+            "CW9yaWdpbl9pZBgIIAEoDSIsCglBY2NlbERhdGESCQoBeBgBIAEoAhIJCgF5",
+            "GAIgASgCEgkKAXoYAyABKAIiKwoIR3lyb0RhdGESCQoBeBgBIAEoAhIJCgF5",
+            "GAIgASgCEgkKAXoYAyABKAIiewoIUHJveERhdGESEwoLZGlzdGFuY2VfbW0Y",
+            "ASABKA0SFgoOc2lnbmFsX3F1YWxpdHkYAiABKAISFAoMdW5vYnN0cnVjdGVk",
+            "GAMgASgIEhQKDGZvdW5kX29iamVjdBgEIAEoCBIWCg5pc19saWZ0X2luX2Zv",
+            "dhgFIAEoCCI+CglUb3VjaERhdGESFwoPcmF3X3RvdWNoX3ZhbHVlGAEgASgN",
+            "EhgKEGlzX2JlaW5nX3RvdWNoZWQYAiABKAgiggUKClJvYm90U3RhdGUSOAoE",
+            "cG9zZRgBIAEoCzIqLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Q",
+            "b3NlU3RydWN0EhYKDnBvc2VfYW5nbGVfcmFkGAIgASgCEhYKDnBvc2VfcGl0",
+            "Y2hfcmFkGAMgASgCEh0KFWxlZnRfd2hlZWxfc3BlZWRfbW1wcxgEIAEoAhIe",
+            "ChZyaWdodF93aGVlbF9zcGVlZF9tbXBzGAUgASgCEhYKDmhlYWRfYW5nbGVf",
+            "cmFkGAYgASgCEhYKDmxpZnRfaGVpZ2h0X21tGAcgASgCEjgKBWFjY2VsGAgg",
+            "ASgLMikuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFjY2VsRGF0",
+            "YRI2CgRneXJvGAkgASgLMiguQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
+            "YWNlLkd5cm9EYXRhEhoKEmNhcnJ5aW5nX29iamVjdF9pZBgKIAEoBRIhChlj",
+            "YXJyeWluZ19vYmplY3Rfb25fdG9wX2lkGAsgASgFEh8KF2hlYWRfdHJhY2tp",
+            "bmdfb2JqZWN0X2lkGAwgASgFEh4KFmxvY2FsaXplZF90b19vYmplY3RfaWQY",
+            "DSABKAUSHQoVbGFzdF9pbWFnZV90aW1lX3N0YW1wGA4gASgNEg4KBnN0YXR1",
+            "cxgPIAEoDRI7Cglwcm94X2RhdGEYECABKAsyKC5BbmtpLlZlY3Rvci5leHRl",
+            "cm5hbF9pbnRlcmZhY2UuUHJveERhdGESPQoKdG91Y2hfZGF0YRgRIAEoCzIp",
+            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Ub3VjaERhdGEiIQoJ",
+            "Q2xhZFBvaW50EgkKAXgYASABKAISCQoBeRgCIAEoAiJRCghDbGFkUmVjdBIS",
+            "Cgp4X3RvcF9sZWZ0GAEgASgCEhIKCnlfdG9wX2xlZnQYAiABKAISDQoFd2lk",
+            "dGgYAyABKAISDgoGaGVpZ2h0GAQgASgCIooEChFSb2JvdE9ic2VydmVkRmFj",
+            "ZRIPCgdmYWNlX2lkGAEgASgFEhEKCXRpbWVzdGFtcBgCIAEoDRI4CgRwb3Nl",
+            "GAMgASgLMiouQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlBvc2VT",
+            "dHJ1Y3QSOgoIaW1nX3JlY3QYBCABKAsyKC5BbmtpLlZlY3Rvci5leHRlcm5h",
+            "bF9pbnRlcmZhY2UuQ2xhZFJlY3QSDAoEbmFtZRgFIAEoCRJECgpleHByZXNz",
+            "aW9uGAYgASgOMjAuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkZh",
+            "Y2lhbEV4cHJlc3Npb24SGQoRZXhwcmVzc2lvbl92YWx1ZXMYByADKA0SOwoI",
+            "bGVmdF9leWUYCCADKAsyKS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZh",
+            "Y2UuQ2xhZFBvaW50EjwKCXJpZ2h0X2V5ZRgJIAMoCzIpLkFua2kuVmVjdG9y",
+            "LmV4dGVybmFsX2ludGVyZmFjZS5DbGFkUG9pbnQSNwoEbm9zZRgKIAMoCzIp",
+            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5DbGFkUG9pbnQSOAoF",
+            "bW91dGgYCyADKAsyKS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
+            "Q2xhZFBvaW50IjwKGlJvYm90Q2hhbmdlZE9ic2VydmVkRmFjZUlEEg4KBm9s",
+            "ZF9pZBgBIAEoBRIOCgZuZXdfaWQYAiABKAUifgoXRmFjZUVucm9sbG1lbnRD",
+            "b21wbGV0ZWQSRAoGcmVzdWx0GAEgASgOMjQuQW5raS5WZWN0b3IuZXh0ZXJu",
+            "YWxfaW50ZXJmYWNlLkZhY2VFbnJvbGxtZW50UmVzdWx0Eg8KB2ZhY2VfaWQY",
+            "AiABKAUSDAoEbmFtZRgDIAEoCSIdChtDYW5jZWxGYWNlRW5yb2xsbWVudFJl",
+            "cXVlc3QiXgocQ2FuY2VsRmFjZUVucm9sbG1lbnRSZXNwb25zZRI+CgZzdGF0",
+            "dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVz",
+            "cG9uc2VTdGF0dXMiHQobUmVxdWVzdEVucm9sbGVkTmFtZXNSZXF1ZXN0IsIB",
+            "Cg9Mb2FkZWRLbm93bkZhY2USJAocc2Vjb25kc19zaW5jZV9maXJzdF9lbnJv",
+            "bGxlZBgBIAEoAxIiChpzZWNvbmRzX3NpbmNlX2xhc3RfdXBkYXRlZBgCIAEo",
+            "AxIfChdzZWNvbmRzX3NpbmNlX2xhc3Rfc2VlbhgDIAEoAxIlCh1sYXN0X3Nl",
+            "ZW5fc2Vjb25kc19zaW5jZV9lcG9jaBgEIAEoAxIPCgdmYWNlX2lkGAUgASgF",
+            "EgwKBG5hbWUYBiABKAkiOQoYUm9ib3RSZW5hbWVkRW5yb2xsZWRGYWNlEg8K",
+            "B2ZhY2VfaWQYASABKAUSDAoEbmFtZRgCIAEoCSKeAQocUmVxdWVzdEVucm9s",
+            "bGVkTmFtZXNSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rv",
+            "ci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSPgoFZmFjZXMY",
+            "AiADKAsyLy5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuTG9hZGVk",
+            "S25vd25GYWNlIlQKHVVwZGF0ZUVucm9sbGVkRmFjZUJ5SURSZXF1ZXN0Eg8K",
+            "B2ZhY2VfaWQYASABKAUSEAoIb2xkX25hbWUYAiABKAkSEAoIbmV3X25hbWUY",
+            "AyABKAkiYAoeVXBkYXRlRW5yb2xsZWRGYWNlQnlJRFJlc3BvbnNlEj4KBnN0",
+            "YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5S",
+            "ZXNwb25zZVN0YXR1cyIvChxFcmFzZUVucm9sbGVkRmFjZUJ5SURSZXF1ZXN0",
+            "Eg8KB2ZhY2VfaWQYASABKAUiXwodRXJhc2VFbnJvbGxlZEZhY2VCeUlEUmVz",
+            "cG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
+            "aW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIh4KHEVyYXNlQWxsRW5yb2xsZWRG",
+            "YWNlc1JlcXVlc3QiXwodRXJhc2VBbGxFbnJvbGxlZEZhY2VzUmVzcG9uc2US",
+            "PgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
+            "YWNlLlJlc3BvbnNlU3RhdHVzIogBChZTZXRGYWNlVG9FbnJvbGxSZXF1ZXN0",
+            "EgwKBG5hbWUYASABKAkSEwoLb2JzZXJ2ZWRfaWQYAiABKAUSDwoHc2F2ZV9p",
+            "ZBgDIAEoBRIVCg1zYXZlX3RvX3JvYm90GAQgASgIEhAKCHNheV9uYW1lGAUg",
+            "ASgIEhEKCXVzZV9tdXNpYxgGIAEoCCJZChdTZXRGYWNlVG9FbnJvbGxSZXNw",
+            "b25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9p",
+            "bnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMiGAoWRHJpdmVPZmZDaGFyZ2VyUmVx",
+            "dWVzdCKaAQoXRHJpdmVPZmZDaGFyZ2VyUmVzcG9uc2USPgoGc3RhdHVzGAEg",
+            "ASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNl",
+            "U3RhdHVzEj8KBnJlc3VsdBgCIAEoDjIvLkFua2kuVmVjdG9yLmV4dGVybmFs",
+            "X2ludGVyZmFjZS5CZWhhdmlvclJlc3VsdHMiFwoVRHJpdmVPbkNoYXJnZXJS",
+            "ZXF1ZXN0IpkBChZEcml2ZU9uQ2hhcmdlclJlc3BvbnNlEj4KBnN0YXR1cxgB",
+            "IAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25z",
+            "ZVN0YXR1cxI/CgZyZXN1bHQYAiABKA4yLy5BbmtpLlZlY3Rvci5leHRlcm5h",
+            "bF9pbnRlcmZhY2UuQmVoYXZpb3JSZXN1bHRzIhIKEEZpbmRGYWNlc1JlcXVl",
+            "c3QilAEKEUZpbmRGYWNlc1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFu",
+            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxI/",
+            "CgZyZXN1bHQYAiABKA4yLy5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZh",
+            "Y2UuQmVoYXZpb3JSZXN1bHRzIhoKGExvb2tBcm91bmRJblBsYWNlUmVxdWVz",
+            "dCKcAQoZTG9va0Fyb3VuZEluUGxhY2VSZXNwb25zZRI+CgZzdGF0dXMYASAB",
+            "KAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VT",
+            "dGF0dXMSPwoGcmVzdWx0GAIgASgOMi8uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
+            "aW50ZXJmYWNlLkJlaGF2aW9yUmVzdWx0cyISChBSb2xsQmxvY2tSZXF1ZXN0",
+            "IpQBChFSb2xsQmxvY2tSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5Bbmtp",
+            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSPwoG",
+            "cmVzdWx0GAIgASgOMi8uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
+            "LkJlaGF2aW9yUmVzdWx0cyIPCg1XYWtlV29yZEJlZ2luIjgKC1dha2VXb3Jk",
+            "RW5kEhQKDGludGVudF9oZWFyZBgBIAEoCBITCgtpbnRlbnRfanNvbhgCIAEo",
+            "CSIyCgpVc2VySW50ZW50EhEKCWludGVudF9pZBgBIAEoDRIRCglqc29uX2Rh",
+            "dGEYAiABKAkibgoJUGhvdG9JbmZvEhAKCHBob3RvX2lkGAEgASgNEhUKDXRp",
             "bWVzdGFtcF91dGMYAiABKA0SGwoTcGhvdG9fY29waWVkX3RvX2FwcBgDIAEo",
             "CBIbChN0aHVtYl9jb3BpZWRfdG9fYXBwGAQgASgIIhMKEVBob3Rvc0luZm9S",
             "ZXF1ZXN0IpQBChJQaG90b3NJbmZvUmVzcG9uc2USPgoGc3RhdHVzGAEgASgL",
@@ -216,62 +239,100 @@ namespace Anki.Vector.ExternalInterface {
             "EiEKGlBBVEhfUExBTk5JTkdfRkFJTEVEX1JFVFJZEIeAgCASHgoXUExBQ0VN",
             "RU5UX0dPQUxfTk9UX0ZSRUUQiICAIBIsCiVQSUNLVVBfT0JKRUNUX1VORVhQ",
             "RUNURURMWV9OT1RfTU9WSU5HEImAgCASFwoQU1RJTExfT05fQ0hBUkdFUhCK",
-            "gIAgEh0KFlVORVhQRUNURURfUElUQ0hfQU5HTEUQi4CAICKnAQoPR29Ub1Bv",
-            "c2VSZXF1ZXN0EgwKBHhfbW0YASABKAISDAoEeV9tbRgCIAEoAhILCgNyYWQY",
-            "AyABKAISRgoLbW90aW9uX3Byb2YYBCABKAsyMS5BbmtpLlZlY3Rvci5leHRl",
-            "cm5hbF9pbnRlcmZhY2UuUGF0aE1vdGlvblByb2ZpbGUSDgoGaWRfdGFnGAUg",
-            "ASgFEhMKC251bV9yZXRyaWVzGAYgASgFIpABChBHb1RvUG9zZVJlc3BvbnNl",
-            "Ej4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVy",
-            "ZmFjZS5SZXNwb25zZVN0YXR1cxI8CgZyZXN1bHQYAiABKAsyLC5BbmtpLlZl",
-            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWN0aW9uUmVzdWx0ItACChNEb2Nr",
-            "V2l0aEN1YmVSZXF1ZXN0EhEKCW9iamVjdF9pZBgBIAEoBRIfChdkaXN0YW5j",
-            "ZV9mcm9tX21hcmtlcl9tbRgCIAEoAhIaChJhcHByb2FjaF9hbmdsZV9yYWQY",
-            "AyABKAISRQoOYWxpZ25tZW50X3R5cGUYBCABKA4yLS5BbmtpLlZlY3Rvci5l",
-            "eHRlcm5hbF9pbnRlcmZhY2UuQWxpZ25tZW50VHlwZRIaChJ1c2VfYXBwcm9h",
-            "Y2hfYW5nbGUYBSABKAgSGQoRdXNlX3ByZV9kb2NrX3Bvc2UYBiABKAgSRgoL",
-            "bW90aW9uX3Byb2YYByABKAsyMS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
-            "cmZhY2UuUGF0aE1vdGlvblByb2ZpbGUSDgoGaWRfdGFnGAggASgFEhMKC251",
-            "bV9yZXRyaWVzGAkgASgFIpQBChREb2NrV2l0aEN1YmVSZXNwb25zZRI+CgZz",
-            "dGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
-            "UmVzcG9uc2VTdGF0dXMSPAoGcmVzdWx0GAIgASgLMiwuQW5raS5WZWN0b3Iu",
-            "ZXh0ZXJuYWxfaW50ZXJmYWNlLkFjdGlvblJlc3VsdCJ/ChREcml2ZVN0cmFp",
-            "Z2h0UmVxdWVzdBISCgpzcGVlZF9tbXBzGAEgASgCEg8KB2Rpc3RfbW0YAiAB",
-            "KAISHQoVc2hvdWxkX3BsYXlfYW5pbWF0aW9uGAMgASgIEg4KBmlkX3RhZxgE",
-            "IAEoBRITCgtudW1fcmV0cmllcxgFIAEoBSKVAQoVRHJpdmVTdHJhaWdodFJl",
+            "gIAgEh0KFlVORVhQRUNURURfUElUQ0hfQU5HTEUQi4CAICIsChpDYW5jZWxB",
+            "Y3Rpb25CeUlkVGFnUmVxdWVzdBIOCgZpZF90YWcYASABKA0iXQobQ2FuY2Vs",
+            "QWN0aW9uQnlJZFRhZ1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2ku",
+            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyKnAQoP",
+            "R29Ub1Bvc2VSZXF1ZXN0EgwKBHhfbW0YASABKAISDAoEeV9tbRgCIAEoAhIL",
+            "CgNyYWQYAyABKAISRgoLbW90aW9uX3Byb2YYBCABKAsyMS5BbmtpLlZlY3Rv",
+            "ci5leHRlcm5hbF9pbnRlcmZhY2UuUGF0aE1vdGlvblByb2ZpbGUSDgoGaWRf",
+            "dGFnGAUgASgFEhMKC251bV9yZXRyaWVzGAYgASgFIpABChBHb1RvUG9zZVJl",
             "c3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFs",
             "X2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxI8CgZyZXN1bHQYAiABKAsyLC5B",
-            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWN0aW9uUmVzdWx0IqkB",
-            "ChJUdXJuSW5QbGFjZVJlcXVlc3QSEQoJYW5nbGVfcmFkGAEgASgCEhkKEXNw",
-            "ZWVkX3JhZF9wZXJfc2VjGAIgASgCEhoKEmFjY2VsX3JhZF9wZXJfc2VjMhgD",
-            "IAEoAhIPCgd0b2xfcmFkGAQgASgCEhMKC2lzX2Fic29sdXRlGAUgASgNEg4K",
-            "BmlkX3RhZxgGIAEoBRITCgtudW1fcmV0cmllcxgHIAEoBSKTAQoTVHVybklu",
-            "UGxhY2VSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5l",
+            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWN0aW9uUmVzdWx0ItAC",
+            "ChNEb2NrV2l0aEN1YmVSZXF1ZXN0EhEKCW9iamVjdF9pZBgBIAEoBRIfChdk",
+            "aXN0YW5jZV9mcm9tX21hcmtlcl9tbRgCIAEoAhIaChJhcHByb2FjaF9hbmds",
+            "ZV9yYWQYAyABKAISRQoOYWxpZ25tZW50X3R5cGUYBCABKA4yLS5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWxpZ25tZW50VHlwZRIaChJ1c2Vf",
+            "YXBwcm9hY2hfYW5nbGUYBSABKAgSGQoRdXNlX3ByZV9kb2NrX3Bvc2UYBiAB",
+            "KAgSRgoLbW90aW9uX3Byb2YYByABKAsyMS5BbmtpLlZlY3Rvci5leHRlcm5h",
+            "bF9pbnRlcmZhY2UuUGF0aE1vdGlvblByb2ZpbGUSDgoGaWRfdGFnGAggASgF",
+            "EhMKC251bV9yZXRyaWVzGAkgASgFIpQBChREb2NrV2l0aEN1YmVSZXNwb25z",
+            "ZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
+            "cmZhY2UuUmVzcG9uc2VTdGF0dXMSPAoGcmVzdWx0GAIgASgLMiwuQW5raS5W",
+            "ZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFjdGlvblJlc3VsdCJ/ChREcml2",
+            "ZVN0cmFpZ2h0UmVxdWVzdBISCgpzcGVlZF9tbXBzGAEgASgCEg8KB2Rpc3Rf",
+            "bW0YAiABKAISHQoVc2hvdWxkX3BsYXlfYW5pbWF0aW9uGAMgASgIEg4KBmlk",
+            "X3RhZxgEIAEoBRITCgtudW1fcmV0cmllcxgFIAEoBSKVAQoVRHJpdmVTdHJh",
+            "aWdodFJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4",
+            "dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxI8CgZyZXN1bHQYAiAB",
+            "KAsyLC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWN0aW9uUmVz",
+            "dWx0IqkBChJUdXJuSW5QbGFjZVJlcXVlc3QSEQoJYW5nbGVfcmFkGAEgASgC",
+            "EhkKEXNwZWVkX3JhZF9wZXJfc2VjGAIgASgCEhoKEmFjY2VsX3JhZF9wZXJf",
+            "c2VjMhgDIAEoAhIPCgd0b2xfcmFkGAQgASgCEhMKC2lzX2Fic29sdXRlGAUg",
+            "ASgNEg4KBmlkX3RhZxgGIAEoBRITCgtudW1fcmV0cmllcxgHIAEoBSKTAQoT",
+            "VHVybkluUGxhY2VSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSPAoGcmVz",
+            "dWx0GAIgASgLMiwuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFj",
+            "dGlvblJlc3VsdCKeAQoTU2V0SGVhZEFuZ2xlUmVxdWVzdBIRCglhbmdsZV9y",
+            "YWQYASABKAISHQoVbWF4X3NwZWVkX3JhZF9wZXJfc2VjGAIgASgCEhoKEmFj",
+            "Y2VsX3JhZF9wZXJfc2VjMhgDIAEoAhIUCgxkdXJhdGlvbl9zZWMYBCABKAIS",
+            "DgoGaWRfdGFnGAUgASgFEhMKC251bV9yZXRyaWVzGAYgASgFIpQBChRTZXRI",
+            "ZWFkQW5nbGVSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rv",
+            "ci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSPAoGcmVzdWx0",
+            "GAIgASgLMiwuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFjdGlv",
+            "blJlc3VsdCKfAQoUU2V0TGlmdEhlaWdodFJlcXVlc3QSEQoJaGVpZ2h0X21t",
+            "GAEgASgCEh0KFW1heF9zcGVlZF9yYWRfcGVyX3NlYxgCIAEoAhIaChJhY2Nl",
+            "bF9yYWRfcGVyX3NlYzIYAyABKAISFAoMZHVyYXRpb25fc2VjGAQgASgCEg4K",
+            "BmlkX3RhZxgFIAEoBRITCgtudW1fcmV0cmllcxgGIAEoBSKVAQoVU2V0TGlm",
+            "dEhlaWdodFJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9y",
+            "LmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxI8CgZyZXN1bHQY",
+            "AiABKAsyLC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWN0aW9u",
+            "UmVzdWx0ImoKFlR1cm5Ub3dhcmRzRmFjZVJlcXVlc3QSDwoHZmFjZV9pZBgB",
+            "IAEoBRIaChJtYXhfdHVybl9hbmdsZV9yYWQYAiABKAISDgoGaWRfdGFnGAMg",
+            "ASgFEhMKC251bV9yZXRyaWVzGAQgASgFIpcBChdUdXJuVG93YXJkc0ZhY2VS",
+            "ZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5h",
+            "bF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSPAoGcmVzdWx0GAIgASgLMiwu",
+            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFjdGlvblJlc3VsdCLW",
+            "AQoRR29Ub09iamVjdFJlcXVlc3QSEQoJb2JqZWN0X2lkGAEgASgFEkYKC21v",
+            "dGlvbl9wcm9mGAIgASgLMjEuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
+            "YWNlLlBhdGhNb3Rpb25Qcm9maWxlEiYKHmRpc3RhbmNlX2Zyb21fb2JqZWN0",
+            "X29yaWdpbl9tbRgDIAEoAhIZChF1c2VfcHJlX2RvY2tfcG9zZRgEIAEoCBIO",
+            "CgZpZF90YWcYBSABKAUSEwoLbnVtX3JldHJpZXMYBiABKAUikgEKEkdvVG9P",
+            "YmplY3RSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5l",
             "eHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSPAoGcmVzdWx0GAIg",
             "ASgLMiwuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFjdGlvblJl",
-            "c3VsdCKeAQoTU2V0SGVhZEFuZ2xlUmVxdWVzdBIRCglhbmdsZV9yYWQYASAB",
-            "KAISHQoVbWF4X3NwZWVkX3JhZF9wZXJfc2VjGAIgASgCEhoKEmFjY2VsX3Jh",
-            "ZF9wZXJfc2VjMhgDIAEoAhIUCgxkdXJhdGlvbl9zZWMYBCABKAISDgoGaWRf",
-            "dGFnGAUgASgFEhMKC251bV9yZXRyaWVzGAYgASgFIpQBChRTZXRIZWFkQW5n",
-            "bGVSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRl",
-            "cm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSPAoGcmVzdWx0GAIgASgL",
-            "MiwuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkFjdGlvblJlc3Vs",
-            "dCKfAQoUU2V0TGlmdEhlaWdodFJlcXVlc3QSEQoJaGVpZ2h0X21tGAEgASgC",
-            "Eh0KFW1heF9zcGVlZF9yYWRfcGVyX3NlYxgCIAEoAhIaChJhY2NlbF9yYWRf",
-            "cGVyX3NlYzIYAyABKAISFAoMZHVyYXRpb25fc2VjGAQgASgCEg4KBmlkX3Rh",
-            "ZxgFIAEoBRITCgtudW1fcmV0cmllcxgGIAEoBSKVAQoVU2V0TGlmdEhlaWdo",
-            "dFJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVy",
-            "bmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxI8CgZyZXN1bHQYAiABKAsy",
-            "LC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWN0aW9uUmVzdWx0",
-            "IrkDCgxOZXR3b3JrU3RhdHMSIwobZ19uZXRfc3RhdDFfbnVtX2Nvbm5lY3Rp",
-            "b25zGAEgASgFEh8KF2dfbmV0X3N0YXQyX2xhdGVuY3lfYXZnGAIgASgCEh4K",
-            "FmdfbmV0X3N0YXQzX2xhdGVuY3lfc2QYAyABKAISHwoXZ19uZXRfc3RhdDRf",
-            "bGF0ZW5jeV9taW4YBCABKAISHwoXZ19uZXRfc3RhdDVfbGF0ZW5jeV9tYXgY",
-            "BSABKAISIwobZ19uZXRfc3RhdDZfcGluZ19hcnJpdmVkX3BjGAYgASgCEiUK",
-            "HWdfbmV0X3N0YXQ3X2V4dF9xdWV1ZWRfYXZnX21zGAcgASgCEiUKHWdfbmV0",
-            "X3N0YXQ4X2V4dF9xdWV1ZWRfbWluX21zGAggASgCEiUKHWdfbmV0X3N0YXQ5",
-            "X2V4dF9xdWV1ZWRfbWF4X21zGAkgASgCEiEKGWdfbmV0X3N0YXRhX3F1ZXVl",
-            "ZF9hdmdfbXMYCiABKAISIQoZZ19uZXRfc3RhdGJfcXVldWVkX21pbl9tcxgL",
-            "IAEoAhIhChlnX25ldF9zdGF0Y19xdWV1ZWRfbWF4X21zGAwgASgCIhUKE0Jh",
+            "c3VsdCLmAQoRUm9sbE9iamVjdFJlcXVlc3QSEQoJb2JqZWN0X2lkGAEgASgF",
+            "EkYKC21vdGlvbl9wcm9mGAIgASgLMjEuQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
+            "aW50ZXJmYWNlLlBhdGhNb3Rpb25Qcm9maWxlEhoKEmFwcHJvYWNoX2FuZ2xl",
+            "X3JhZBgDIAEoAhIaChJ1c2VfYXBwcm9hY2hfYW5nbGUYBCABKAgSGQoRdXNl",
+            "X3ByZV9kb2NrX3Bvc2UYBSABKAgSDgoGaWRfdGFnGAYgASgFEhMKC251bV9y",
+            "ZXRyaWVzGAcgASgFIpIBChJSb2xsT2JqZWN0UmVzcG9uc2USPgoGc3RhdHVz",
+            "GAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3Bv",
+            "bnNlU3RhdHVzEjwKBnJlc3VsdBgCIAEoCzIsLkFua2kuVmVjdG9yLmV4dGVy",
+            "bmFsX2ludGVyZmFjZS5BY3Rpb25SZXN1bHQi5wEKElBvcEFXaGVlbGllUmVx",
+            "dWVzdBIRCglvYmplY3RfaWQYASABKAUSRgoLbW90aW9uX3Byb2YYAiABKAsy",
+            "MS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUGF0aE1vdGlvblBy",
+            "b2ZpbGUSGgoSYXBwcm9hY2hfYW5nbGVfcmFkGAMgASgCEhoKEnVzZV9hcHBy",
+            "b2FjaF9hbmdsZRgEIAEoCBIZChF1c2VfcHJlX2RvY2tfcG9zZRgFIAEoCBIO",
+            "CgZpZF90YWcYBiABKAUSEwoLbnVtX3JldHJpZXMYByABKAUikwEKE1BvcEFX",
+            "aGVlbGllUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3Iu",
+            "ZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzEjwKBnJlc3VsdBgC",
+            "IAEoCzIsLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5BY3Rpb25S",
+            "ZXN1bHQi6AEKE1BpY2t1cE9iamVjdFJlcXVlc3QSEQoJb2JqZWN0X2lkGAEg",
+            "ASgFEkYKC21vdGlvbl9wcm9mGAIgASgLMjEuQW5raS5WZWN0b3IuZXh0ZXJu",
+            "YWxfaW50ZXJmYWNlLlBhdGhNb3Rpb25Qcm9maWxlEhoKEmFwcHJvYWNoX2Fu",
+            "Z2xlX3JhZBgDIAEoAhIaChJ1c2VfYXBwcm9hY2hfYW5nbGUYBCABKAgSGQoR",
+            "dXNlX3ByZV9kb2NrX3Bvc2UYBSABKAgSDgoGaWRfdGFnGAYgASgFEhMKC251",
+            "bV9yZXRyaWVzGAcgASgFIpQBChRQaWNrdXBPYmplY3RSZXNwb25zZRI+CgZz",
+            "dGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
+            "UmVzcG9uc2VTdGF0dXMSPAoGcmVzdWx0GAIgASgLMiwuQW5raS5WZWN0b3Iu",
+            "ZXh0ZXJuYWxfaW50ZXJmYWNlLkFjdGlvblJlc3VsdCJFCh5QbGFjZU9iamVj",
+            "dE9uR3JvdW5kSGVyZVJlcXVlc3QSDgoGaWRfdGFnGAEgASgFEhMKC251bV9y",
+            "ZXRyaWVzGAIgASgFIp8BCh9QbGFjZU9iamVjdE9uR3JvdW5kSGVyZVJlc3Bv",
+            "bnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
+            "dGVyZmFjZS5SZXNwb25zZVN0YXR1cxI8CgZyZXN1bHQYAiABKAsyLC5Bbmtp",
+            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWN0aW9uUmVzdWx0IhUKE0Jh",
             "dHRlcnlTdGF0ZVJlcXVlc3QiyQIKFEJhdHRlcnlTdGF0ZVJlc3BvbnNlEj4K",
             "BnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFj",
             "ZS5SZXNwb25zZVN0YXR1cxJDCg1iYXR0ZXJ5X2xldmVsGAIgASgOMiwuQW5r",
@@ -288,123 +349,162 @@ namespace Anki.Vector.ExternalInterface {
             "dCKDAQoUVmVyc2lvblN0YXRlUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4u",
             "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVz",
             "EhIKCm9zX3ZlcnNpb24YAiABKAkSFwoPZW5naW5lX2J1aWxkX2lkGAMgASgJ",
-            "IhUKE05ldHdvcmtTdGF0ZVJlcXVlc3QimwEKFE5ldHdvcmtTdGF0ZVJlc3Bv",
-            "bnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5SZXNwb25zZVN0YXR1cxJDCg1uZXR3b3JrX3N0YXRzGAIgASgL",
-            "MiwuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLk5ldHdvcmtTdGF0",
-            "cyJRCg5TYXlUZXh0UmVxdWVzdBIMCgR0ZXh0GAEgASgJEhgKEHVzZV92ZWN0",
-            "b3Jfdm9pY2UYAiABKAgSFwoPZHVyYXRpb25fc2NhbGFyGAMgASgCIvUBCg9T",
-            "YXlUZXh0UmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3Iu",
-            "ZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzEk0KBXN0YXRlGAIg",
-            "ASgOMj4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlNheVRleHRS",
-            "ZXNwb25zZS5VdHRlcmFuY2VTdGF0ZSJTCg5VdHRlcmFuY2VTdGF0ZRILCgdJ",
-            "TlZBTElEEAASDgoKR0VORVJBVElORxABEgkKBVJFQURZEAISCwoHUExBWUlO",
-            "RxADEgwKCEZJTklTSEVEEAQimwEKD1N0aW11bGF0aW9uSW5mbxIWCg5lbW90",
-            "aW9uX2V2ZW50cxgBIAMoCRINCgV2YWx1ZRgCIAEoAhIQCgh2ZWxvY2l0eRgD",
-            "IAEoAhINCgVhY2NlbBgEIAEoAhIaChJ2YWx1ZV9iZWZvcmVfZXZlbnQYBSAB",
-            "KAISEQoJbWluX3ZhbHVlGAYgASgCEhEKCW1heF92YWx1ZRgHIAEoAiJZChRB",
-            "dWRpb1NlbmRNb2RlUmVxdWVzdBJBCgRtb2RlGAEgASgOMjMuQW5raS5WZWN0",
-            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkF1ZGlvUHJvY2Vzc2luZ01vZGUiWQoU",
-            "QXVkaW9TZW5kTW9kZUNoYW5nZWQSQQoEbW9kZRgBIAEoDjIzLkFua2kuVmVj",
-            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5BdWRpb1Byb2Nlc3NpbmdNb2RlIugB",
-            "CgpBdWRpb0NodW5rEhgKEHJvYm90X3RpbWVfc3RhbXAYASABKA0SEAoIZ3Jv",
-            "dXBfaWQYAiABKA0SEAoIY2h1bmtfaWQYAyABKA0SGQoRYXVkaW9fY2h1bmtf",
-            "Y291bnQYBCABKA0SFAoMc2lnbmFsX3Bvd2VyGAUgASgMEhsKE2RpcmVjdGlv",
-            "bl9zdHJlbmd0aHMYBiABKAwSGAoQc291cmNlX2RpcmVjdGlvbhgHIAEoDRIZ",
-            "ChFzb3VyY2VfY29uZmlkZW5jZRgIIAEoDRIZChFub2lzZV9mbG9vcl9wb3dl",
-            "chgJIAEoDSISChBBdWRpb0ZlZWRSZXF1ZXN0IsgBChFBdWRpb0ZlZWRSZXNw",
-            "b25zZRIYChByb2JvdF90aW1lX3N0YW1wGAEgASgNEhAKCGdyb3VwX2lkGAIg",
-            "ASgNEhQKDHNpZ25hbF9wb3dlchgDIAEoDBIbChNkaXJlY3Rpb25fc3RyZW5n",
-            "dGhzGAQgASgMEhgKEHNvdXJjZV9kaXJlY3Rpb24YBSABKA0SGQoRc291cmNl",
-            "X2NvbmZpZGVuY2UYBiABKA0SGQoRbm9pc2VfZmxvb3JfcG93ZXIYByABKA06",
-            "BICmHQEiLgocRW5hYmxlTWFya2VyRGV0ZWN0aW9uUmVxdWVzdBIOCgZlbmFi",
-            "bGUYASABKAgiXwodRW5hYmxlTWFya2VyRGV0ZWN0aW9uUmVzcG9uc2USPgoG",
-            "c3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
-            "LlJlc3BvbnNlU3RhdHVzIrEBChpFbmFibGVGYWNlRGV0ZWN0aW9uUmVxdWVz",
-            "dBIOCgZlbmFibGUYASABKAgSHgoWZW5hYmxlX3NtaWxlX2RldGVjdGlvbhgC",
-            "IAEoCBIkChxlbmFibGVfZXhwcmVzc2lvbl9lc3RpbWF0aW9uGAMgASgIEh4K",
-            "FmVuYWJsZV9ibGlua19kZXRlY3Rpb24YBCABKAgSHQoVZW5hYmxlX2dhemVf",
-            "ZGV0ZWN0aW9uGAUgASgIIl0KG0VuYWJsZUZhY2VEZXRlY3Rpb25SZXNwb25z",
-            "ZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
-            "cmZhY2UuUmVzcG9uc2VTdGF0dXMiLgocRW5hYmxlTW90aW9uRGV0ZWN0aW9u",
-            "UmVxdWVzdBIOCgZlbmFibGUYASABKAgiXwodRW5hYmxlTW90aW9uRGV0ZWN0",
-            "aW9uUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0",
-            "ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIikKF0VuYWJsZU1pcnJv",
-            "ck1vZGVSZXF1ZXN0Eg4KBmVuYWJsZRgBIAEoCCJaChhFbmFibGVNaXJyb3JN",
-            "b2RlUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0",
-            "ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIhQKEk1pcnJvck1vZGVE",
-            "aXNhYmxlZCItChtFbmFibGVJbWFnZVN0cmVhbWluZ1JlcXVlc3QSDgoGZW5h",
-            "YmxlGAEgASgIIl4KHEVuYWJsZUltYWdlU3RyZWFtaW5nUmVzcG9uc2USPgoG",
-            "c3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
-            "LlJlc3BvbnNlU3RhdHVzIhkKF1Zpc2lvbk1vZGVzQXV0b0Rpc2FibGVkItED",
-            "CgpJbWFnZUNodW5rEhgKEGZyYW1lX3RpbWVfc3RhbXAYASABKA0SEAoIaW1h",
-            "Z2VfaWQYAiABKA0SDQoFd2lkdGgYAyABKA0SDgoGaGVpZ2h0GAQgASgNElAK",
-            "DmltYWdlX2VuY29kaW5nGAUgASgOMjguQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
-            "aW50ZXJmYWNlLkltYWdlQ2h1bmsuSW1hZ2VFbmNvZGluZxIVCg1kaXNwbGF5",
-            "X2luZGV4GAYgASgNEhkKEWltYWdlX2NodW5rX2NvdW50GAcgASgNEhAKCGNo",
-            "dW5rX2lkGAggASgNEgwKBGRhdGEYCSABKAwi0wEKDUltYWdlRW5jb2RpbmcS",
-            "FwoTTk9ORV9JTUFHRV9FTkNPRElORxAAEgwKCFJBV19HUkFZEAESCwoHUkFX",
-            "X1JHQhACEggKBFlVWVYQAxIMCghZVVY0MjBTUBAEEgkKBUJBWUVSEAUSDQoJ",
-            "SlBFR19HUkFZEAYSDgoKSlBFR19DT0xPUhAHEhkKFUpQRUdfQ09MT1JfSEFM",
-            "Rl9XSURUSBAIEhcKE0pQRUdfTUlOSU1JWkVEX0dSQVkQCRIYChRKUEVHX01J",
-            "TklNSVpFRF9DT0xPUhAKIhMKEUNhbWVyYUZlZWRSZXF1ZXN0IqYBChJDYW1l",
-            "cmFGZWVkUmVzcG9uc2USGAoQZnJhbWVfdGltZV9zdGFtcBgBIAEoDRIQCghp",
-            "bWFnZV9pZBgCIAEoDRJQCg5pbWFnZV9lbmNvZGluZxgDIAEoDjI4LkFua2ku",
-            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5JbWFnZUNodW5rLkltYWdlRW5j",
-            "b2RpbmcSDAoEZGF0YRgEIAEoDDoEgKYdASI1ChJTZXRFeWVDb2xvclJlcXVl",
-            "c3QSCwoDaHVlGAEgASgCEhIKCnNhdHVyYXRpb24YAiABKAIiVQoTU2V0RXll",
-            "Q29sb3JSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5l",
-            "eHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMilgEKGFNES0luaXRp",
-            "YWxpemF0aW9uUmVxdWVzdBIaChJzZGtfbW9kdWxlX3ZlcnNpb24YASABKAkS",
-            "FgoOcHl0aG9uX3ZlcnNpb24YAiABKAkSHQoVcHl0aG9uX2ltcGxlbWVudGF0",
-            "aW9uGAMgASgJEhIKCm9zX3ZlcnNpb24YBCABKAkSEwoLY3B1X3ZlcnNpb24Y",
-            "BSABKAkiWwoZU0RLSW5pdGlhbGl6YXRpb25SZXNwb25zZRI+CgZzdGF0dXMY",
-            "ASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9u",
-            "c2VTdGF0dXMq3AQKC1JvYm90U3RhdHVzEhUKEVJPQk9UX1NUQVRVU19OT05F",
-            "EAASGgoWUk9CT1RfU1RBVFVTX0lTX01PVklORxABEiIKHlJPQk9UX1NUQVRV",
-            "U19JU19DQVJSWUlOR19CTE9DSxACEiYKIlJPQk9UX1NUQVRVU19JU19QSUNL",
-            "SU5HX09SX1BMQUNJTkcQBBIdChlST0JPVF9TVEFUVVNfSVNfUElDS0VEX1VQ",
-            "EAgSIgoeUk9CT1RfU1RBVFVTX0lTX0JVVFRPTl9QUkVTU0VEEBASGwoXUk9C",
-            "T1RfU1RBVFVTX0lTX0ZBTExJTkcQIBIdChlST0JPVF9TVEFUVVNfSVNfQU5J",
-            "TUFUSU5HEEASHAoXUk9CT1RfU1RBVFVTX0lTX1BBVEhJTkcQgAESHQoYUk9C",
-            "T1RfU1RBVFVTX0xJRlRfSU5fUE9TEIACEh0KGFJPQk9UX1NUQVRVU19IRUFE",
-            "X0lOX1BPUxCABBIhChxST0JPVF9TVEFUVVNfQ0FMTV9QT1dFUl9NT0RFEIAI",
-            "Eh8KGlJPQk9UX1NUQVRVU19JU19PTl9DSEFSR0VSEIAgEh0KGFJPQk9UX1NU",
-            "QVRVU19JU19DSEFSR0lORxCAQBIhChtST0JPVF9TVEFUVVNfQ0xJRkZfREVU",
-            "RUNURUQQgIABEiQKHlJPQk9UX1NUQVRVU19BUkVfV0hFRUxTX01PVklORxCA",
-            "gAISIAoaUk9CT1RfU1RBVFVTX0lTX0JFSU5HX0hFTEQQgIAEEiUKH1JPQk9U",
-            "X1NUQVRVU19JU19NT1RJT05fREVURUNURUQQgIAIKr0BChBGYWNpYWxFeHBy",
-            "ZXNzaW9uEhYKEkVYUFJFU1NJT05fVU5LTk9XThAAEhYKEkVYUFJFU1NJT05f",
-            "TkVVVFJBTBABEhgKFEVYUFJFU1NJT05fSEFQUElORVNTEAISFwoTRVhQUkVT",
-            "U0lPTl9TVVJQUklTRRADEhQKEEVYUFJFU1NJT05fQU5HRVIQBBIWChJFWFBS",
-            "RVNTSU9OX1NBRE5FU1MQBRIUChBFWFBSRVNTSU9OX0NPVU5UEAUaAhABKswB",
-            "ChRGYWNlRW5yb2xsbWVudFJlc3VsdBILCgdTVUNDRVNTEAASEgoOU0FXX1dS",
-            "T05HX0ZBQ0UQARIWChJTQVdfTVVMVElQTEVfRkFDRVMQAhINCglUSU1FRF9P",
-            "VVQQAxIPCgtTQVZFX0ZBSUxFRBAEEg4KCklOQ09NUExFVEUQBRINCglDQU5D",
-            "RUxMRUQQBhIPCgtOQU1FX0lOX1VTRRAHEhYKEk5BTUVEX1NUT1JBR0VfRlVM",
-            "TBAIEhMKD1VOS05PV05fRkFJTFVSRRAJKmwKD0JlaGF2aW9yUmVzdWx0cxIa",
-            "ChZCRUhBVklPUl9JTlZBTElEX1NUQVRFEAASGwoXQkVIQVZJT1JfQ09NUExF",
-            "VEVfU1RBVEUQARIgChxCRUhBVklPUl9XT05UX0FDVElWQVRFX1NUQVRFEAIq",
-            "UwoSQWN0aW9uVGFnQ29uc3RhbnRzEhMKD0lOVkFMSURfU0RLX1RBRxAAEhMK",
-            "DUZJUlNUX1NES19UQUcQgYl6EhMKDExBU1RfU0RLX1RBRxDAjbcBKp4BCg1B",
-            "bGlnbm1lbnRUeXBlEhoKFkFMSUdOTUVOVF9UWVBFX1VOS05PV04QABIeChpB",
-            "TElHTk1FTlRfVFlQRV9MSUZUX0ZJTkdFUhABEh0KGUFMSUdOTUVOVF9UWVBF",
-            "X0xJRlRfUExBVEUQAhIXChNBTElHTk1FTlRfVFlQRV9CT0RZEAMSGQoVQUxJ",
-            "R05NRU5UX1RZUEVfQ1VTVE9NEAQqcwoMQmF0dGVyeUxldmVsEhkKFUJBVFRF",
-            "UllfTEVWRUxfVU5LTk9XThAAEhUKEUJBVFRFUllfTEVWRUxfTE9XEAESGQoV",
-            "QkFUVEVSWV9MRVZFTF9OT01JTkFMEAISFgoSQkFUVEVSWV9MRVZFTF9GVUxM",
-            "EAMqzAEKDkF1ZGlvQ29uc3RhbnRzEhgKFEFVRElPX0NPTlNUQU5UU19OVUxM",
-            "EAASHAoYTUlDX0RFVEVDVElPTl9ESVJFQ1RJT05TEAwSJQogU0FNUExFX0NP",
-            "VU5UU19QRVJfRU5HSU5FX01FU1NBR0UQoAESIgodU0FNUExFX0NPVU5UU19Q",
-            "RVJfU0RLX01FU1NBR0UQwAwSGwoWTUlDUk9QSE9ORV9TQU1QTEVfUkFURRCJ",
-            "ehIaChVQUk9DRVNTRURfU0FNUExFX1JBVEUQgH0qhQEKE0F1ZGlvUHJvY2Vz",
-            "c2luZ01vZGUSEQoNQVVESU9fVU5LTk9XThAAEg0KCUFVRElPX09GRhABEhMK",
-            "D0FVRElPX0ZBU1RfTU9ERRACEhoKFkFVRElPX0RJUkVDVElPTkFMX01PREUQ",
-            "AxIbChdBVURJT19WT0lDRV9ERVRFQ1RfTU9ERRAEYgZwcm90bzM="));
+            "IlEKDlNheVRleHRSZXF1ZXN0EgwKBHRleHQYASABKAkSGAoQdXNlX3ZlY3Rv",
+            "cl92b2ljZRgCIAEoCBIXCg9kdXJhdGlvbl9zY2FsYXIYAyABKAIi9QEKD1Nh",
+            "eVRleHRSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5l",
+            "eHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSTQoFc3RhdGUYAiAB",
+            "KA4yPi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuU2F5VGV4dFJl",
+            "c3BvbnNlLlV0dGVyYW5jZVN0YXRlIlMKDlV0dGVyYW5jZVN0YXRlEgsKB0lO",
+            "VkFMSUQQABIOCgpHRU5FUkFUSU5HEAESCQoFUkVBRFkQAhILCgdQTEFZSU5H",
+            "EAMSDAoIRklOSVNIRUQQBCKbAQoPU3RpbXVsYXRpb25JbmZvEhYKDmVtb3Rp",
+            "b25fZXZlbnRzGAEgAygJEg0KBXZhbHVlGAIgASgCEhAKCHZlbG9jaXR5GAMg",
+            "ASgCEg0KBWFjY2VsGAQgASgCEhoKEnZhbHVlX2JlZm9yZV9ldmVudBgFIAEo",
+            "AhIRCgltaW5fdmFsdWUYBiABKAISEQoJbWF4X3ZhbHVlGAcgASgCIlkKFEF1",
+            "ZGlvU2VuZE1vZGVSZXF1ZXN0EkEKBG1vZGUYASABKA4yMy5BbmtpLlZlY3Rv",
+            "ci5leHRlcm5hbF9pbnRlcmZhY2UuQXVkaW9Qcm9jZXNzaW5nTW9kZSJZChRB",
+            "dWRpb1NlbmRNb2RlQ2hhbmdlZBJBCgRtb2RlGAEgASgOMjMuQW5raS5WZWN0",
+            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkF1ZGlvUHJvY2Vzc2luZ01vZGUi6AEK",
+            "CkF1ZGlvQ2h1bmsSGAoQcm9ib3RfdGltZV9zdGFtcBgBIAEoDRIQCghncm91",
+            "cF9pZBgCIAEoDRIQCghjaHVua19pZBgDIAEoDRIZChFhdWRpb19jaHVua19j",
+            "b3VudBgEIAEoDRIUCgxzaWduYWxfcG93ZXIYBSABKAwSGwoTZGlyZWN0aW9u",
+            "X3N0cmVuZ3RocxgGIAEoDBIYChBzb3VyY2VfZGlyZWN0aW9uGAcgASgNEhkK",
+            "EXNvdXJjZV9jb25maWRlbmNlGAggASgNEhkKEW5vaXNlX2Zsb29yX3Bvd2Vy",
+            "GAkgASgNIhIKEEF1ZGlvRmVlZFJlcXVlc3QiyAEKEUF1ZGlvRmVlZFJlc3Bv",
+            "bnNlEhgKEHJvYm90X3RpbWVfc3RhbXAYASABKA0SEAoIZ3JvdXBfaWQYAiAB",
+            "KA0SFAoMc2lnbmFsX3Bvd2VyGAMgASgMEhsKE2RpcmVjdGlvbl9zdHJlbmd0",
+            "aHMYBCABKAwSGAoQc291cmNlX2RpcmVjdGlvbhgFIAEoDRIZChFzb3VyY2Vf",
+            "Y29uZmlkZW5jZRgGIAEoDRIZChFub2lzZV9mbG9vcl9wb3dlchgHIAEoDToE",
+            "gKYdASJMChpFeHRlcm5hbEF1ZGlvU3RyZWFtUHJlcGFyZRIYChBhdWRpb19m",
+            "cmFtZV9yYXRlGAEgASgNEhQKDGF1ZGlvX3ZvbHVtZRgCIAEoDSJXChhFeHRl",
+            "cm5hbEF1ZGlvU3RyZWFtQ2h1bmsSHgoWYXVkaW9fY2h1bmtfc2l6ZV9ieXRl",
+            "cxgBIAEoDRIbChNhdWRpb19jaHVua19zYW1wbGVzGAIgASgMIh0KG0V4dGVy",
+            "bmFsQXVkaW9TdHJlYW1Db21wbGV0ZSIbChlFeHRlcm5hbEF1ZGlvU3RyZWFt",
+            "Q2FuY2VsIp4DChpFeHRlcm5hbEF1ZGlvU3RyZWFtUmVxdWVzdBJaChRhdWRp",
+            "b19zdHJlYW1fcHJlcGFyZRgBIAEoCzI6LkFua2kuVmVjdG9yLmV4dGVybmFs",
+            "X2ludGVyZmFjZS5FeHRlcm5hbEF1ZGlvU3RyZWFtUHJlcGFyZUgAElYKEmF1",
+            "ZGlvX3N0cmVhbV9jaHVuaxgCIAEoCzI4LkFua2kuVmVjdG9yLmV4dGVybmFs",
+            "X2ludGVyZmFjZS5FeHRlcm5hbEF1ZGlvU3RyZWFtQ2h1bmtIABJcChVhdWRp",
+            "b19zdHJlYW1fY29tcGxldGUYAyABKAsyOy5BbmtpLlZlY3Rvci5leHRlcm5h",
+            "bF9pbnRlcmZhY2UuRXh0ZXJuYWxBdWRpb1N0cmVhbUNvbXBsZXRlSAASWAoT",
+            "YXVkaW9fc3RyZWFtX2NhbmNlbBgEIAEoCzI5LkFua2kuVmVjdG9yLmV4dGVy",
+            "bmFsX2ludGVyZmFjZS5FeHRlcm5hbEF1ZGlvU3RyZWFtQ2FuY2VsSABCFAoS",
+            "YXVkaW9fcmVxdWVzdF90eXBlIiUKI0V4dGVybmFsQXVkaW9TdHJlYW1QbGF5",
+            "YmFja0NvbXBsZXRlIiQKIkV4dGVybmFsQXVkaW9TdHJlYW1QbGF5YmFja0Zh",
+            "aWx1cmUiXAogRXh0ZXJuYWxBdWRpb1N0cmVhbUJ1ZmZlck92ZXJydW4SGgoS",
+            "YXVkaW9fc2FtcGxlc19zZW50GAEgASgNEhwKFGF1ZGlvX3NhbXBsZXNfcGxh",
+            "eWVkGAIgASgNIvkCChtFeHRlcm5hbEF1ZGlvU3RyZWFtUmVzcG9uc2USbQoe",
+            "YXVkaW9fc3RyZWFtX3BsYXliYWNrX2NvbXBsZXRlGAEgASgLMkMuQW5raS5W",
+            "ZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV4dGVybmFsQXVkaW9TdHJlYW1Q",
+            "bGF5YmFja0NvbXBsZXRlSAASZwobYXVkaW9fc3RyZWFtX2J1ZmZlcl9vdmVy",
+            "cnVuGAIgASgLMkAuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV4",
+            "dGVybmFsQXVkaW9TdHJlYW1CdWZmZXJPdmVycnVuSAASawodYXVkaW9fc3Ry",
+            "ZWFtX3BsYXliYWNrX2ZhaWx5ZXIYAyABKAsyQi5BbmtpLlZlY3Rvci5leHRl",
+            "cm5hbF9pbnRlcmZhY2UuRXh0ZXJuYWxBdWRpb1N0cmVhbVBsYXliYWNrRmFp",
+            "bHVyZUgAQhUKE2F1ZGlvX3Jlc3BvbnNlX3R5cGUiXgoTTWFzdGVyVm9sdW1l",
+            "UmVxdWVzdBJHCgx2b2x1bWVfbGV2ZWwYASABKA4yMS5BbmtpLlZlY3Rvci5l",
+            "eHRlcm5hbF9pbnRlcmZhY2UuTWFzdGVyVm9sdW1lTGV2ZWwiVgoUTWFzdGVy",
+            "Vm9sdW1lUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3Iu",
+            "ZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIi4KHEVuYWJsZU1h",
+            "cmtlckRldGVjdGlvblJlcXVlc3QSDgoGZW5hYmxlGAEgASgIIl8KHUVuYWJs",
+            "ZU1hcmtlckRldGVjdGlvblJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFu",
+            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyKx",
+            "AQoaRW5hYmxlRmFjZURldGVjdGlvblJlcXVlc3QSDgoGZW5hYmxlGAEgASgI",
+            "Eh4KFmVuYWJsZV9zbWlsZV9kZXRlY3Rpb24YAiABKAgSJAocZW5hYmxlX2V4",
+            "cHJlc3Npb25fZXN0aW1hdGlvbhgDIAEoCBIeChZlbmFibGVfYmxpbmtfZGV0",
+            "ZWN0aW9uGAQgASgIEh0KFWVuYWJsZV9nYXplX2RldGVjdGlvbhgFIAEoCCJd",
+            "ChtFbmFibGVGYWNlRGV0ZWN0aW9uUmVzcG9uc2USPgoGc3RhdHVzGAEgASgL",
+            "Mi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3Rh",
+            "dHVzIi4KHEVuYWJsZU1vdGlvbkRldGVjdGlvblJlcXVlc3QSDgoGZW5hYmxl",
+            "GAEgASgIIl8KHUVuYWJsZU1vdGlvbkRldGVjdGlvblJlc3BvbnNlEj4KBnN0",
+            "YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5S",
+            "ZXNwb25zZVN0YXR1cyIpChdFbmFibGVNaXJyb3JNb2RlUmVxdWVzdBIOCgZl",
+            "bmFibGUYASABKAgiWgoYRW5hYmxlTWlycm9yTW9kZVJlc3BvbnNlEj4KBnN0",
+            "YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5S",
+            "ZXNwb25zZVN0YXR1cyIUChJNaXJyb3JNb2RlRGlzYWJsZWQiLQobRW5hYmxl",
+            "SW1hZ2VTdHJlYW1pbmdSZXF1ZXN0Eg4KBmVuYWJsZRgBIAEoCCJeChxFbmFi",
+            "bGVJbWFnZVN0cmVhbWluZ1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFu",
+            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyIg",
+            "Ch5Jc0ltYWdlU3RyZWFtaW5nRW5hYmxlZFJlcXVlc3QiRQofSXNJbWFnZVN0",
+            "cmVhbWluZ0VuYWJsZWRSZXNwb25zZRIiChppc19pbWFnZV9zdHJlYW1pbmdf",
+            "ZW5hYmxlZBgBIAEoCCIZChdWaXNpb25Nb2Rlc0F1dG9EaXNhYmxlZCLRAwoK",
+            "SW1hZ2VDaHVuaxIYChBmcmFtZV90aW1lX3N0YW1wGAEgASgNEhAKCGltYWdl",
+            "X2lkGAIgASgNEg0KBXdpZHRoGAMgASgNEg4KBmhlaWdodBgEIAEoDRJQCg5p",
+            "bWFnZV9lbmNvZGluZxgFIAEoDjI4LkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
+            "dGVyZmFjZS5JbWFnZUNodW5rLkltYWdlRW5jb2RpbmcSFQoNZGlzcGxheV9p",
+            "bmRleBgGIAEoDRIZChFpbWFnZV9jaHVua19jb3VudBgHIAEoDRIQCghjaHVu",
+            "a19pZBgIIAEoDRIMCgRkYXRhGAkgASgMItMBCg1JbWFnZUVuY29kaW5nEhcK",
+            "E05PTkVfSU1BR0VfRU5DT0RJTkcQABIMCghSQVdfR1JBWRABEgsKB1JBV19S",
+            "R0IQAhIICgRZVVlWEAMSDAoIWVVWNDIwU1AQBBIJCgVCQVlFUhAFEg0KCUpQ",
+            "RUdfR1JBWRAGEg4KCkpQRUdfQ09MT1IQBxIZChVKUEVHX0NPTE9SX0hBTEZf",
+            "V0lEVEgQCBIXChNKUEVHX01JTklNSVpFRF9HUkFZEAkSGAoUSlBFR19NSU5J",
+            "TUlaRURfQ09MT1IQCiITChFDYW1lcmFGZWVkUmVxdWVzdCKmAQoSQ2FtZXJh",
+            "RmVlZFJlc3BvbnNlEhgKEGZyYW1lX3RpbWVfc3RhbXAYASABKA0SEAoIaW1h",
+            "Z2VfaWQYAiABKA0SUAoOaW1hZ2VfZW5jb2RpbmcYAyABKA4yOC5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuSW1hZ2VDaHVuay5JbWFnZUVuY29k",
+            "aW5nEgwKBGRhdGEYBCABKAw6BICmHQEiGwoZQ2FwdHVyZVNpbmdsZUltYWdl",
+            "UmVxdWVzdCLoAQoaQ2FwdHVyZVNpbmdsZUltYWdlUmVzcG9uc2USPgoGc3Rh",
+            "dHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJl",
+            "c3BvbnNlU3RhdHVzEhgKEGZyYW1lX3RpbWVfc3RhbXAYAiABKA0SEAoIaW1h",
+            "Z2VfaWQYAyABKA0SUAoOaW1hZ2VfZW5jb2RpbmcYBCABKA4yOC5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuSW1hZ2VDaHVuay5JbWFnZUVuY29k",
+            "aW5nEgwKBGRhdGEYBSABKAwiNQoSU2V0RXllQ29sb3JSZXF1ZXN0EgsKA2h1",
+            "ZRgBIAEoAhISCgpzYXR1cmF0aW9uGAIgASgCIlUKE1NldEV5ZUNvbG9yUmVz",
+            "cG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
+            "aW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIpYBChhTREtJbml0aWFsaXphdGlv",
+            "blJlcXVlc3QSGgoSc2RrX21vZHVsZV92ZXJzaW9uGAEgASgJEhYKDnB5dGhv",
+            "bl92ZXJzaW9uGAIgASgJEh0KFXB5dGhvbl9pbXBsZW1lbnRhdGlvbhgDIAEo",
+            "CRISCgpvc192ZXJzaW9uGAQgASgJEhMKC2NwdV92ZXJzaW9uGAUgASgJIlsK",
+            "GVNES0luaXRpYWxpemF0aW9uUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4u",
+            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVz",
+            "KtwECgtSb2JvdFN0YXR1cxIVChFST0JPVF9TVEFUVVNfTk9ORRAAEhoKFlJP",
+            "Qk9UX1NUQVRVU19JU19NT1ZJTkcQARIiCh5ST0JPVF9TVEFUVVNfSVNfQ0FS",
+            "UllJTkdfQkxPQ0sQAhImCiJST0JPVF9TVEFUVVNfSVNfUElDS0lOR19PUl9Q",
+            "TEFDSU5HEAQSHQoZUk9CT1RfU1RBVFVTX0lTX1BJQ0tFRF9VUBAIEiIKHlJP",
+            "Qk9UX1NUQVRVU19JU19CVVRUT05fUFJFU1NFRBAQEhsKF1JPQk9UX1NUQVRV",
+            "U19JU19GQUxMSU5HECASHQoZUk9CT1RfU1RBVFVTX0lTX0FOSU1BVElORxBA",
+            "EhwKF1JPQk9UX1NUQVRVU19JU19QQVRISU5HEIABEh0KGFJPQk9UX1NUQVRV",
+            "U19MSUZUX0lOX1BPUxCAAhIdChhST0JPVF9TVEFUVVNfSEVBRF9JTl9QT1MQ",
+            "gAQSIQocUk9CT1RfU1RBVFVTX0NBTE1fUE9XRVJfTU9ERRCACBIfChpST0JP",
+            "VF9TVEFUVVNfSVNfT05fQ0hBUkdFUhCAIBIdChhST0JPVF9TVEFUVVNfSVNf",
+            "Q0hBUkdJTkcQgEASIQobUk9CT1RfU1RBVFVTX0NMSUZGX0RFVEVDVEVEEICA",
+            "ARIkCh5ST0JPVF9TVEFUVVNfQVJFX1dIRUVMU19NT1ZJTkcQgIACEiAKGlJP",
+            "Qk9UX1NUQVRVU19JU19CRUlOR19IRUxEEICABBIlCh9ST0JPVF9TVEFUVVNf",
+            "SVNfTU9USU9OX0RFVEVDVEVEEICACCq9AQoQRmFjaWFsRXhwcmVzc2lvbhIW",
+            "ChJFWFBSRVNTSU9OX1VOS05PV04QABIWChJFWFBSRVNTSU9OX05FVVRSQUwQ",
+            "ARIYChRFWFBSRVNTSU9OX0hBUFBJTkVTUxACEhcKE0VYUFJFU1NJT05fU1VS",
+            "UFJJU0UQAxIUChBFWFBSRVNTSU9OX0FOR0VSEAQSFgoSRVhQUkVTU0lPTl9T",
+            "QURORVNTEAUSFAoQRVhQUkVTU0lPTl9DT1VOVBAFGgIQASrMAQoURmFjZUVu",
+            "cm9sbG1lbnRSZXN1bHQSCwoHU1VDQ0VTUxAAEhIKDlNBV19XUk9OR19GQUNF",
+            "EAESFgoSU0FXX01VTFRJUExFX0ZBQ0VTEAISDQoJVElNRURfT1VUEAMSDwoL",
+            "U0FWRV9GQUlMRUQQBBIOCgpJTkNPTVBMRVRFEAUSDQoJQ0FOQ0VMTEVEEAYS",
+            "DwoLTkFNRV9JTl9VU0UQBxIWChJOQU1FRF9TVE9SQUdFX0ZVTEwQCBITCg9V",
+            "TktOT1dOX0ZBSUxVUkUQCSpsCg9CZWhhdmlvclJlc3VsdHMSGgoWQkVIQVZJ",
+            "T1JfSU5WQUxJRF9TVEFURRAAEhsKF0JFSEFWSU9SX0NPTVBMRVRFX1NUQVRF",
+            "EAESIAocQkVIQVZJT1JfV09OVF9BQ1RJVkFURV9TVEFURRACKlMKEkFjdGlv",
+            "blRhZ0NvbnN0YW50cxITCg9JTlZBTElEX1NES19UQUcQABITCg1GSVJTVF9T",
+            "REtfVEFHEIGJehITCgxMQVNUX1NES19UQUcQwI23ASqeAQoNQWxpZ25tZW50",
+            "VHlwZRIaChZBTElHTk1FTlRfVFlQRV9VTktOT1dOEAASHgoaQUxJR05NRU5U",
+            "X1RZUEVfTElGVF9GSU5HRVIQARIdChlBTElHTk1FTlRfVFlQRV9MSUZUX1BM",
+            "QVRFEAISFwoTQUxJR05NRU5UX1RZUEVfQk9EWRADEhkKFUFMSUdOTUVOVF9U",
+            "WVBFX0NVU1RPTRAEKnMKDEJhdHRlcnlMZXZlbBIZChVCQVRURVJZX0xFVkVM",
+            "X1VOS05PV04QABIVChFCQVRURVJZX0xFVkVMX0xPVxABEhkKFUJBVFRFUllf",
+            "TEVWRUxfTk9NSU5BTBACEhYKEkJBVFRFUllfTEVWRUxfRlVMTBADKswBCg5B",
+            "dWRpb0NvbnN0YW50cxIYChRBVURJT19DT05TVEFOVFNfTlVMTBAAEhwKGE1J",
+            "Q19ERVRFQ1RJT05fRElSRUNUSU9OUxAMEiUKIFNBTVBMRV9DT1VOVFNfUEVS",
+            "X0VOR0lORV9NRVNTQUdFEKABEiIKHVNBTVBMRV9DT1VOVFNfUEVSX1NES19N",
+            "RVNTQUdFEMAMEhsKFk1JQ1JPUEhPTkVfU0FNUExFX1JBVEUQiXoSGgoVUFJP",
+            "Q0VTU0VEX1NBTVBMRV9SQVRFEIB9KoUBChNBdWRpb1Byb2Nlc3NpbmdNb2Rl",
+            "EhEKDUFVRElPX1VOS05PV04QABINCglBVURJT19PRkYQARITCg9BVURJT19G",
+            "QVNUX01PREUQAhIaChZBVURJT19ESVJFQ1RJT05BTF9NT0RFEAMSGwoXQVVE",
+            "SU9fVk9JQ0VfREVURUNUX01PREUQBCp2ChFNYXN0ZXJWb2x1bWVMZXZlbBIO",
+            "CgpWT0xVTUVfTE9XEAASFQoRVk9MVU1FX01FRElVTV9MT1cQARIRCg1WT0xV",
+            "TUVfTUVESVVNEAISFgoSVk9MVU1FX01FRElVTV9ISUdIEAMSDwoLVk9MVU1F",
+            "X0hJR0gQBGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, global::Anki.Vector.ExternalInterface.ExtensionsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.RobotStatus), typeof(global::Anki.Vector.ExternalInterface.FacialExpression), typeof(global::Anki.Vector.ExternalInterface.FaceEnrollmentResult), typeof(global::Anki.Vector.ExternalInterface.BehaviorResults), typeof(global::Anki.Vector.ExternalInterface.ActionTagConstants), typeof(global::Anki.Vector.ExternalInterface.AlignmentType), typeof(global::Anki.Vector.ExternalInterface.BatteryLevel), typeof(global::Anki.Vector.ExternalInterface.AudioConstants), typeof(global::Anki.Vector.ExternalInterface.AudioProcessingMode), }, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.RobotStatus), typeof(global::Anki.Vector.ExternalInterface.FacialExpression), typeof(global::Anki.Vector.ExternalInterface.FaceEnrollmentResult), typeof(global::Anki.Vector.ExternalInterface.BehaviorResults), typeof(global::Anki.Vector.ExternalInterface.ActionTagConstants), typeof(global::Anki.Vector.ExternalInterface.AlignmentType), typeof(global::Anki.Vector.ExternalInterface.BatteryLevel), typeof(global::Anki.Vector.ExternalInterface.AudioConstants), typeof(global::Anki.Vector.ExternalInterface.AudioProcessingMode), typeof(global::Anki.Vector.ExternalInterface.MasterVolumeLevel), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.KeepAlivePing), global::Anki.Vector.ExternalInterface.KeepAlivePing.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AnimationTrigger), global::Anki.Vector.ExternalInterface.AnimationTrigger.Parser, new[]{ "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.Animation), global::Anki.Vector.ExternalInterface.Animation.Parser, new[]{ "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DriveWheelsRequest), global::Anki.Vector.ExternalInterface.DriveWheelsRequest.Parser, new[]{ "LeftWheelMmps", "RightWheelMmps", "LeftWheelMmps2", "RightWheelMmps2" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DriveWheelsResponse), global::Anki.Vector.ExternalInterface.DriveWheelsResponse.Parser, new[]{ "Status" }, null, null, null),
@@ -412,10 +512,15 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.MoveHeadResponse), global::Anki.Vector.ExternalInterface.MoveHeadResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.MoveLiftRequest), global::Anki.Vector.ExternalInterface.MoveLiftRequest.Parser, new[]{ "SpeedRadPerSec" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.MoveLiftResponse), global::Anki.Vector.ExternalInterface.MoveLiftResponse.Parser, new[]{ "Status" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.StopAllMotorsRequest), global::Anki.Vector.ExternalInterface.StopAllMotorsRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.StopAllMotorsResponse), global::Anki.Vector.ExternalInterface.StopAllMotorsResponse.Parser, new[]{ "Status" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PlayAnimationTriggerRequest), global::Anki.Vector.ExternalInterface.PlayAnimationTriggerRequest.Parser, new[]{ "AnimationTrigger", "Loops", "UseLiftSafe", "IgnoreBodyTrack", "IgnoreHeadTrack", "IgnoreLiftTrack" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PlayAnimationRequest), global::Anki.Vector.ExternalInterface.PlayAnimationRequest.Parser, new[]{ "Animation", "Loops", "IgnoreBodyTrack", "IgnoreHeadTrack", "IgnoreLiftTrack" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PlayAnimationResponse), global::Anki.Vector.ExternalInterface.PlayAnimationResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PlayAnimationResponse), global::Anki.Vector.ExternalInterface.PlayAnimationResponse.Parser, new[]{ "Status", "Result", "Animation" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ListAnimationsRequest), global::Anki.Vector.ExternalInterface.ListAnimationsRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ListAnimationsResponse), global::Anki.Vector.ExternalInterface.ListAnimationsResponse.Parser, new[]{ "Status", "AnimationNames" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ListAnimationTriggersRequest), global::Anki.Vector.ExternalInterface.ListAnimationTriggersRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ListAnimationTriggersResponse), global::Anki.Vector.ExternalInterface.ListAnimationTriggersResponse.Parser, new[]{ "Status", "AnimationTriggerNames" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DisplayFaceImageRGBRequest), global::Anki.Vector.ExternalInterface.DisplayFaceImageRGBRequest.Parser, new[]{ "FaceData", "DurationMs", "InterruptRunning" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DisplayFaceImageRGBResponse), global::Anki.Vector.ExternalInterface.DisplayFaceImageRGBResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.MeetVictorFaceScanStarted), global::Anki.Vector.ExternalInterface.MeetVictorFaceScanStarted.Parser, null, null, null, null),
@@ -426,16 +531,13 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PoseStruct), global::Anki.Vector.ExternalInterface.PoseStruct.Parser, new[]{ "X", "Y", "Z", "Q0", "Q1", "Q2", "Q3", "OriginId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AccelData), global::Anki.Vector.ExternalInterface.AccelData.Parser, new[]{ "X", "Y", "Z" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.GyroData), global::Anki.Vector.ExternalInterface.GyroData.Parser, new[]{ "X", "Y", "Z" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ProxData), global::Anki.Vector.ExternalInterface.ProxData.Parser, new[]{ "DistanceMm", "SignalQuality", "IsInValidRange", "IsValidSignalQuality", "IsLiftInFov", "IsTooPitched" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ProxData), global::Anki.Vector.ExternalInterface.ProxData.Parser, new[]{ "DistanceMm", "SignalQuality", "Unobstructed", "FoundObject", "IsLiftInFov" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.TouchData), global::Anki.Vector.ExternalInterface.TouchData.Parser, new[]{ "RawTouchValue", "IsBeingTouched" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RobotState), global::Anki.Vector.ExternalInterface.RobotState.Parser, new[]{ "Pose", "PoseAngleRad", "PosePitchRad", "LeftWheelSpeedMmps", "RightWheelSpeedMmps", "HeadAngleRad", "LiftHeightMm", "Accel", "Gyro", "CarryingObjectId", "CarryingObjectOnTopId", "HeadTrackingObjectId", "LocalizedToObjectId", "LastImageTimeStamp", "Status", "ProxData", "TouchData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CladPoint), global::Anki.Vector.ExternalInterface.CladPoint.Parser, new[]{ "X", "Y" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CladRect), global::Anki.Vector.ExternalInterface.CladRect.Parser, new[]{ "XTopLeft", "YTopLeft", "Width", "Height" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RobotObservedFace), global::Anki.Vector.ExternalInterface.RobotObservedFace.Parser, new[]{ "FaceId", "Timestamp", "Pose", "ImgRect", "Name", "Expression", "ExpressionValues", "LeftEye", "RightEye", "Nose", "Mouth" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RobotChangedObservedFaceID), global::Anki.Vector.ExternalInterface.RobotChangedObservedFaceID.Parser, new[]{ "OldId", "NewId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AppIntentRequest), global::Anki.Vector.ExternalInterface.AppIntentRequest.Parser, new[]{ "Intent", "Param" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AppDisconnected), global::Anki.Vector.ExternalInterface.AppDisconnected.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AppIntentResponse), global::Anki.Vector.ExternalInterface.AppIntentResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.FaceEnrollmentCompleted), global::Anki.Vector.ExternalInterface.FaceEnrollmentCompleted.Parser, new[]{ "Result", "FaceId", "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CancelFaceEnrollmentRequest), global::Anki.Vector.ExternalInterface.CancelFaceEnrollmentRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CancelFaceEnrollmentResponse), global::Anki.Vector.ExternalInterface.CancelFaceEnrollmentResponse.Parser, new[]{ "Status" }, null, null, null),
@@ -455,8 +557,15 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DriveOffChargerResponse), global::Anki.Vector.ExternalInterface.DriveOffChargerResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DriveOnChargerRequest), global::Anki.Vector.ExternalInterface.DriveOnChargerRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DriveOnChargerResponse), global::Anki.Vector.ExternalInterface.DriveOnChargerResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.FindFacesRequest), global::Anki.Vector.ExternalInterface.FindFacesRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.FindFacesResponse), global::Anki.Vector.ExternalInterface.FindFacesResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.LookAroundInPlaceRequest), global::Anki.Vector.ExternalInterface.LookAroundInPlaceRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.LookAroundInPlaceResponse), global::Anki.Vector.ExternalInterface.LookAroundInPlaceResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RollBlockRequest), global::Anki.Vector.ExternalInterface.RollBlockRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RollBlockResponse), global::Anki.Vector.ExternalInterface.RollBlockResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.WakeWordBegin), global::Anki.Vector.ExternalInterface.WakeWordBegin.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.WakeWordEnd), global::Anki.Vector.ExternalInterface.WakeWordEnd.Parser, new[]{ "IntentHeard", "IntentJson" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UserIntent), global::Anki.Vector.ExternalInterface.UserIntent.Parser, new[]{ "IntentId", "JsonData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PhotoInfo), global::Anki.Vector.ExternalInterface.PhotoInfo.Parser, new[]{ "PhotoId", "TimestampUtc", "PhotoCopiedToApp", "ThumbCopiedToApp" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PhotosInfoRequest), global::Anki.Vector.ExternalInterface.PhotosInfoRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PhotosInfoResponse), global::Anki.Vector.ExternalInterface.PhotosInfoResponse.Parser, new[]{ "Status", "PhotoInfos" }, null, null, null),
@@ -471,6 +580,8 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PhotoTaken), global::Anki.Vector.ExternalInterface.PhotoTaken.Parser, new[]{ "PhotoId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PathMotionProfile), global::Anki.Vector.ExternalInterface.PathMotionProfile.Parser, new[]{ "SpeedMmps", "AccelMmps2", "DecelMmps2", "PointTurnSpeedRadPerSec", "PointTurnAccelRadPerSec2", "PointTurnDecelRadPerSec2", "DockSpeedMmps", "DockAccelMmps2", "DockDecelMmps2", "ReverseSpeedMmps", "IsCustom" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ActionResult), global::Anki.Vector.ExternalInterface.ActionResult.Parser, new[]{ "Code" }, null, new[]{ typeof(global::Anki.Vector.ExternalInterface.ActionResult.Types.ActionResultCode) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CancelActionByIdTagRequest), global::Anki.Vector.ExternalInterface.CancelActionByIdTagRequest.Parser, new[]{ "IdTag" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CancelActionByIdTagResponse), global::Anki.Vector.ExternalInterface.CancelActionByIdTagResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.GoToPoseRequest), global::Anki.Vector.ExternalInterface.GoToPoseRequest.Parser, new[]{ "XMm", "YMm", "Rad", "MotionProf", "IdTag", "NumRetries" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.GoToPoseResponse), global::Anki.Vector.ExternalInterface.GoToPoseResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.DockWithCubeRequest), global::Anki.Vector.ExternalInterface.DockWithCubeRequest.Parser, new[]{ "ObjectId", "DistanceFromMarkerMm", "ApproachAngleRad", "AlignmentType", "UseApproachAngle", "UsePreDockPose", "MotionProf", "IdTag", "NumRetries" }, null, null, null),
@@ -483,14 +594,23 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SetHeadAngleResponse), global::Anki.Vector.ExternalInterface.SetHeadAngleResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SetLiftHeightRequest), global::Anki.Vector.ExternalInterface.SetLiftHeightRequest.Parser, new[]{ "HeightMm", "MaxSpeedRadPerSec", "AccelRadPerSec2", "DurationSec", "IdTag", "NumRetries" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SetLiftHeightResponse), global::Anki.Vector.ExternalInterface.SetLiftHeightResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.NetworkStats), global::Anki.Vector.ExternalInterface.NetworkStats.Parser, new[]{ "GNetStat1NumConnections", "GNetStat2LatencyAvg", "GNetStat3LatencySd", "GNetStat4LatencyMin", "GNetStat5LatencyMax", "GNetStat6PingArrivedPc", "GNetStat7ExtQueuedAvgMs", "GNetStat8ExtQueuedMinMs", "GNetStat9ExtQueuedMaxMs", "GNetStataQueuedAvgMs", "GNetStatbQueuedMinMs", "GNetStatcQueuedMaxMs" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.TurnTowardsFaceRequest), global::Anki.Vector.ExternalInterface.TurnTowardsFaceRequest.Parser, new[]{ "FaceId", "MaxTurnAngleRad", "IdTag", "NumRetries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.TurnTowardsFaceResponse), global::Anki.Vector.ExternalInterface.TurnTowardsFaceResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.GoToObjectRequest), global::Anki.Vector.ExternalInterface.GoToObjectRequest.Parser, new[]{ "ObjectId", "MotionProf", "DistanceFromObjectOriginMm", "UsePreDockPose", "IdTag", "NumRetries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.GoToObjectResponse), global::Anki.Vector.ExternalInterface.GoToObjectResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RollObjectRequest), global::Anki.Vector.ExternalInterface.RollObjectRequest.Parser, new[]{ "ObjectId", "MotionProf", "ApproachAngleRad", "UseApproachAngle", "UsePreDockPose", "IdTag", "NumRetries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RollObjectResponse), global::Anki.Vector.ExternalInterface.RollObjectResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PopAWheelieRequest), global::Anki.Vector.ExternalInterface.PopAWheelieRequest.Parser, new[]{ "ObjectId", "MotionProf", "ApproachAngleRad", "UseApproachAngle", "UsePreDockPose", "IdTag", "NumRetries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PopAWheelieResponse), global::Anki.Vector.ExternalInterface.PopAWheelieResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PickupObjectRequest), global::Anki.Vector.ExternalInterface.PickupObjectRequest.Parser, new[]{ "ObjectId", "MotionProf", "ApproachAngleRad", "UseApproachAngle", "UsePreDockPose", "IdTag", "NumRetries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PickupObjectResponse), global::Anki.Vector.ExternalInterface.PickupObjectResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PlaceObjectOnGroundHereRequest), global::Anki.Vector.ExternalInterface.PlaceObjectOnGroundHereRequest.Parser, new[]{ "IdTag", "NumRetries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PlaceObjectOnGroundHereResponse), global::Anki.Vector.ExternalInterface.PlaceObjectOnGroundHereResponse.Parser, new[]{ "Status", "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.BatteryStateRequest), global::Anki.Vector.ExternalInterface.BatteryStateRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.BatteryStateResponse), global::Anki.Vector.ExternalInterface.BatteryStateResponse.Parser, new[]{ "Status", "BatteryLevel", "BatteryVolts", "IsCharging", "IsOnChargerPlatform", "SuggestedChargerSec", "CubeBattery" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CubeBattery), global::Anki.Vector.ExternalInterface.CubeBattery.Parser, new[]{ "Level", "FactoryId", "BatteryVolts", "TimeSinceLastReadingSec" }, null, new[]{ typeof(global::Anki.Vector.ExternalInterface.CubeBattery.Types.CubeBatteryLevel) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.VersionStateRequest), global::Anki.Vector.ExternalInterface.VersionStateRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.VersionStateResponse), global::Anki.Vector.ExternalInterface.VersionStateResponse.Parser, new[]{ "Status", "OsVersion", "EngineBuildId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.NetworkStateRequest), global::Anki.Vector.ExternalInterface.NetworkStateRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.NetworkStateResponse), global::Anki.Vector.ExternalInterface.NetworkStateResponse.Parser, new[]{ "Status", "NetworkStats" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SayTextRequest), global::Anki.Vector.ExternalInterface.SayTextRequest.Parser, new[]{ "Text", "UseVectorVoice", "DurationScalar" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SayTextResponse), global::Anki.Vector.ExternalInterface.SayTextResponse.Parser, new[]{ "Status", "State" }, null, new[]{ typeof(global::Anki.Vector.ExternalInterface.SayTextResponse.Types.UtteranceState) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.StimulationInfo), global::Anki.Vector.ExternalInterface.StimulationInfo.Parser, new[]{ "EmotionEvents", "Value", "Velocity", "Accel", "ValueBeforeEvent", "MinValue", "MaxValue" }, null, null, null),
@@ -499,6 +619,17 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioChunk), global::Anki.Vector.ExternalInterface.AudioChunk.Parser, new[]{ "RobotTimeStamp", "GroupId", "ChunkId", "AudioChunkCount", "SignalPower", "DirectionStrengths", "SourceDirection", "SourceConfidence", "NoiseFloorPower" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioFeedRequest), global::Anki.Vector.ExternalInterface.AudioFeedRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioFeedResponse), global::Anki.Vector.ExternalInterface.AudioFeedResponse.Parser, new[]{ "RobotTimeStamp", "GroupId", "SignalPower", "DirectionStrengths", "SourceDirection", "SourceConfidence", "NoiseFloorPower" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamPrepare), global::Anki.Vector.ExternalInterface.ExternalAudioStreamPrepare.Parser, new[]{ "AudioFrameRate", "AudioVolume" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamChunk), global::Anki.Vector.ExternalInterface.ExternalAudioStreamChunk.Parser, new[]{ "AudioChunkSizeBytes", "AudioChunkSamples" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamComplete), global::Anki.Vector.ExternalInterface.ExternalAudioStreamComplete.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamCancel), global::Anki.Vector.ExternalInterface.ExternalAudioStreamCancel.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamRequest), global::Anki.Vector.ExternalInterface.ExternalAudioStreamRequest.Parser, new[]{ "AudioStreamPrepare", "AudioStreamChunk", "AudioStreamComplete", "AudioStreamCancel" }, new[]{ "AudioRequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackComplete), global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackComplete.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackFailure), global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackFailure.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamBufferOverrun), global::Anki.Vector.ExternalInterface.ExternalAudioStreamBufferOverrun.Parser, new[]{ "AudioSamplesSent", "AudioSamplesPlayed" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ExternalAudioStreamResponse), global::Anki.Vector.ExternalInterface.ExternalAudioStreamResponse.Parser, new[]{ "AudioStreamPlaybackComplete", "AudioStreamBufferOverrun", "AudioStreamPlaybackFailyer" }, new[]{ "AudioResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.MasterVolumeRequest), global::Anki.Vector.ExternalInterface.MasterVolumeRequest.Parser, new[]{ "VolumeLevel" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.MasterVolumeResponse), global::Anki.Vector.ExternalInterface.MasterVolumeResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EnableMarkerDetectionRequest), global::Anki.Vector.ExternalInterface.EnableMarkerDetectionRequest.Parser, new[]{ "Enable" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EnableMarkerDetectionResponse), global::Anki.Vector.ExternalInterface.EnableMarkerDetectionResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EnableFaceDetectionRequest), global::Anki.Vector.ExternalInterface.EnableFaceDetectionRequest.Parser, new[]{ "Enable", "EnableSmileDetection", "EnableExpressionEstimation", "EnableBlinkDetection", "EnableGazeDetection" }, null, null, null),
@@ -510,10 +641,14 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.MirrorModeDisabled), global::Anki.Vector.ExternalInterface.MirrorModeDisabled.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EnableImageStreamingRequest), global::Anki.Vector.ExternalInterface.EnableImageStreamingRequest.Parser, new[]{ "Enable" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EnableImageStreamingResponse), global::Anki.Vector.ExternalInterface.EnableImageStreamingResponse.Parser, new[]{ "Status" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.IsImageStreamingEnabledRequest), global::Anki.Vector.ExternalInterface.IsImageStreamingEnabledRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.IsImageStreamingEnabledResponse), global::Anki.Vector.ExternalInterface.IsImageStreamingEnabledResponse.Parser, new[]{ "IsImageStreamingEnabled" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.VisionModesAutoDisabled), global::Anki.Vector.ExternalInterface.VisionModesAutoDisabled.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ImageChunk), global::Anki.Vector.ExternalInterface.ImageChunk.Parser, new[]{ "FrameTimeStamp", "ImageId", "Width", "Height", "ImageEncoding", "DisplayIndex", "ImageChunkCount", "ChunkId", "Data" }, null, new[]{ typeof(global::Anki.Vector.ExternalInterface.ImageChunk.Types.ImageEncoding) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CameraFeedRequest), global::Anki.Vector.ExternalInterface.CameraFeedRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CameraFeedResponse), global::Anki.Vector.ExternalInterface.CameraFeedResponse.Parser, new[]{ "FrameTimeStamp", "ImageId", "ImageEncoding", "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CaptureSingleImageRequest), global::Anki.Vector.ExternalInterface.CaptureSingleImageRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.CaptureSingleImageResponse), global::Anki.Vector.ExternalInterface.CaptureSingleImageResponse.Parser, new[]{ "Status", "FrameTimeStamp", "ImageId", "ImageEncoding", "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SetEyeColorRequest), global::Anki.Vector.ExternalInterface.SetEyeColorRequest.Parser, new[]{ "Hue", "Saturation" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SetEyeColorResponse), global::Anki.Vector.ExternalInterface.SetEyeColorResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SDKInitializationRequest), global::Anki.Vector.ExternalInterface.SDKInitializationRequest.Parser, new[]{ "SdkModuleVersion", "PythonVersion", "PythonImplementation", "OsVersion", "CpuVersion" }, null, null, null),
@@ -599,17 +734,20 @@ namespace Anki.Vector.ExternalInterface {
   public enum AlignmentType {
     [pbr::OriginalName("ALIGNMENT_TYPE_UNKNOWN")] Unknown = 0,
     /// <summary>
-    /// Fingers aligned with object
+    /// Align the tips of the lift fingers with the target object
     /// </summary>
     [pbr::OriginalName("ALIGNMENT_TYPE_LIFT_FINGER")] LiftFinger = 1,
     /// <summary>
-    /// Lift plate aligned with object
+    /// Align the flat part of the lift with the object (useful for getting the fingers in the cube's grooves)
     /// </summary>
     [pbr::OriginalName("ALIGNMENT_TYPE_LIFT_PLATE")] LiftPlate = 2,
     /// <summary>
-    /// Front of body aligned with object
+    /// Align the front of Vector's body (useful for when the lift is up)
     /// </summary>
     [pbr::OriginalName("ALIGNMENT_TYPE_BODY")] Body = 3,
+    /// <summary>
+    /// For use with distanceFromMarker parameter
+    /// </summary>
     [pbr::OriginalName("ALIGNMENT_TYPE_CUSTOM")] Custom = 4,
   }
 
@@ -674,6 +812,14 @@ namespace Anki.Vector.ExternalInterface {
     /// multi-microphone non-beamforming - best for voice detection programs
     /// </summary>
     [pbr::OriginalName("AUDIO_VOICE_DETECT_MODE")] AudioVoiceDetectMode = 4,
+  }
+
+  public enum MasterVolumeLevel {
+    [pbr::OriginalName("VOLUME_LOW")] VolumeLow = 0,
+    [pbr::OriginalName("VOLUME_MEDIUM_LOW")] VolumeMediumLow = 1,
+    [pbr::OriginalName("VOLUME_MEDIUM")] VolumeMedium = 2,
+    [pbr::OriginalName("VOLUME_MEDIUM_HIGH")] VolumeMediumHigh = 3,
+    [pbr::OriginalName("VOLUME_HIGH")] VolumeHigh = 4,
   }
 
   #endregion
@@ -784,6 +930,144 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// An animation trigger object.
+  /// </summary>
+  public sealed partial class AnimationTrigger : pb::IMessage<AnimationTrigger> {
+    private static readonly pb::MessageParser<AnimationTrigger> _parser = new pb::MessageParser<AnimationTrigger>(() => new AnimationTrigger());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AnimationTrigger> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AnimationTrigger() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AnimationTrigger(AnimationTrigger other) : this() {
+      name_ = other.name_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AnimationTrigger Clone() {
+      return new AnimationTrigger(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    /// <summary>
+    /// The name of a given animation trigger.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AnimationTrigger);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AnimationTrigger other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AnimationTrigger other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// An animation object.
+  /// </summary>
   public sealed partial class Animation : pb::IMessage<Animation> {
     private static readonly pb::MessageParser<Animation> _parser = new pb::MessageParser<Animation>(() => new Animation());
     private pb::UnknownFieldSet _unknownFields;
@@ -792,7 +1076,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -821,6 +1105,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 1;
     private string name_ = "";
+    /// <summary>
+    /// The name of a given animation.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
       get { return name_; }
@@ -913,6 +1200,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See the DriveWheels rpc for more details.
+  /// </summary>
   public sealed partial class DriveWheelsRequest : pb::IMessage<DriveWheelsRequest> {
     private static readonly pb::MessageParser<DriveWheelsRequest> _parser = new pb::MessageParser<DriveWheelsRequest>(() => new DriveWheelsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -921,7 +1211,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1126,6 +1416,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See the DriveWheels rpc for more details.
+  /// </summary>
   public sealed partial class DriveWheelsResponse : pb::IMessage<DriveWheelsResponse> {
     private static readonly pb::MessageParser<DriveWheelsResponse> _parser = new pb::MessageParser<DriveWheelsResponse>(() => new DriveWheelsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -1134,7 +1427,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1163,6 +1456,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
       get { return status_; }
@@ -1261,6 +1557,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See the MoveHead rpc for more details.
+  /// </summary>
   public sealed partial class MoveHeadRequest : pb::IMessage<MoveHeadRequest> {
     private static readonly pb::MessageParser<MoveHeadRequest> _parser = new pb::MessageParser<MoveHeadRequest>(() => new MoveHeadRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -1269,7 +1568,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1390,6 +1689,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See the MoveHead rpc for more details.
+  /// </summary>
   public sealed partial class MoveHeadResponse : pb::IMessage<MoveHeadResponse> {
     private static readonly pb::MessageParser<MoveHeadResponse> _parser = new pb::MessageParser<MoveHeadResponse>(() => new MoveHeadResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -1398,7 +1700,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1427,6 +1729,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
       get { return status_; }
@@ -1525,6 +1830,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See the MoveLift rpc for more details.
+  /// </summary>
   public sealed partial class MoveLiftRequest : pb::IMessage<MoveLiftRequest> {
     private static readonly pb::MessageParser<MoveLiftRequest> _parser = new pb::MessageParser<MoveLiftRequest>(() => new MoveLiftRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -1533,7 +1841,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1654,6 +1962,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See the MoveLift rpc for more details.
+  /// </summary>
   public sealed partial class MoveLiftResponse : pb::IMessage<MoveLiftResponse> {
     private static readonly pb::MessageParser<MoveLiftResponse> _parser = new pb::MessageParser<MoveLiftResponse>(() => new MoveLiftResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -1662,7 +1973,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1691,6 +2002,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
       get { return status_; }
@@ -1789,6 +2103,547 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See the StopAllMotors rpc for more details.
+  /// </summary>
+  public sealed partial class StopAllMotorsRequest : pb::IMessage<StopAllMotorsRequest> {
+    private static readonly pb::MessageParser<StopAllMotorsRequest> _parser = new pb::MessageParser<StopAllMotorsRequest>(() => new StopAllMotorsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StopAllMotorsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StopAllMotorsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StopAllMotorsRequest(StopAllMotorsRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StopAllMotorsRequest Clone() {
+      return new StopAllMotorsRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StopAllMotorsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StopAllMotorsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StopAllMotorsRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// See the StopAllMotors rpc for more details.
+  /// </summary>
+  public sealed partial class StopAllMotorsResponse : pb::IMessage<StopAllMotorsResponse> {
+    private static readonly pb::MessageParser<StopAllMotorsResponse> _parser = new pb::MessageParser<StopAllMotorsResponse>(() => new StopAllMotorsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StopAllMotorsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StopAllMotorsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StopAllMotorsResponse(StopAllMotorsResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StopAllMotorsResponse Clone() {
+      return new StopAllMotorsResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StopAllMotorsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StopAllMotorsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StopAllMotorsResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// See PlayAnimationTrigger rpc for more details.
+  /// </summary>
+  public sealed partial class PlayAnimationTriggerRequest : pb::IMessage<PlayAnimationTriggerRequest> {
+    private static readonly pb::MessageParser<PlayAnimationTriggerRequest> _parser = new pb::MessageParser<PlayAnimationTriggerRequest>(() => new PlayAnimationTriggerRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PlayAnimationTriggerRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlayAnimationTriggerRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlayAnimationTriggerRequest(PlayAnimationTriggerRequest other) : this() {
+      animationTrigger_ = other.animationTrigger_ != null ? other.animationTrigger_.Clone() : null;
+      loops_ = other.loops_;
+      useLiftSafe_ = other.useLiftSafe_;
+      ignoreBodyTrack_ = other.ignoreBodyTrack_;
+      ignoreHeadTrack_ = other.ignoreHeadTrack_;
+      ignoreLiftTrack_ = other.ignoreLiftTrack_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlayAnimationTriggerRequest Clone() {
+      return new PlayAnimationTriggerRequest(this);
+    }
+
+    /// <summary>Field number for the "animation_trigger" field.</summary>
+    public const int AnimationTriggerFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.AnimationTrigger animationTrigger_;
+    /// <summary>
+    /// The animation trigger to play.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.AnimationTrigger AnimationTrigger {
+      get { return animationTrigger_; }
+      set {
+        animationTrigger_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "loops" field.</summary>
+    public const int LoopsFieldNumber = 2;
+    private uint loops_;
+    /// <summary>
+    /// The number of times to play the animation in a row.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Loops {
+      get { return loops_; }
+      set {
+        loops_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_lift_safe" field.</summary>
+    public const int UseLiftSafeFieldNumber = 3;
+    private bool useLiftSafe_;
+    /// <summary>
+    /// Automatically ignore the lift track if Vector is currently carrying an object.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UseLiftSafe {
+      get { return useLiftSafe_; }
+      set {
+        useLiftSafe_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ignore_body_track" field.</summary>
+    public const int IgnoreBodyTrackFieldNumber = 4;
+    private bool ignoreBodyTrack_;
+    /// <summary>
+    /// Ignore any movement of Vector's body when playing the animation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IgnoreBodyTrack {
+      get { return ignoreBodyTrack_; }
+      set {
+        ignoreBodyTrack_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ignore_head_track" field.</summary>
+    public const int IgnoreHeadTrackFieldNumber = 5;
+    private bool ignoreHeadTrack_;
+    /// <summary>
+    /// Ignore any movement of Vector's head when playing the animation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IgnoreHeadTrack {
+      get { return ignoreHeadTrack_; }
+      set {
+        ignoreHeadTrack_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ignore_lift_track" field.</summary>
+    public const int IgnoreLiftTrackFieldNumber = 6;
+    private bool ignoreLiftTrack_;
+    /// <summary>
+    /// Ignore any movement of Vector's lift when playing the animation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IgnoreLiftTrack {
+      get { return ignoreLiftTrack_; }
+      set {
+        ignoreLiftTrack_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PlayAnimationTriggerRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PlayAnimationTriggerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(AnimationTrigger, other.AnimationTrigger)) return false;
+      if (Loops != other.Loops) return false;
+      if (UseLiftSafe != other.UseLiftSafe) return false;
+      if (IgnoreBodyTrack != other.IgnoreBodyTrack) return false;
+      if (IgnoreHeadTrack != other.IgnoreHeadTrack) return false;
+      if (IgnoreLiftTrack != other.IgnoreLiftTrack) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (animationTrigger_ != null) hash ^= AnimationTrigger.GetHashCode();
+      if (Loops != 0) hash ^= Loops.GetHashCode();
+      if (UseLiftSafe != false) hash ^= UseLiftSafe.GetHashCode();
+      if (IgnoreBodyTrack != false) hash ^= IgnoreBodyTrack.GetHashCode();
+      if (IgnoreHeadTrack != false) hash ^= IgnoreHeadTrack.GetHashCode();
+      if (IgnoreLiftTrack != false) hash ^= IgnoreLiftTrack.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (animationTrigger_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AnimationTrigger);
+      }
+      if (Loops != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Loops);
+      }
+      if (UseLiftSafe != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(UseLiftSafe);
+      }
+      if (IgnoreBodyTrack != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IgnoreBodyTrack);
+      }
+      if (IgnoreHeadTrack != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IgnoreHeadTrack);
+      }
+      if (IgnoreLiftTrack != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(IgnoreLiftTrack);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (animationTrigger_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AnimationTrigger);
+      }
+      if (Loops != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Loops);
+      }
+      if (UseLiftSafe != false) {
+        size += 1 + 1;
+      }
+      if (IgnoreBodyTrack != false) {
+        size += 1 + 1;
+      }
+      if (IgnoreHeadTrack != false) {
+        size += 1 + 1;
+      }
+      if (IgnoreLiftTrack != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PlayAnimationTriggerRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.animationTrigger_ != null) {
+        if (animationTrigger_ == null) {
+          animationTrigger_ = new global::Anki.Vector.ExternalInterface.AnimationTrigger();
+        }
+        AnimationTrigger.MergeFrom(other.AnimationTrigger);
+      }
+      if (other.Loops != 0) {
+        Loops = other.Loops;
+      }
+      if (other.UseLiftSafe != false) {
+        UseLiftSafe = other.UseLiftSafe;
+      }
+      if (other.IgnoreBodyTrack != false) {
+        IgnoreBodyTrack = other.IgnoreBodyTrack;
+      }
+      if (other.IgnoreHeadTrack != false) {
+        IgnoreHeadTrack = other.IgnoreHeadTrack;
+      }
+      if (other.IgnoreLiftTrack != false) {
+        IgnoreLiftTrack = other.IgnoreLiftTrack;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (animationTrigger_ == null) {
+              animationTrigger_ = new global::Anki.Vector.ExternalInterface.AnimationTrigger();
+            }
+            input.ReadMessage(animationTrigger_);
+            break;
+          }
+          case 16: {
+            Loops = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            UseLiftSafe = input.ReadBool();
+            break;
+          }
+          case 32: {
+            IgnoreBodyTrack = input.ReadBool();
+            break;
+          }
+          case 40: {
+            IgnoreHeadTrack = input.ReadBool();
+            break;
+          }
+          case 48: {
+            IgnoreLiftTrack = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// See PlayAnimation rpc for more details.
+  /// </summary>
   public sealed partial class PlayAnimationRequest : pb::IMessage<PlayAnimationRequest> {
     private static readonly pb::MessageParser<PlayAnimationRequest> _parser = new pb::MessageParser<PlayAnimationRequest>(() => new PlayAnimationRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -1797,7 +2652,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1830,6 +2685,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "animation" field.</summary>
     public const int AnimationFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.Animation animation_;
+    /// <summary>
+    /// The animation to play.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.Animation Animation {
       get { return animation_; }
@@ -1841,6 +2699,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "loops" field.</summary>
     public const int LoopsFieldNumber = 2;
     private uint loops_;
+    /// <summary>
+    /// The number of times to play the animation in a row.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Loops {
       get { return loops_; }
@@ -1852,6 +2713,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "ignore_body_track" field.</summary>
     public const int IgnoreBodyTrackFieldNumber = 3;
     private bool ignoreBodyTrack_;
+    /// <summary>
+    /// Ignore any movement of Vector's body in the given animation.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IgnoreBodyTrack {
       get { return ignoreBodyTrack_; }
@@ -1863,6 +2727,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "ignore_head_track" field.</summary>
     public const int IgnoreHeadTrackFieldNumber = 4;
     private bool ignoreHeadTrack_;
+    /// <summary>
+    /// Ignore any movement of Vector's head in the given animation.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IgnoreHeadTrack {
       get { return ignoreHeadTrack_; }
@@ -1874,6 +2741,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "ignore_lift_track" field.</summary>
     public const int IgnoreLiftTrackFieldNumber = 5;
     private bool ignoreLiftTrack_;
+    /// <summary>
+    /// Ignore any movement of Vector's lift in the given animation.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IgnoreLiftTrack {
       get { return ignoreLiftTrack_; }
@@ -2036,6 +2906,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See PlayAnimation rpc for more details.
+  /// </summary>
   public sealed partial class PlayAnimationResponse : pb::IMessage<PlayAnimationResponse> {
     private static readonly pb::MessageParser<PlayAnimationResponse> _parser = new pb::MessageParser<PlayAnimationResponse>(() => new PlayAnimationResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -2044,7 +2917,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2063,6 +2936,7 @@ namespace Anki.Vector.ExternalInterface {
     public PlayAnimationResponse(PlayAnimationResponse other) : this() {
       status_ = other.status_ != null ? other.status_.Clone() : null;
       result_ = other.result_;
+      animation_ = other.animation_ != null ? other.animation_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2074,6 +2948,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
       get { return status_; }
@@ -2085,11 +2962,28 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 2;
     private global::Anki.Vector.ExternalInterface.BehaviorResults result_ = 0;
+    /// <summary>
+    /// Information on whether the animation played successfully.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.BehaviorResults Result {
       get { return result_; }
       set {
         result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "animation" field.</summary>
+    public const int AnimationFieldNumber = 3;
+    private global::Anki.Vector.ExternalInterface.Animation animation_;
+    /// <summary>
+    /// The animation that the robot executed.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.Animation Animation {
+      get { return animation_; }
+      set {
+        animation_ = value;
       }
     }
 
@@ -2108,6 +3002,7 @@ namespace Anki.Vector.ExternalInterface {
       }
       if (!object.Equals(Status, other.Status)) return false;
       if (Result != other.Result) return false;
+      if (!object.Equals(Animation, other.Animation)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2116,6 +3011,7 @@ namespace Anki.Vector.ExternalInterface {
       int hash = 1;
       if (status_ != null) hash ^= Status.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
+      if (animation_ != null) hash ^= Animation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2137,6 +3033,10 @@ namespace Anki.Vector.ExternalInterface {
         output.WriteRawTag(16);
         output.WriteEnum((int) Result);
       }
+      if (animation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Animation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2150,6 +3050,9 @@ namespace Anki.Vector.ExternalInterface {
       }
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (animation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Animation);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2170,6 +3073,12 @@ namespace Anki.Vector.ExternalInterface {
       }
       if (other.Result != 0) {
         Result = other.Result;
+      }
+      if (other.animation_ != null) {
+        if (animation_ == null) {
+          animation_ = new global::Anki.Vector.ExternalInterface.Animation();
+        }
+        Animation.MergeFrom(other.Animation);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2193,12 +3102,22 @@ namespace Anki.Vector.ExternalInterface {
             result_ = (global::Anki.Vector.ExternalInterface.BehaviorResults) input.ReadEnum();
             break;
           }
+          case 26: {
+            if (animation_ == null) {
+              animation_ = new global::Anki.Vector.ExternalInterface.Animation();
+            }
+            input.ReadMessage(animation_);
+            break;
+          }
         }
       }
     }
 
   }
 
+  /// <summary>
+  /// See ListAnimations rpc for more details.
+  /// </summary>
   public sealed partial class ListAnimationsRequest : pb::IMessage<ListAnimationsRequest> {
     private static readonly pb::MessageParser<ListAnimationsRequest> _parser = new pb::MessageParser<ListAnimationsRequest>(() => new ListAnimationsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2207,7 +3126,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2300,6 +3219,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See ListAnimations rpc for more details.
+  /// </summary>
   public sealed partial class ListAnimationsResponse : pb::IMessage<ListAnimationsResponse> {
     private static readonly pb::MessageParser<ListAnimationsResponse> _parser = new pb::MessageParser<ListAnimationsResponse>(() => new ListAnimationsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -2308,7 +3230,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2338,6 +3260,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
       get { return status_; }
@@ -2351,6 +3276,9 @@ namespace Anki.Vector.ExternalInterface {
     private static readonly pb::FieldCodec<global::Anki.Vector.ExternalInterface.Animation> _repeated_animationNames_codec
         = pb::FieldCodec.ForMessage(18, global::Anki.Vector.ExternalInterface.Animation.Parser);
     private readonly pbc::RepeatedField<global::Anki.Vector.ExternalInterface.Animation> animationNames_ = new pbc::RepeatedField<global::Anki.Vector.ExternalInterface.Animation>();
+    /// <summary>
+    /// The animations that Vector knows.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Anki.Vector.ExternalInterface.Animation> AnimationNames {
       get { return animationNames_; }
@@ -2455,6 +3383,277 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See ListAnimationTriggers rpc for more details.
+  /// </summary>
+  public sealed partial class ListAnimationTriggersRequest : pb::IMessage<ListAnimationTriggersRequest> {
+    private static readonly pb::MessageParser<ListAnimationTriggersRequest> _parser = new pb::MessageParser<ListAnimationTriggersRequest>(() => new ListAnimationTriggersRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ListAnimationTriggersRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAnimationTriggersRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAnimationTriggersRequest(ListAnimationTriggersRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAnimationTriggersRequest Clone() {
+      return new ListAnimationTriggersRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ListAnimationTriggersRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ListAnimationTriggersRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ListAnimationTriggersRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// See ListAnimationTriggers rpc for more details.
+  /// </summary>
+  public sealed partial class ListAnimationTriggersResponse : pb::IMessage<ListAnimationTriggersResponse> {
+    private static readonly pb::MessageParser<ListAnimationTriggersResponse> _parser = new pb::MessageParser<ListAnimationTriggersResponse>(() => new ListAnimationTriggersResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ListAnimationTriggersResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAnimationTriggersResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAnimationTriggersResponse(ListAnimationTriggersResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      animationTriggerNames_ = other.animationTriggerNames_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAnimationTriggersResponse Clone() {
+      return new ListAnimationTriggersResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "animation_trigger_names" field.</summary>
+    public const int AnimationTriggerNamesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Anki.Vector.ExternalInterface.AnimationTrigger> _repeated_animationTriggerNames_codec
+        = pb::FieldCodec.ForMessage(18, global::Anki.Vector.ExternalInterface.AnimationTrigger.Parser);
+    private readonly pbc::RepeatedField<global::Anki.Vector.ExternalInterface.AnimationTrigger> animationTriggerNames_ = new pbc::RepeatedField<global::Anki.Vector.ExternalInterface.AnimationTrigger>();
+    /// <summary>
+    /// The animation triggers that Vector knows.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Anki.Vector.ExternalInterface.AnimationTrigger> AnimationTriggerNames {
+      get { return animationTriggerNames_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ListAnimationTriggersResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ListAnimationTriggersResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if(!animationTriggerNames_.Equals(other.animationTriggerNames_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      hash ^= animationTriggerNames_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      animationTriggerNames_.WriteTo(output, _repeated_animationTriggerNames_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      size += animationTriggerNames_.CalculateSize(_repeated_animationTriggerNames_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ListAnimationTriggersResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      animationTriggerNames_.Add(other.animationTriggerNames_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 18: {
+            animationTriggerNames_.AddEntriesFrom(input, _repeated_animationTriggerNames_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// See DisplayFaceImageRGB rpc for more details.
+  /// </summary>
   public sealed partial class DisplayFaceImageRGBRequest : pb::IMessage<DisplayFaceImageRGBRequest> {
     private static readonly pb::MessageParser<DisplayFaceImageRGBRequest> _parser = new pb::MessageParser<DisplayFaceImageRGBRequest>(() => new DisplayFaceImageRGBRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2463,7 +3662,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2494,6 +3693,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "face_data" field.</summary>
     public const int FaceDataFieldNumber = 1;
     private pb::ByteString faceData_ = pb::ByteString.Empty;
+    /// <summary>
+    /// The image to render.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString FaceData {
       get { return faceData_; }
@@ -2505,6 +3707,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "duration_ms" field.</summary>
     public const int DurationMsFieldNumber = 2;
     private uint durationMs_;
+    /// <summary>
+    /// How long to display the image on the face.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint DurationMs {
       get { return durationMs_; }
@@ -2516,6 +3721,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "interrupt_running" field.</summary>
     public const int InterruptRunningFieldNumber = 3;
     private bool interruptRunning_;
+    /// <summary>
+    /// If this image should overwrite any current images on the face.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool InterruptRunning {
       get { return interruptRunning_; }
@@ -2640,6 +3848,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// See DisplayFaceImageRGB rpc for more details.
+  /// </summary>
   public sealed partial class DisplayFaceImageRGBResponse : pb::IMessage<DisplayFaceImageRGBResponse> {
     private static readonly pb::MessageParser<DisplayFaceImageRGBResponse> _parser = new pb::MessageParser<DisplayFaceImageRGBResponse>(() => new DisplayFaceImageRGBResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -2648,7 +3859,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2677,6 +3888,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
       get { return status_; }
@@ -2783,7 +3997,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2884,7 +4098,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2985,7 +4199,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3228,7 +4442,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3432,7 +4646,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3595,7 +4809,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3921,6 +5135,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// All values are in mm/s^2.
+  /// </summary>
   public sealed partial class AccelData : pb::IMessage<AccelData> {
     private static readonly pb::MessageParser<AccelData> _parser = new pb::MessageParser<AccelData>(() => new AccelData());
     private pb::UnknownFieldSet _unknownFields;
@@ -3929,7 +5146,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3960,9 +5177,6 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "x" field.</summary>
     public const int XFieldNumber = 1;
     private float x_;
-    /// <summary>
-    /// mm/s^2
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float X {
       get { return x_; }
@@ -4109,6 +5323,9 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  /// <summary>
+  /// All values are in rad/s.
+  /// </summary>
   public sealed partial class GyroData : pb::IMessage<GyroData> {
     private static readonly pb::MessageParser<GyroData> _parser = new pb::MessageParser<GyroData>(() => new GyroData());
     private pb::UnknownFieldSet _unknownFields;
@@ -4117,7 +5334,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4148,9 +5365,6 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "x" field.</summary>
     public const int XFieldNumber = 1;
     private float x_;
-    /// <summary>
-    /// rad/s
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float X {
       get { return x_; }
@@ -4305,7 +5519,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4324,10 +5538,9 @@ namespace Anki.Vector.ExternalInterface {
     public ProxData(ProxData other) : this() {
       distanceMm_ = other.distanceMm_;
       signalQuality_ = other.signalQuality_;
-      isInValidRange_ = other.isInValidRange_;
-      isValidSignalQuality_ = other.isValidSignalQuality_;
+      unobstructed_ = other.unobstructed_;
+      foundObject_ = other.foundObject_;
       isLiftInFov_ = other.isLiftInFov_;
-      isTooPitched_ = other.isTooPitched_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4358,31 +5571,31 @@ namespace Anki.Vector.ExternalInterface {
       }
     }
 
-    /// <summary>Field number for the "is_in_valid_range" field.</summary>
-    public const int IsInValidRangeFieldNumber = 3;
-    private bool isInValidRange_;
+    /// <summary>Field number for the "unobstructed" field.</summary>
+    public const int UnobstructedFieldNumber = 3;
+    private bool unobstructed_;
     /// <summary>
-    /// Distance is within valid range
+    /// The sensor has confirmed it has not detected anything up to its max range
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsInValidRange {
-      get { return isInValidRange_; }
+    public bool Unobstructed {
+      get { return unobstructed_; }
       set {
-        isInValidRange_ = value;
+        unobstructed_ = value;
       }
     }
 
-    /// <summary>Field number for the "is_valid_signal_quality" field.</summary>
-    public const int IsValidSignalQualityFieldNumber = 4;
-    private bool isValidSignalQuality_;
+    /// <summary>Field number for the "found_object" field.</summary>
+    public const int FoundObjectFieldNumber = 4;
+    private bool foundObject_;
     /// <summary>
-    /// Signal quality is sufficiently strong to trust that something was detected
+    /// The sensor detected an object in the valid operating range
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsValidSignalQuality {
-      get { return isValidSignalQuality_; }
+    public bool FoundObject {
+      get { return foundObject_; }
       set {
-        isValidSignalQuality_ = value;
+        foundObject_ = value;
       }
     }
 
@@ -4397,20 +5610,6 @@ namespace Anki.Vector.ExternalInterface {
       get { return isLiftInFov_; }
       set {
         isLiftInFov_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_too_pitched" field.</summary>
-    public const int IsTooPitchedFieldNumber = 6;
-    private bool isTooPitched_;
-    /// <summary>
-    /// Robot is too far pitched up or down
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsTooPitched {
-      get { return isTooPitched_; }
-      set {
-        isTooPitched_ = value;
       }
     }
 
@@ -4429,10 +5628,9 @@ namespace Anki.Vector.ExternalInterface {
       }
       if (DistanceMm != other.DistanceMm) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SignalQuality, other.SignalQuality)) return false;
-      if (IsInValidRange != other.IsInValidRange) return false;
-      if (IsValidSignalQuality != other.IsValidSignalQuality) return false;
+      if (Unobstructed != other.Unobstructed) return false;
+      if (FoundObject != other.FoundObject) return false;
       if (IsLiftInFov != other.IsLiftInFov) return false;
-      if (IsTooPitched != other.IsTooPitched) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4441,10 +5639,9 @@ namespace Anki.Vector.ExternalInterface {
       int hash = 1;
       if (DistanceMm != 0) hash ^= DistanceMm.GetHashCode();
       if (SignalQuality != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SignalQuality);
-      if (IsInValidRange != false) hash ^= IsInValidRange.GetHashCode();
-      if (IsValidSignalQuality != false) hash ^= IsValidSignalQuality.GetHashCode();
+      if (Unobstructed != false) hash ^= Unobstructed.GetHashCode();
+      if (FoundObject != false) hash ^= FoundObject.GetHashCode();
       if (IsLiftInFov != false) hash ^= IsLiftInFov.GetHashCode();
-      if (IsTooPitched != false) hash ^= IsTooPitched.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4466,21 +5663,17 @@ namespace Anki.Vector.ExternalInterface {
         output.WriteRawTag(21);
         output.WriteFloat(SignalQuality);
       }
-      if (IsInValidRange != false) {
+      if (Unobstructed != false) {
         output.WriteRawTag(24);
-        output.WriteBool(IsInValidRange);
+        output.WriteBool(Unobstructed);
       }
-      if (IsValidSignalQuality != false) {
+      if (FoundObject != false) {
         output.WriteRawTag(32);
-        output.WriteBool(IsValidSignalQuality);
+        output.WriteBool(FoundObject);
       }
       if (IsLiftInFov != false) {
         output.WriteRawTag(40);
         output.WriteBool(IsLiftInFov);
-      }
-      if (IsTooPitched != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(IsTooPitched);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4496,16 +5689,13 @@ namespace Anki.Vector.ExternalInterface {
       if (SignalQuality != 0F) {
         size += 1 + 4;
       }
-      if (IsInValidRange != false) {
+      if (Unobstructed != false) {
         size += 1 + 1;
       }
-      if (IsValidSignalQuality != false) {
+      if (FoundObject != false) {
         size += 1 + 1;
       }
       if (IsLiftInFov != false) {
-        size += 1 + 1;
-      }
-      if (IsTooPitched != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -4525,17 +5715,14 @@ namespace Anki.Vector.ExternalInterface {
       if (other.SignalQuality != 0F) {
         SignalQuality = other.SignalQuality;
       }
-      if (other.IsInValidRange != false) {
-        IsInValidRange = other.IsInValidRange;
+      if (other.Unobstructed != false) {
+        Unobstructed = other.Unobstructed;
       }
-      if (other.IsValidSignalQuality != false) {
-        IsValidSignalQuality = other.IsValidSignalQuality;
+      if (other.FoundObject != false) {
+        FoundObject = other.FoundObject;
       }
       if (other.IsLiftInFov != false) {
         IsLiftInFov = other.IsLiftInFov;
-      }
-      if (other.IsTooPitched != false) {
-        IsTooPitched = other.IsTooPitched;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4557,19 +5744,15 @@ namespace Anki.Vector.ExternalInterface {
             break;
           }
           case 24: {
-            IsInValidRange = input.ReadBool();
+            Unobstructed = input.ReadBool();
             break;
           }
           case 32: {
-            IsValidSignalQuality = input.ReadBool();
+            FoundObject = input.ReadBool();
             break;
           }
           case 40: {
             IsLiftInFov = input.ReadBool();
-            break;
-          }
-          case 48: {
-            IsTooPitched = input.ReadBool();
             break;
           }
         }
@@ -4586,7 +5769,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4749,7 +5932,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5359,7 +6542,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5516,7 +6699,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5729,7 +6912,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6131,7 +7314,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6280,399 +7463,6 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
-  public sealed partial class AppIntentRequest : pb::IMessage<AppIntentRequest> {
-    private static readonly pb::MessageParser<AppIntentRequest> _parser = new pb::MessageParser<AppIntentRequest>(() => new AppIntentRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AppIntentRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[29]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppIntentRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppIntentRequest(AppIntentRequest other) : this() {
-      intent_ = other.intent_;
-      param_ = other.param_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppIntentRequest Clone() {
-      return new AppIntentRequest(this);
-    }
-
-    /// <summary>Field number for the "intent" field.</summary>
-    public const int IntentFieldNumber = 1;
-    private string intent_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Intent {
-      get { return intent_; }
-      set {
-        intent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "param" field.</summary>
-    public const int ParamFieldNumber = 2;
-    private string param_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Param {
-      get { return param_; }
-      set {
-        param_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as AppIntentRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AppIntentRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Intent != other.Intent) return false;
-      if (Param != other.Param) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Intent.Length != 0) hash ^= Intent.GetHashCode();
-      if (Param.Length != 0) hash ^= Param.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Intent.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Intent);
-      }
-      if (Param.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Param);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Intent.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Intent);
-      }
-      if (Param.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Param);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AppIntentRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Intent.Length != 0) {
-        Intent = other.Intent;
-      }
-      if (other.Param.Length != 0) {
-        Param = other.Param;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Intent = input.ReadString();
-            break;
-          }
-          case 18: {
-            Param = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class AppDisconnected : pb::IMessage<AppDisconnected> {
-    private static readonly pb::MessageParser<AppDisconnected> _parser = new pb::MessageParser<AppDisconnected>(() => new AppDisconnected());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AppDisconnected> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[30]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppDisconnected() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppDisconnected(AppDisconnected other) : this() {
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppDisconnected Clone() {
-      return new AppDisconnected(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as AppDisconnected);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AppDisconnected other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AppDisconnected other) {
-      if (other == null) {
-        return;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class AppIntentResponse : pb::IMessage<AppIntentResponse> {
-    private static readonly pb::MessageParser<AppIntentResponse> _parser = new pb::MessageParser<AppIntentResponse>(() => new AppIntentResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AppIntentResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[31]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppIntentResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppIntentResponse(AppIntentResponse other) : this() {
-      status_ = other.status_ != null ? other.status_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AppIntentResponse Clone() {
-      return new AppIntentResponse(this);
-    }
-
-    /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 1;
-    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
-      get { return status_; }
-      set {
-        status_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as AppIntentResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AppIntentResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Status, other.Status)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (status_ != null) hash ^= Status.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (status_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Status);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (status_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AppIntentResponse other) {
-      if (other == null) {
-        return;
-      }
-      if (other.status_ != null) {
-        if (status_ == null) {
-          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
-        }
-        Status.MergeFrom(other.Status);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (status_ == null) {
-              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
-            }
-            input.ReadMessage(status_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class FaceEnrollmentCompleted : pb::IMessage<FaceEnrollmentCompleted> {
     private static readonly pb::MessageParser<FaceEnrollmentCompleted> _parser = new pb::MessageParser<FaceEnrollmentCompleted>(() => new FaceEnrollmentCompleted());
     private pb::UnknownFieldSet _unknownFields;
@@ -6681,7 +7471,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6866,7 +7656,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[33]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[36]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6967,7 +7757,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[34]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[37]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7102,7 +7892,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[35]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7203,7 +7993,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[36]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7472,7 +8262,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[37]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7629,7 +8419,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[38]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[41]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7784,7 +8574,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[39]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[42]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7969,7 +8759,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[40]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[43]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8104,7 +8894,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[41]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[44]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8233,7 +9023,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[42]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[45]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8368,7 +9158,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[43]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[46]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8469,7 +9259,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[44]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[47]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8604,7 +9394,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[45]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[48]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8888,7 +9678,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[46]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[49]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9023,7 +9813,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[47]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[50]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9124,7 +9914,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[48]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[51]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9287,7 +10077,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[49]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[52]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9388,7 +10178,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[50]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[53]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9543,6 +10333,801 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  public sealed partial class FindFacesRequest : pb::IMessage<FindFacesRequest> {
+    private static readonly pb::MessageParser<FindFacesRequest> _parser = new pb::MessageParser<FindFacesRequest>(() => new FindFacesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FindFacesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[54]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FindFacesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FindFacesRequest(FindFacesRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FindFacesRequest Clone() {
+      return new FindFacesRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FindFacesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FindFacesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FindFacesRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class FindFacesResponse : pb::IMessage<FindFacesResponse> {
+    private static readonly pb::MessageParser<FindFacesResponse> _parser = new pb::MessageParser<FindFacesResponse>(() => new FindFacesResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FindFacesResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[55]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FindFacesResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FindFacesResponse(FindFacesResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FindFacesResponse Clone() {
+      return new FindFacesResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.BehaviorResults result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.BehaviorResults Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FindFacesResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FindFacesResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (Result != other.Result) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (Result != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FindFacesResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 16: {
+            result_ = (global::Anki.Vector.ExternalInterface.BehaviorResults) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class LookAroundInPlaceRequest : pb::IMessage<LookAroundInPlaceRequest> {
+    private static readonly pb::MessageParser<LookAroundInPlaceRequest> _parser = new pb::MessageParser<LookAroundInPlaceRequest>(() => new LookAroundInPlaceRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LookAroundInPlaceRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[56]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LookAroundInPlaceRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LookAroundInPlaceRequest(LookAroundInPlaceRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LookAroundInPlaceRequest Clone() {
+      return new LookAroundInPlaceRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LookAroundInPlaceRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LookAroundInPlaceRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LookAroundInPlaceRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class LookAroundInPlaceResponse : pb::IMessage<LookAroundInPlaceResponse> {
+    private static readonly pb::MessageParser<LookAroundInPlaceResponse> _parser = new pb::MessageParser<LookAroundInPlaceResponse>(() => new LookAroundInPlaceResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LookAroundInPlaceResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[57]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LookAroundInPlaceResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LookAroundInPlaceResponse(LookAroundInPlaceResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LookAroundInPlaceResponse Clone() {
+      return new LookAroundInPlaceResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.BehaviorResults result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.BehaviorResults Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LookAroundInPlaceResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LookAroundInPlaceResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (Result != other.Result) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (Result != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LookAroundInPlaceResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 16: {
+            result_ = (global::Anki.Vector.ExternalInterface.BehaviorResults) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///this triggers a Vector Behavior, different from RollObjectRequest which triggers an Action
+  /// </summary>
+  public sealed partial class RollBlockRequest : pb::IMessage<RollBlockRequest> {
+    private static readonly pb::MessageParser<RollBlockRequest> _parser = new pb::MessageParser<RollBlockRequest>(() => new RollBlockRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RollBlockRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[58]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollBlockRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollBlockRequest(RollBlockRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollBlockRequest Clone() {
+      return new RollBlockRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RollBlockRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RollBlockRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RollBlockRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RollBlockResponse : pb::IMessage<RollBlockResponse> {
+    private static readonly pb::MessageParser<RollBlockResponse> _parser = new pb::MessageParser<RollBlockResponse>(() => new RollBlockResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RollBlockResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[59]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollBlockResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollBlockResponse(RollBlockResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollBlockResponse Clone() {
+      return new RollBlockResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.BehaviorResults result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.BehaviorResults Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RollBlockResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RollBlockResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (Result != other.Result) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (Result != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RollBlockResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 16: {
+            result_ = (global::Anki.Vector.ExternalInterface.BehaviorResults) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class WakeWordBegin : pb::IMessage<WakeWordBegin> {
     private static readonly pb::MessageParser<WakeWordBegin> _parser = new pb::MessageParser<WakeWordBegin>(() => new WakeWordBegin());
     private pb::UnknownFieldSet _unknownFields;
@@ -9551,7 +11136,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[51]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[60]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9652,7 +11237,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[52]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[61]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9801,6 +11386,163 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  public sealed partial class UserIntent : pb::IMessage<UserIntent> {
+    private static readonly pb::MessageParser<UserIntent> _parser = new pb::MessageParser<UserIntent>(() => new UserIntent());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserIntent> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[62]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserIntent() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserIntent(UserIntent other) : this() {
+      intentId_ = other.intentId_;
+      jsonData_ = other.jsonData_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserIntent Clone() {
+      return new UserIntent(this);
+    }
+
+    /// <summary>Field number for the "intent_id" field.</summary>
+    public const int IntentIdFieldNumber = 1;
+    private uint intentId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint IntentId {
+      get { return intentId_; }
+      set {
+        intentId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "json_data" field.</summary>
+    public const int JsonDataFieldNumber = 2;
+    private string jsonData_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string JsonData {
+      get { return jsonData_; }
+      set {
+        jsonData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserIntent);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserIntent other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IntentId != other.IntentId) return false;
+      if (JsonData != other.JsonData) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IntentId != 0) hash ^= IntentId.GetHashCode();
+      if (JsonData.Length != 0) hash ^= JsonData.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IntentId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(IntentId);
+      }
+      if (JsonData.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(JsonData);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IntentId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(IntentId);
+      }
+      if (JsonData.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(JsonData);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserIntent other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IntentId != 0) {
+        IntentId = other.IntentId;
+      }
+      if (other.JsonData.Length != 0) {
+        JsonData = other.JsonData;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            IntentId = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            JsonData = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class PhotoInfo : pb::IMessage<PhotoInfo> {
     private static readonly pb::MessageParser<PhotoInfo> _parser = new pb::MessageParser<PhotoInfo>(() => new PhotoInfo());
     private pb::UnknownFieldSet _unknownFields;
@@ -9809,7 +11551,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[53]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10022,7 +11764,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[54]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10123,7 +11865,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[55]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10278,7 +12020,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[56]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10407,7 +12149,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[57]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10564,7 +12306,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[58]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[68]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10755,7 +12497,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[59]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[69]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10884,7 +12626,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[60]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[70]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11041,7 +12783,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[61]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[71]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11232,7 +12974,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[62]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[72]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11361,7 +13103,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[63]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[73]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11524,7 +13266,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[64]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[74]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11657,7 +13399,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[65]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[75]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12059,7 +13801,7 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
-  /// These codes are duplicated from actionResults.clad file and need to be kept in sync
+  /// The possible results of running an action.
   /// </summary>
   public sealed partial class ActionResult : pb::IMessage<ActionResult> {
     private static readonly pb::MessageParser<ActionResult> _parser = new pb::MessageParser<ActionResult>(() => new ActionResult());
@@ -12069,7 +13811,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[66]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[76]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12192,64 +13934,487 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Container for nested types declared in the ActionResult message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
+      /// <summary>
+      /// The possible results of running an action.
+      /// </summary>
       public enum ActionResultCode {
+        /// <summary>
+        /// Action completed successfully.
+        /// </summary>
         [pbr::OriginalName("ACTION_RESULT_SUCCESS")] ActionResultSuccess = 0,
+        /// <summary>
+        /// Action is still running.
+        /// </summary>
         [pbr::OriginalName("ACTION_RESULT_RUNNING")] ActionResultRunning = 16777216,
+        /// <summary>
+        /// Action was cancelled by SDK request
+        /// </summary>
         [pbr::OriginalName("ACTION_RESULT_CANCELLED_WHILE_RUNNING")] ActionResultCancelledWhileRunning = 33554432,
+        /// <summary>
+        /// Initial state of an Action to indicate it has not yet started.
+        /// </summary>
         [pbr::OriginalName("NOT_STARTED")] NotStarted = 33554433,
+        /// <summary>
+        /// Action aborted itself (e.g. had invalid attributes, or a runtime failure).
+        /// </summary>
         [pbr::OriginalName("ABORT")] Abort = 50331648,
+        /// <summary>
+        /// Animation Action aborted itself (e.g. there was an error playing the animation).
+        /// </summary>
         [pbr::OriginalName("ANIM_ABORTED")] AnimAborted = 50331649,
+        /// <summary>
+        /// There was an error related to vision markers.
+        /// </summary>
         [pbr::OriginalName("BAD_MARKER")] BadMarker = 50331650,
+        /// <summary>
+        /// There was a problem related to a subscribed or unsupported message tag
+        /// </summary>
         [pbr::OriginalName("BAD_MESSAGE_TAG")] BadMessageTag = 50331651,
+        /// <summary>
+        /// There was a problem with the Object ID provided (e.g. there is no Object with that ID).
+        /// </summary>
         [pbr::OriginalName("BAD_OBJECT")] BadObject = 50331652,
+        /// <summary>
+        /// There was a problem with the Pose provided.
+        /// </summary>
         [pbr::OriginalName("BAD_POSE")] BadPose = 50331653,
+        /// <summary>
+        /// The SDK-provided tag was bad.
+        /// </summary>
         [pbr::OriginalName("BAD_TAG")] BadTag = 50331654,
+        /// <summary>
+        /// Vector is on the charger but cannot sense the contacts. Charger may be unplugged.
+        /// </summary>
         [pbr::OriginalName("CHARGER_UNPLUGGED_ABORT")] ChargerUnpluggedAbort = 50331655,
         [pbr::OriginalName("CLIFF_ALIGN_FAILED_TIMEOUT")] CliffAlignFailedTimeout = 50331656,
         [pbr::OriginalName("CLIFF_ALIGN_FAILED_NO_TURNING")] CliffAlignFailedNoTurning = 50331657,
         [pbr::OriginalName("CLIFF_ALIGN_FAILED_OVER_TURNING")] CliffAlignFailedOverTurning = 50331658,
         [pbr::OriginalName("CLIFF_ALIGN_FAILED_NO_WHITE")] CliffAlignFailedNoWhite = 50331659,
         [pbr::OriginalName("CLIFF_ALIGN_FAILED_STOPPED")] CliffAlignFailedStopped = 50331660,
+        /// <summary>
+        /// Shouldn't occur outside of factory.
+        /// </summary>
         [pbr::OriginalName("FAILED_SETTING_CALIBRATION")] FailedSettingCalibration = 50331661,
+        /// <summary>
+        /// There was an error following the planned path.
+        /// </summary>
         [pbr::OriginalName("FOLLOWING_PATH_BUT_NOT_TRAVERSING")] FollowingPathButNotTraversing = 50331662,
+        /// <summary>
+        /// The action was interrupted by another Action or Behavior.
+        /// </summary>
         [pbr::OriginalName("INTERRUPTED")] Interrupted = 50331663,
+        /// <summary>
+        /// The robot ended up in an "off treads state" not valid for this action (e.g. the robot was placed on its back while executing a turn).
+        /// </summary>
         [pbr::OriginalName("INVALID_OFF_TREADS_STATE")] InvalidOffTreadsState = 50331664,
+        /// <summary>
+        /// The Up Axis of a carried object doesn't match the desired placement pose.
+        /// </summary>
         [pbr::OriginalName("MISMATCHED_UP_AXIS")] MismatchedUpAxis = 50331665,
+        /// <summary>
+        /// No valid Animation name was found.
+        /// </summary>
         [pbr::OriginalName("NO_ANIM_NAME")] NoAnimName = 50331666,
+        /// <summary>
+        /// An invalid distance value was given.
+        /// </summary>
         [pbr::OriginalName("NO_DISTANCE_SET")] NoDistanceSet = 50331667,
+        /// <summary>
+        /// There was a problem with the Face ID (e.g. Vector doesn't no where it is).
+        /// </summary>
         [pbr::OriginalName("NO_FACE")] NoFace = 50331668,
+        /// <summary>
+        /// No goal pose was set.
+        /// </summary>
         [pbr::OriginalName("NO_GOAL_SET")] NoGoalSet = 50331669,
+        /// <summary>
+        /// No pre-action poses were found (e.g. could not get into position).
+        /// </summary>
         [pbr::OriginalName("NO_PREACTION_POSES")] NoPreactionPoses = 50331670,
+        /// <summary>
+        /// No object is being carried, but the action requires one.
+        /// </summary>
         [pbr::OriginalName("NOT_CARRYING_OBJECT_ABORT")] NotCarryingObjectAbort = 50331671,
+        /// <summary>
+        /// Vector is expected to be on the charger, but is not.
+        /// </summary>
         [pbr::OriginalName("NOT_ON_CHARGER_ABORT")] NotOnChargerAbort = 50331672,
+        /// <summary>
+        /// No sub-action was provided.
+        /// </summary>
         [pbr::OriginalName("NULL_SUBACTION")] NullSubaction = 50331673,
+        /// <summary>
+        /// Vector was unable to plan a path.
+        /// </summary>
         [pbr::OriginalName("PATH_PLANNING_FAILED_ABORT")] PathPlanningFailedAbort = 50331674,
+        /// <summary>
+        /// The object that Vector is attempting to pickup is unexpectedly moving (e.g it is being moved by someone else).
+        /// </summary>
         [pbr::OriginalName("PICKUP_OBJECT_UNEXPECTEDLY_MOVING")] PickupObjectUnexpectedlyMoving = 50331675,
+        /// <summary>
+        /// Shouldn't occur in SDK usage.
+        /// </summary>
         [pbr::OriginalName("SEND_MESSAGE_TO_ROBOT_FAILED")] SendMessageToRobotFailed = 50331676,
+        /// <summary>
+        /// Vector is unexpectedly still carrying an object.
+        /// </summary>
         [pbr::OriginalName("STILL_CARRYING_OBJECT")] StillCarryingObject = 50331677,
+        /// <summary>
+        /// The Action timed out before completing correctly.
+        /// </summary>
         [pbr::OriginalName("TIMEOUT")] Timeout = 50331678,
+        /// <summary>
+        /// One or more movement tracks (Head, Lift, Body, Face, Backpack Lights, Audio) are already being used by another Action.
+        /// </summary>
         [pbr::OriginalName("TRACKS_LOCKED")] TracksLocked = 50331679,
+        /// <summary>
+        /// There was an internal error related to an unexpected type of dock action.
+        /// </summary>
         [pbr::OriginalName("UNEXPECTED_DOCK_ACTION")] UnexpectedDockAction = 50331680,
+        /// <summary>
+        /// Shouldn't occur outside of factory.
+        /// </summary>
         [pbr::OriginalName("UNKNOWN_TOOL_CODE")] UnknownToolCode = 50331681,
+        /// <summary>
+        /// There was a problem in the subclass's update on the robot.
+        /// </summary>
         [pbr::OriginalName("UPDATE_DERIVED_FAILED")] UpdateDerivedFailed = 50331682,
+        /// <summary>
+        /// Vector did not see the expected result (e.g. unable to see cube in the expected position after a related action).
+        /// </summary>
         [pbr::OriginalName("VISUAL_OBSERVATION_FAILED")] VisualObservationFailed = 50331683,
+        /// <summary>
+        /// Action is not permitted on the charger.
+        /// </summary>
         [pbr::OriginalName("SHOULDNT_DRIVE_ON_CHARGER")] ShouldntDriveOnCharger = 50331684,
+        /// <summary>
+        /// The Action failed, but may succeed if retried.
+        /// </summary>
         [pbr::OriginalName("RETRY")] Retry = 67108864,
+        /// <summary>
+        /// Failed to get into position.
+        /// </summary>
         [pbr::OriginalName("DID_NOT_REACH_PREACTION_POSE")] DidNotReachPreactionPose = 67108865,
+        /// <summary>
+        /// Failed to follow the planned path.
+        /// </summary>
         [pbr::OriginalName("FAILED_TRAVERSING_PATH")] FailedTraversingPath = 67108866,
+        /// <summary>
+        /// The previous attempt to pick and place an object failed.
+        /// </summary>
         [pbr::OriginalName("LAST_PICK_AND_PLACE_FAILED")] LastPickAndPlaceFailed = 67108867,
+        /// <summary>
+        /// The required motor isn't moving so the action cannot complete.
+        /// </summary>
         [pbr::OriginalName("MOTOR_STOPPED_MAKING_PROGRESS")] MotorStoppedMakingProgress = 67108868,
+        /// <summary>
+        /// Not carrying an object when it was expected, but may succeed if the action is retried.
+        /// </summary>
         [pbr::OriginalName("NOT_CARRYING_OBJECT_RETRY")] NotCarryingObjectRetry = 67108869,
+        /// <summary>
+        /// Driving onto the charger failed, but may succeed if the action is retried.
+        /// </summary>
         [pbr::OriginalName("NOT_ON_CHARGER_RETRY")] NotOnChargerRetry = 67108870,
+        /// <summary>
+        /// Vector was unable to plan a path, but may succeed if the action is retried.
+        /// </summary>
         [pbr::OriginalName("PATH_PLANNING_FAILED_RETRY")] PathPlanningFailedRetry = 67108871,
+        /// <summary>
+        /// There is no room to place the object at the desired destination.
+        /// </summary>
         [pbr::OriginalName("PLACEMENT_GOAL_NOT_FREE")] PlacementGoalNotFree = 67108872,
+        /// <summary>
+        /// The object that Vector thought he was lifting didn't start moving, so he must have missed.
+        /// </summary>
         [pbr::OriginalName("PICKUP_OBJECT_UNEXPECTEDLY_NOT_MOVING")] PickupObjectUnexpectedlyNotMoving = 67108873,
+        /// <summary>
+        /// Vector failed to drive off the charger.
+        /// </summary>
         [pbr::OriginalName("STILL_ON_CHARGER")] StillOnCharger = 67108874,
+        /// <summary>
+        /// Vector's pitch is at an unexpected angle for the Action.
+        /// </summary>
         [pbr::OriginalName("UNEXPECTED_PITCH_ANGLE")] UnexpectedPitchAngle = 67108875,
       }
 
     }
     #endregion
+
+  }
+
+  /// <summary>
+  /// Cancel a previously-requested action. Action requests include GoToPoseRequest, DockWithCubeRequest, DriveStraightRequest, TurnInPlaceRequest, SetHeadAngleRequest, and SetLiftHeightRequest.
+  /// </summary>
+  public sealed partial class CancelActionByIdTagRequest : pb::IMessage<CancelActionByIdTagRequest> {
+    private static readonly pb::MessageParser<CancelActionByIdTagRequest> _parser = new pb::MessageParser<CancelActionByIdTagRequest>(() => new CancelActionByIdTagRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CancelActionByIdTagRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[77]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CancelActionByIdTagRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CancelActionByIdTagRequest(CancelActionByIdTagRequest other) : this() {
+      idTag_ = other.idTag_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CancelActionByIdTagRequest Clone() {
+      return new CancelActionByIdTagRequest(this);
+    }
+
+    /// <summary>Field number for the "id_tag" field.</summary>
+    public const int IdTagFieldNumber = 1;
+    private uint idTag_;
+    /// <summary>
+    /// Use the id_tag provided to the action request
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint IdTag {
+      get { return idTag_; }
+      set {
+        idTag_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CancelActionByIdTagRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CancelActionByIdTagRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IdTag != other.IdTag) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IdTag != 0) hash ^= IdTag.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IdTag != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(IdTag);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IdTag != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(IdTag);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CancelActionByIdTagRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IdTag != 0) {
+        IdTag = other.IdTag;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            IdTag = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response from the robot to CancelActionByIdTagRequest.
+  /// </summary>
+  public sealed partial class CancelActionByIdTagResponse : pb::IMessage<CancelActionByIdTagResponse> {
+    private static readonly pb::MessageParser<CancelActionByIdTagResponse> _parser = new pb::MessageParser<CancelActionByIdTagResponse>(() => new CancelActionByIdTagResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CancelActionByIdTagResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[78]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CancelActionByIdTagResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CancelActionByIdTagResponse(CancelActionByIdTagResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CancelActionByIdTagResponse Clone() {
+      return new CancelActionByIdTagResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    /// <summary>
+    /// A generic status.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CancelActionByIdTagResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CancelActionByIdTagResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CancelActionByIdTagResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+        }
+      }
+    }
 
   }
 
@@ -12264,7 +14429,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[67]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[79]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12539,7 +14704,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[68]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[80]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12708,7 +14873,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[69]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[81]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13067,7 +15232,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[70]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[82]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13236,7 +15401,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[71]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[83]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13483,7 +15648,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[72]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[84]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13657,7 +15822,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[73]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[85]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13964,7 +16129,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[74]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[86]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14136,7 +16301,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[75]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[87]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14405,7 +16570,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[76]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[88]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14577,7 +16742,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[77]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[89]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14846,7 +17011,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[78]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[90]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15007,15 +17172,18 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
-  public sealed partial class NetworkStats : pb::IMessage<NetworkStats> {
-    private static readonly pb::MessageParser<NetworkStats> _parser = new pb::MessageParser<NetworkStats>(() => new NetworkStats());
+  /// <summary>
+  /// TurnTowardsFace
+  /// </summary>
+  public sealed partial class TurnTowardsFaceRequest : pb::IMessage<TurnTowardsFaceRequest> {
+    private static readonly pb::MessageParser<TurnTowardsFaceRequest> _parser = new pb::MessageParser<TurnTowardsFaceRequest>(() => new TurnTowardsFaceRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<NetworkStats> Parser { get { return _parser; } }
+    public static pb::MessageParser<TurnTowardsFaceRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[79]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[91]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15024,209 +17192,97 @@ namespace Anki.Vector.ExternalInterface {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStats() {
+    public TurnTowardsFaceRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStats(NetworkStats other) : this() {
-      gNetStat1NumConnections_ = other.gNetStat1NumConnections_;
-      gNetStat2LatencyAvg_ = other.gNetStat2LatencyAvg_;
-      gNetStat3LatencySd_ = other.gNetStat3LatencySd_;
-      gNetStat4LatencyMin_ = other.gNetStat4LatencyMin_;
-      gNetStat5LatencyMax_ = other.gNetStat5LatencyMax_;
-      gNetStat6PingArrivedPc_ = other.gNetStat6PingArrivedPc_;
-      gNetStat7ExtQueuedAvgMs_ = other.gNetStat7ExtQueuedAvgMs_;
-      gNetStat8ExtQueuedMinMs_ = other.gNetStat8ExtQueuedMinMs_;
-      gNetStat9ExtQueuedMaxMs_ = other.gNetStat9ExtQueuedMaxMs_;
-      gNetStataQueuedAvgMs_ = other.gNetStataQueuedAvgMs_;
-      gNetStatbQueuedMinMs_ = other.gNetStatbQueuedMinMs_;
-      gNetStatcQueuedMaxMs_ = other.gNetStatcQueuedMaxMs_;
+    public TurnTowardsFaceRequest(TurnTowardsFaceRequest other) : this() {
+      faceId_ = other.faceId_;
+      maxTurnAngleRad_ = other.maxTurnAngleRad_;
+      idTag_ = other.idTag_;
+      numRetries_ = other.numRetries_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStats Clone() {
-      return new NetworkStats(this);
+    public TurnTowardsFaceRequest Clone() {
+      return new TurnTowardsFaceRequest(this);
     }
 
-    /// <summary>Field number for the "g_net_stat1_num_connections" field.</summary>
-    public const int GNetStat1NumConnectionsFieldNumber = 1;
-    private int gNetStat1NumConnections_;
+    /// <summary>Field number for the "face_id" field.</summary>
+    public const int FaceIdFieldNumber = 1;
+    private int faceId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int GNetStat1NumConnections {
-      get { return gNetStat1NumConnections_; }
+    public int FaceId {
+      get { return faceId_; }
       set {
-        gNetStat1NumConnections_ = value;
+        faceId_ = value;
       }
     }
 
-    /// <summary>Field number for the "g_net_stat2_latency_avg" field.</summary>
-    public const int GNetStat2LatencyAvgFieldNumber = 2;
-    private float gNetStat2LatencyAvg_;
+    /// <summary>Field number for the "max_turn_angle_rad" field.</summary>
+    public const int MaxTurnAngleRadFieldNumber = 2;
+    private float maxTurnAngleRad_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat2LatencyAvg {
-      get { return gNetStat2LatencyAvg_; }
+    public float MaxTurnAngleRad {
+      get { return maxTurnAngleRad_; }
       set {
-        gNetStat2LatencyAvg_ = value;
+        maxTurnAngleRad_ = value;
       }
     }
 
-    /// <summary>Field number for the "g_net_stat3_latency_sd" field.</summary>
-    public const int GNetStat3LatencySdFieldNumber = 3;
-    private float gNetStat3LatencySd_;
+    /// <summary>Field number for the "id_tag" field.</summary>
+    public const int IdTagFieldNumber = 3;
+    private int idTag_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat3LatencySd {
-      get { return gNetStat3LatencySd_; }
+    public int IdTag {
+      get { return idTag_; }
       set {
-        gNetStat3LatencySd_ = value;
+        idTag_ = value;
       }
     }
 
-    /// <summary>Field number for the "g_net_stat4_latency_min" field.</summary>
-    public const int GNetStat4LatencyMinFieldNumber = 4;
-    private float gNetStat4LatencyMin_;
+    /// <summary>Field number for the "num_retries" field.</summary>
+    public const int NumRetriesFieldNumber = 4;
+    private int numRetries_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat4LatencyMin {
-      get { return gNetStat4LatencyMin_; }
+    public int NumRetries {
+      get { return numRetries_; }
       set {
-        gNetStat4LatencyMin_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_stat5_latency_max" field.</summary>
-    public const int GNetStat5LatencyMaxFieldNumber = 5;
-    private float gNetStat5LatencyMax_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat5LatencyMax {
-      get { return gNetStat5LatencyMax_; }
-      set {
-        gNetStat5LatencyMax_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_stat6_ping_arrived_pc" field.</summary>
-    public const int GNetStat6PingArrivedPcFieldNumber = 6;
-    private float gNetStat6PingArrivedPc_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat6PingArrivedPc {
-      get { return gNetStat6PingArrivedPc_; }
-      set {
-        gNetStat6PingArrivedPc_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_stat7_ext_queued_avg_ms" field.</summary>
-    public const int GNetStat7ExtQueuedAvgMsFieldNumber = 7;
-    private float gNetStat7ExtQueuedAvgMs_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat7ExtQueuedAvgMs {
-      get { return gNetStat7ExtQueuedAvgMs_; }
-      set {
-        gNetStat7ExtQueuedAvgMs_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_stat8_ext_queued_min_ms" field.</summary>
-    public const int GNetStat8ExtQueuedMinMsFieldNumber = 8;
-    private float gNetStat8ExtQueuedMinMs_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat8ExtQueuedMinMs {
-      get { return gNetStat8ExtQueuedMinMs_; }
-      set {
-        gNetStat8ExtQueuedMinMs_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_stat9_ext_queued_max_ms" field.</summary>
-    public const int GNetStat9ExtQueuedMaxMsFieldNumber = 9;
-    private float gNetStat9ExtQueuedMaxMs_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStat9ExtQueuedMaxMs {
-      get { return gNetStat9ExtQueuedMaxMs_; }
-      set {
-        gNetStat9ExtQueuedMaxMs_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_stata_queued_avg_ms" field.</summary>
-    public const int GNetStataQueuedAvgMsFieldNumber = 10;
-    private float gNetStataQueuedAvgMs_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStataQueuedAvgMs {
-      get { return gNetStataQueuedAvgMs_; }
-      set {
-        gNetStataQueuedAvgMs_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_statb_queued_min_ms" field.</summary>
-    public const int GNetStatbQueuedMinMsFieldNumber = 11;
-    private float gNetStatbQueuedMinMs_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStatbQueuedMinMs {
-      get { return gNetStatbQueuedMinMs_; }
-      set {
-        gNetStatbQueuedMinMs_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "g_net_statc_queued_max_ms" field.</summary>
-    public const int GNetStatcQueuedMaxMsFieldNumber = 12;
-    private float gNetStatcQueuedMaxMs_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float GNetStatcQueuedMaxMs {
-      get { return gNetStatcQueuedMaxMs_; }
-      set {
-        gNetStatcQueuedMaxMs_ = value;
+        numRetries_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as NetworkStats);
+      return Equals(other as TurnTowardsFaceRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(NetworkStats other) {
+    public bool Equals(TurnTowardsFaceRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GNetStat1NumConnections != other.GNetStat1NumConnections) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat2LatencyAvg, other.GNetStat2LatencyAvg)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat3LatencySd, other.GNetStat3LatencySd)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat4LatencyMin, other.GNetStat4LatencyMin)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat5LatencyMax, other.GNetStat5LatencyMax)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat6PingArrivedPc, other.GNetStat6PingArrivedPc)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat7ExtQueuedAvgMs, other.GNetStat7ExtQueuedAvgMs)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat8ExtQueuedMinMs, other.GNetStat8ExtQueuedMinMs)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStat9ExtQueuedMaxMs, other.GNetStat9ExtQueuedMaxMs)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStataQueuedAvgMs, other.GNetStataQueuedAvgMs)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStatbQueuedMinMs, other.GNetStatbQueuedMinMs)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(GNetStatcQueuedMaxMs, other.GNetStatcQueuedMaxMs)) return false;
+      if (FaceId != other.FaceId) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MaxTurnAngleRad, other.MaxTurnAngleRad)) return false;
+      if (IdTag != other.IdTag) return false;
+      if (NumRetries != other.NumRetries) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (GNetStat1NumConnections != 0) hash ^= GNetStat1NumConnections.GetHashCode();
-      if (GNetStat2LatencyAvg != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat2LatencyAvg);
-      if (GNetStat3LatencySd != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat3LatencySd);
-      if (GNetStat4LatencyMin != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat4LatencyMin);
-      if (GNetStat5LatencyMax != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat5LatencyMax);
-      if (GNetStat6PingArrivedPc != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat6PingArrivedPc);
-      if (GNetStat7ExtQueuedAvgMs != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat7ExtQueuedAvgMs);
-      if (GNetStat8ExtQueuedMinMs != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat8ExtQueuedMinMs);
-      if (GNetStat9ExtQueuedMaxMs != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStat9ExtQueuedMaxMs);
-      if (GNetStataQueuedAvgMs != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStataQueuedAvgMs);
-      if (GNetStatbQueuedMinMs != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStatbQueuedMinMs);
-      if (GNetStatcQueuedMaxMs != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(GNetStatcQueuedMaxMs);
+      if (FaceId != 0) hash ^= FaceId.GetHashCode();
+      if (MaxTurnAngleRad != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MaxTurnAngleRad);
+      if (IdTag != 0) hash ^= IdTag.GetHashCode();
+      if (NumRetries != 0) hash ^= NumRetries.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -15240,53 +17296,21 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (GNetStat1NumConnections != 0) {
+      if (FaceId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(GNetStat1NumConnections);
+        output.WriteInt32(FaceId);
       }
-      if (GNetStat2LatencyAvg != 0F) {
+      if (MaxTurnAngleRad != 0F) {
         output.WriteRawTag(21);
-        output.WriteFloat(GNetStat2LatencyAvg);
+        output.WriteFloat(MaxTurnAngleRad);
       }
-      if (GNetStat3LatencySd != 0F) {
-        output.WriteRawTag(29);
-        output.WriteFloat(GNetStat3LatencySd);
+      if (IdTag != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(IdTag);
       }
-      if (GNetStat4LatencyMin != 0F) {
-        output.WriteRawTag(37);
-        output.WriteFloat(GNetStat4LatencyMin);
-      }
-      if (GNetStat5LatencyMax != 0F) {
-        output.WriteRawTag(45);
-        output.WriteFloat(GNetStat5LatencyMax);
-      }
-      if (GNetStat6PingArrivedPc != 0F) {
-        output.WriteRawTag(53);
-        output.WriteFloat(GNetStat6PingArrivedPc);
-      }
-      if (GNetStat7ExtQueuedAvgMs != 0F) {
-        output.WriteRawTag(61);
-        output.WriteFloat(GNetStat7ExtQueuedAvgMs);
-      }
-      if (GNetStat8ExtQueuedMinMs != 0F) {
-        output.WriteRawTag(69);
-        output.WriteFloat(GNetStat8ExtQueuedMinMs);
-      }
-      if (GNetStat9ExtQueuedMaxMs != 0F) {
-        output.WriteRawTag(77);
-        output.WriteFloat(GNetStat9ExtQueuedMaxMs);
-      }
-      if (GNetStataQueuedAvgMs != 0F) {
-        output.WriteRawTag(85);
-        output.WriteFloat(GNetStataQueuedAvgMs);
-      }
-      if (GNetStatbQueuedMinMs != 0F) {
-        output.WriteRawTag(93);
-        output.WriteFloat(GNetStatbQueuedMinMs);
-      }
-      if (GNetStatcQueuedMaxMs != 0F) {
-        output.WriteRawTag(101);
-        output.WriteFloat(GNetStatcQueuedMaxMs);
+      if (NumRetries != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(NumRetries);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -15296,41 +17320,17 @@ namespace Anki.Vector.ExternalInterface {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (GNetStat1NumConnections != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GNetStat1NumConnections);
+      if (FaceId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FaceId);
       }
-      if (GNetStat2LatencyAvg != 0F) {
+      if (MaxTurnAngleRad != 0F) {
         size += 1 + 4;
       }
-      if (GNetStat3LatencySd != 0F) {
-        size += 1 + 4;
+      if (IdTag != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdTag);
       }
-      if (GNetStat4LatencyMin != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStat5LatencyMax != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStat6PingArrivedPc != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStat7ExtQueuedAvgMs != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStat8ExtQueuedMinMs != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStat9ExtQueuedMaxMs != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStataQueuedAvgMs != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStatbQueuedMinMs != 0F) {
-        size += 1 + 4;
-      }
-      if (GNetStatcQueuedMaxMs != 0F) {
-        size += 1 + 4;
+      if (NumRetries != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumRetries);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -15339,45 +17339,21 @@ namespace Anki.Vector.ExternalInterface {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(NetworkStats other) {
+    public void MergeFrom(TurnTowardsFaceRequest other) {
       if (other == null) {
         return;
       }
-      if (other.GNetStat1NumConnections != 0) {
-        GNetStat1NumConnections = other.GNetStat1NumConnections;
+      if (other.FaceId != 0) {
+        FaceId = other.FaceId;
       }
-      if (other.GNetStat2LatencyAvg != 0F) {
-        GNetStat2LatencyAvg = other.GNetStat2LatencyAvg;
+      if (other.MaxTurnAngleRad != 0F) {
+        MaxTurnAngleRad = other.MaxTurnAngleRad;
       }
-      if (other.GNetStat3LatencySd != 0F) {
-        GNetStat3LatencySd = other.GNetStat3LatencySd;
+      if (other.IdTag != 0) {
+        IdTag = other.IdTag;
       }
-      if (other.GNetStat4LatencyMin != 0F) {
-        GNetStat4LatencyMin = other.GNetStat4LatencyMin;
-      }
-      if (other.GNetStat5LatencyMax != 0F) {
-        GNetStat5LatencyMax = other.GNetStat5LatencyMax;
-      }
-      if (other.GNetStat6PingArrivedPc != 0F) {
-        GNetStat6PingArrivedPc = other.GNetStat6PingArrivedPc;
-      }
-      if (other.GNetStat7ExtQueuedAvgMs != 0F) {
-        GNetStat7ExtQueuedAvgMs = other.GNetStat7ExtQueuedAvgMs;
-      }
-      if (other.GNetStat8ExtQueuedMinMs != 0F) {
-        GNetStat8ExtQueuedMinMs = other.GNetStat8ExtQueuedMinMs;
-      }
-      if (other.GNetStat9ExtQueuedMaxMs != 0F) {
-        GNetStat9ExtQueuedMaxMs = other.GNetStat9ExtQueuedMaxMs;
-      }
-      if (other.GNetStataQueuedAvgMs != 0F) {
-        GNetStataQueuedAvgMs = other.GNetStataQueuedAvgMs;
-      }
-      if (other.GNetStatbQueuedMinMs != 0F) {
-        GNetStatbQueuedMinMs = other.GNetStatbQueuedMinMs;
-      }
-      if (other.GNetStatcQueuedMaxMs != 0F) {
-        GNetStatcQueuedMaxMs = other.GNetStatcQueuedMaxMs;
+      if (other.NumRetries != 0) {
+        NumRetries = other.NumRetries;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -15391,51 +17367,2398 @@ namespace Anki.Vector.ExternalInterface {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            GNetStat1NumConnections = input.ReadInt32();
+            FaceId = input.ReadInt32();
             break;
           }
           case 21: {
-            GNetStat2LatencyAvg = input.ReadFloat();
+            MaxTurnAngleRad = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            IdTag = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            NumRetries = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class TurnTowardsFaceResponse : pb::IMessage<TurnTowardsFaceResponse> {
+    private static readonly pb::MessageParser<TurnTowardsFaceResponse> _parser = new pb::MessageParser<TurnTowardsFaceResponse>(() => new TurnTowardsFaceResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TurnTowardsFaceResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[92]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TurnTowardsFaceResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TurnTowardsFaceResponse(TurnTowardsFaceResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TurnTowardsFaceResponse Clone() {
+      return new TurnTowardsFaceResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.ActionResult result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ActionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TurnTowardsFaceResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TurnTowardsFaceResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Result, other.Result)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (result_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TurnTowardsFaceResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 18: {
+            if (result_ == null) {
+              result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+            }
+            input.ReadMessage(result_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// GoToObject
+  /// </summary>
+  public sealed partial class GoToObjectRequest : pb::IMessage<GoToObjectRequest> {
+    private static readonly pb::MessageParser<GoToObjectRequest> _parser = new pb::MessageParser<GoToObjectRequest>(() => new GoToObjectRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GoToObjectRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[93]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GoToObjectRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GoToObjectRequest(GoToObjectRequest other) : this() {
+      objectId_ = other.objectId_;
+      motionProf_ = other.motionProf_ != null ? other.motionProf_.Clone() : null;
+      distanceFromObjectOriginMm_ = other.distanceFromObjectOriginMm_;
+      usePreDockPose_ = other.usePreDockPose_;
+      idTag_ = other.idTag_;
+      numRetries_ = other.numRetries_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GoToObjectRequest Clone() {
+      return new GoToObjectRequest(this);
+    }
+
+    /// <summary>Field number for the "object_id" field.</summary>
+    public const int ObjectIdFieldNumber = 1;
+    private int objectId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ObjectId {
+      get { return objectId_; }
+      set {
+        objectId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "motion_prof" field.</summary>
+    public const int MotionProfFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.PathMotionProfile motionProf_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.PathMotionProfile MotionProf {
+      get { return motionProf_; }
+      set {
+        motionProf_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "distance_from_object_origin_mm" field.</summary>
+    public const int DistanceFromObjectOriginMmFieldNumber = 3;
+    private float distanceFromObjectOriginMm_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float DistanceFromObjectOriginMm {
+      get { return distanceFromObjectOriginMm_; }
+      set {
+        distanceFromObjectOriginMm_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_pre_dock_pose" field.</summary>
+    public const int UsePreDockPoseFieldNumber = 4;
+    private bool usePreDockPose_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UsePreDockPose {
+      get { return usePreDockPose_; }
+      set {
+        usePreDockPose_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id_tag" field.</summary>
+    public const int IdTagFieldNumber = 5;
+    private int idTag_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int IdTag {
+      get { return idTag_; }
+      set {
+        idTag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "num_retries" field.</summary>
+    public const int NumRetriesFieldNumber = 6;
+    private int numRetries_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumRetries {
+      get { return numRetries_; }
+      set {
+        numRetries_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GoToObjectRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GoToObjectRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ObjectId != other.ObjectId) return false;
+      if (!object.Equals(MotionProf, other.MotionProf)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(DistanceFromObjectOriginMm, other.DistanceFromObjectOriginMm)) return false;
+      if (UsePreDockPose != other.UsePreDockPose) return false;
+      if (IdTag != other.IdTag) return false;
+      if (NumRetries != other.NumRetries) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ObjectId != 0) hash ^= ObjectId.GetHashCode();
+      if (motionProf_ != null) hash ^= MotionProf.GetHashCode();
+      if (DistanceFromObjectOriginMm != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(DistanceFromObjectOriginMm);
+      if (UsePreDockPose != false) hash ^= UsePreDockPose.GetHashCode();
+      if (IdTag != 0) hash ^= IdTag.GetHashCode();
+      if (NumRetries != 0) hash ^= NumRetries.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ObjectId);
+      }
+      if (motionProf_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MotionProf);
+      }
+      if (DistanceFromObjectOriginMm != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(DistanceFromObjectOriginMm);
+      }
+      if (UsePreDockPose != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(UsePreDockPose);
+      }
+      if (IdTag != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(IdTag);
+      }
+      if (NumRetries != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(NumRetries);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ObjectId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ObjectId);
+      }
+      if (motionProf_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MotionProf);
+      }
+      if (DistanceFromObjectOriginMm != 0F) {
+        size += 1 + 4;
+      }
+      if (UsePreDockPose != false) {
+        size += 1 + 1;
+      }
+      if (IdTag != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdTag);
+      }
+      if (NumRetries != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumRetries);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GoToObjectRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ObjectId != 0) {
+        ObjectId = other.ObjectId;
+      }
+      if (other.motionProf_ != null) {
+        if (motionProf_ == null) {
+          motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+        }
+        MotionProf.MergeFrom(other.MotionProf);
+      }
+      if (other.DistanceFromObjectOriginMm != 0F) {
+        DistanceFromObjectOriginMm = other.DistanceFromObjectOriginMm;
+      }
+      if (other.UsePreDockPose != false) {
+        UsePreDockPose = other.UsePreDockPose;
+      }
+      if (other.IdTag != 0) {
+        IdTag = other.IdTag;
+      }
+      if (other.NumRetries != 0) {
+        NumRetries = other.NumRetries;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ObjectId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (motionProf_ == null) {
+              motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+            }
+            input.ReadMessage(motionProf_);
             break;
           }
           case 29: {
-            GNetStat3LatencySd = input.ReadFloat();
+            DistanceFromObjectOriginMm = input.ReadFloat();
             break;
           }
-          case 37: {
-            GNetStat4LatencyMin = input.ReadFloat();
+          case 32: {
+            UsePreDockPose = input.ReadBool();
             break;
           }
-          case 45: {
-            GNetStat5LatencyMax = input.ReadFloat();
+          case 40: {
+            IdTag = input.ReadInt32();
             break;
           }
-          case 53: {
-            GNetStat6PingArrivedPc = input.ReadFloat();
+          case 48: {
+            NumRetries = input.ReadInt32();
             break;
           }
-          case 61: {
-            GNetStat7ExtQueuedAvgMs = input.ReadFloat();
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GoToObjectResponse : pb::IMessage<GoToObjectResponse> {
+    private static readonly pb::MessageParser<GoToObjectResponse> _parser = new pb::MessageParser<GoToObjectResponse>(() => new GoToObjectResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GoToObjectResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[94]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GoToObjectResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GoToObjectResponse(GoToObjectResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GoToObjectResponse Clone() {
+      return new GoToObjectResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.ActionResult result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ActionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GoToObjectResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GoToObjectResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Result, other.Result)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (result_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GoToObjectResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
             break;
           }
-          case 69: {
-            GNetStat8ExtQueuedMinMs = input.ReadFloat();
+          case 18: {
+            if (result_ == null) {
+              result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+            }
+            input.ReadMessage(result_);
             break;
           }
-          case 77: {
-            GNetStat9ExtQueuedMaxMs = input.ReadFloat();
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// RollObject
+  /// </summary>
+  public sealed partial class RollObjectRequest : pb::IMessage<RollObjectRequest> {
+    private static readonly pb::MessageParser<RollObjectRequest> _parser = new pb::MessageParser<RollObjectRequest>(() => new RollObjectRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RollObjectRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[95]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollObjectRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollObjectRequest(RollObjectRequest other) : this() {
+      objectId_ = other.objectId_;
+      motionProf_ = other.motionProf_ != null ? other.motionProf_.Clone() : null;
+      approachAngleRad_ = other.approachAngleRad_;
+      useApproachAngle_ = other.useApproachAngle_;
+      usePreDockPose_ = other.usePreDockPose_;
+      idTag_ = other.idTag_;
+      numRetries_ = other.numRetries_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollObjectRequest Clone() {
+      return new RollObjectRequest(this);
+    }
+
+    /// <summary>Field number for the "object_id" field.</summary>
+    public const int ObjectIdFieldNumber = 1;
+    private int objectId_;
+    /// <summary>
+    /// negative value means "currently selected object"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ObjectId {
+      get { return objectId_; }
+      set {
+        objectId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "motion_prof" field.</summary>
+    public const int MotionProfFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.PathMotionProfile motionProf_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.PathMotionProfile MotionProf {
+      get { return motionProf_; }
+      set {
+        motionProf_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "approach_angle_rad" field.</summary>
+    public const int ApproachAngleRadFieldNumber = 3;
+    private float approachAngleRad_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ApproachAngleRad {
+      get { return approachAngleRad_; }
+      set {
+        approachAngleRad_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_approach_angle" field.</summary>
+    public const int UseApproachAngleFieldNumber = 4;
+    private bool useApproachAngle_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UseApproachAngle {
+      get { return useApproachAngle_; }
+      set {
+        useApproachAngle_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_pre_dock_pose" field.</summary>
+    public const int UsePreDockPoseFieldNumber = 5;
+    private bool usePreDockPose_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UsePreDockPose {
+      get { return usePreDockPose_; }
+      set {
+        usePreDockPose_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id_tag" field.</summary>
+    public const int IdTagFieldNumber = 6;
+    private int idTag_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int IdTag {
+      get { return idTag_; }
+      set {
+        idTag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "num_retries" field.</summary>
+    public const int NumRetriesFieldNumber = 7;
+    private int numRetries_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumRetries {
+      get { return numRetries_; }
+      set {
+        numRetries_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RollObjectRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RollObjectRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ObjectId != other.ObjectId) return false;
+      if (!object.Equals(MotionProf, other.MotionProf)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ApproachAngleRad, other.ApproachAngleRad)) return false;
+      if (UseApproachAngle != other.UseApproachAngle) return false;
+      if (UsePreDockPose != other.UsePreDockPose) return false;
+      if (IdTag != other.IdTag) return false;
+      if (NumRetries != other.NumRetries) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ObjectId != 0) hash ^= ObjectId.GetHashCode();
+      if (motionProf_ != null) hash ^= MotionProf.GetHashCode();
+      if (ApproachAngleRad != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ApproachAngleRad);
+      if (UseApproachAngle != false) hash ^= UseApproachAngle.GetHashCode();
+      if (UsePreDockPose != false) hash ^= UsePreDockPose.GetHashCode();
+      if (IdTag != 0) hash ^= IdTag.GetHashCode();
+      if (NumRetries != 0) hash ^= NumRetries.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ObjectId);
+      }
+      if (motionProf_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MotionProf);
+      }
+      if (ApproachAngleRad != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(ApproachAngleRad);
+      }
+      if (UseApproachAngle != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(UseApproachAngle);
+      }
+      if (UsePreDockPose != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(UsePreDockPose);
+      }
+      if (IdTag != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(IdTag);
+      }
+      if (NumRetries != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(NumRetries);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ObjectId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ObjectId);
+      }
+      if (motionProf_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MotionProf);
+      }
+      if (ApproachAngleRad != 0F) {
+        size += 1 + 4;
+      }
+      if (UseApproachAngle != false) {
+        size += 1 + 1;
+      }
+      if (UsePreDockPose != false) {
+        size += 1 + 1;
+      }
+      if (IdTag != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdTag);
+      }
+      if (NumRetries != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumRetries);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RollObjectRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ObjectId != 0) {
+        ObjectId = other.ObjectId;
+      }
+      if (other.motionProf_ != null) {
+        if (motionProf_ == null) {
+          motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+        }
+        MotionProf.MergeFrom(other.MotionProf);
+      }
+      if (other.ApproachAngleRad != 0F) {
+        ApproachAngleRad = other.ApproachAngleRad;
+      }
+      if (other.UseApproachAngle != false) {
+        UseApproachAngle = other.UseApproachAngle;
+      }
+      if (other.UsePreDockPose != false) {
+        UsePreDockPose = other.UsePreDockPose;
+      }
+      if (other.IdTag != 0) {
+        IdTag = other.IdTag;
+      }
+      if (other.NumRetries != 0) {
+        NumRetries = other.NumRetries;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ObjectId = input.ReadInt32();
             break;
           }
-          case 85: {
-            GNetStataQueuedAvgMs = input.ReadFloat();
+          case 18: {
+            if (motionProf_ == null) {
+              motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+            }
+            input.ReadMessage(motionProf_);
             break;
           }
-          case 93: {
-            GNetStatbQueuedMinMs = input.ReadFloat();
+          case 29: {
+            ApproachAngleRad = input.ReadFloat();
             break;
           }
-          case 101: {
-            GNetStatcQueuedMaxMs = input.ReadFloat();
+          case 32: {
+            UseApproachAngle = input.ReadBool();
+            break;
+          }
+          case 40: {
+            UsePreDockPose = input.ReadBool();
+            break;
+          }
+          case 48: {
+            IdTag = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            NumRetries = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RollObjectResponse : pb::IMessage<RollObjectResponse> {
+    private static readonly pb::MessageParser<RollObjectResponse> _parser = new pb::MessageParser<RollObjectResponse>(() => new RollObjectResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RollObjectResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[96]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollObjectResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollObjectResponse(RollObjectResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RollObjectResponse Clone() {
+      return new RollObjectResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.ActionResult result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ActionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RollObjectResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RollObjectResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Result, other.Result)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (result_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RollObjectResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 18: {
+            if (result_ == null) {
+              result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+            }
+            input.ReadMessage(result_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// PopAWheelie
+  /// </summary>
+  public sealed partial class PopAWheelieRequest : pb::IMessage<PopAWheelieRequest> {
+    private static readonly pb::MessageParser<PopAWheelieRequest> _parser = new pb::MessageParser<PopAWheelieRequest>(() => new PopAWheelieRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PopAWheelieRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[97]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PopAWheelieRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PopAWheelieRequest(PopAWheelieRequest other) : this() {
+      objectId_ = other.objectId_;
+      motionProf_ = other.motionProf_ != null ? other.motionProf_.Clone() : null;
+      approachAngleRad_ = other.approachAngleRad_;
+      useApproachAngle_ = other.useApproachAngle_;
+      usePreDockPose_ = other.usePreDockPose_;
+      idTag_ = other.idTag_;
+      numRetries_ = other.numRetries_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PopAWheelieRequest Clone() {
+      return new PopAWheelieRequest(this);
+    }
+
+    /// <summary>Field number for the "object_id" field.</summary>
+    public const int ObjectIdFieldNumber = 1;
+    private int objectId_;
+    /// <summary>
+    /// negative value means "currently selected object"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ObjectId {
+      get { return objectId_; }
+      set {
+        objectId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "motion_prof" field.</summary>
+    public const int MotionProfFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.PathMotionProfile motionProf_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.PathMotionProfile MotionProf {
+      get { return motionProf_; }
+      set {
+        motionProf_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "approach_angle_rad" field.</summary>
+    public const int ApproachAngleRadFieldNumber = 3;
+    private float approachAngleRad_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ApproachAngleRad {
+      get { return approachAngleRad_; }
+      set {
+        approachAngleRad_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_approach_angle" field.</summary>
+    public const int UseApproachAngleFieldNumber = 4;
+    private bool useApproachAngle_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UseApproachAngle {
+      get { return useApproachAngle_; }
+      set {
+        useApproachAngle_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_pre_dock_pose" field.</summary>
+    public const int UsePreDockPoseFieldNumber = 5;
+    private bool usePreDockPose_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UsePreDockPose {
+      get { return usePreDockPose_; }
+      set {
+        usePreDockPose_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id_tag" field.</summary>
+    public const int IdTagFieldNumber = 6;
+    private int idTag_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int IdTag {
+      get { return idTag_; }
+      set {
+        idTag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "num_retries" field.</summary>
+    public const int NumRetriesFieldNumber = 7;
+    private int numRetries_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumRetries {
+      get { return numRetries_; }
+      set {
+        numRetries_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PopAWheelieRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PopAWheelieRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ObjectId != other.ObjectId) return false;
+      if (!object.Equals(MotionProf, other.MotionProf)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ApproachAngleRad, other.ApproachAngleRad)) return false;
+      if (UseApproachAngle != other.UseApproachAngle) return false;
+      if (UsePreDockPose != other.UsePreDockPose) return false;
+      if (IdTag != other.IdTag) return false;
+      if (NumRetries != other.NumRetries) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ObjectId != 0) hash ^= ObjectId.GetHashCode();
+      if (motionProf_ != null) hash ^= MotionProf.GetHashCode();
+      if (ApproachAngleRad != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ApproachAngleRad);
+      if (UseApproachAngle != false) hash ^= UseApproachAngle.GetHashCode();
+      if (UsePreDockPose != false) hash ^= UsePreDockPose.GetHashCode();
+      if (IdTag != 0) hash ^= IdTag.GetHashCode();
+      if (NumRetries != 0) hash ^= NumRetries.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ObjectId);
+      }
+      if (motionProf_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MotionProf);
+      }
+      if (ApproachAngleRad != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(ApproachAngleRad);
+      }
+      if (UseApproachAngle != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(UseApproachAngle);
+      }
+      if (UsePreDockPose != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(UsePreDockPose);
+      }
+      if (IdTag != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(IdTag);
+      }
+      if (NumRetries != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(NumRetries);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ObjectId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ObjectId);
+      }
+      if (motionProf_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MotionProf);
+      }
+      if (ApproachAngleRad != 0F) {
+        size += 1 + 4;
+      }
+      if (UseApproachAngle != false) {
+        size += 1 + 1;
+      }
+      if (UsePreDockPose != false) {
+        size += 1 + 1;
+      }
+      if (IdTag != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdTag);
+      }
+      if (NumRetries != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumRetries);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PopAWheelieRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ObjectId != 0) {
+        ObjectId = other.ObjectId;
+      }
+      if (other.motionProf_ != null) {
+        if (motionProf_ == null) {
+          motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+        }
+        MotionProf.MergeFrom(other.MotionProf);
+      }
+      if (other.ApproachAngleRad != 0F) {
+        ApproachAngleRad = other.ApproachAngleRad;
+      }
+      if (other.UseApproachAngle != false) {
+        UseApproachAngle = other.UseApproachAngle;
+      }
+      if (other.UsePreDockPose != false) {
+        UsePreDockPose = other.UsePreDockPose;
+      }
+      if (other.IdTag != 0) {
+        IdTag = other.IdTag;
+      }
+      if (other.NumRetries != 0) {
+        NumRetries = other.NumRetries;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ObjectId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (motionProf_ == null) {
+              motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+            }
+            input.ReadMessage(motionProf_);
+            break;
+          }
+          case 29: {
+            ApproachAngleRad = input.ReadFloat();
+            break;
+          }
+          case 32: {
+            UseApproachAngle = input.ReadBool();
+            break;
+          }
+          case 40: {
+            UsePreDockPose = input.ReadBool();
+            break;
+          }
+          case 48: {
+            IdTag = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            NumRetries = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PopAWheelieResponse : pb::IMessage<PopAWheelieResponse> {
+    private static readonly pb::MessageParser<PopAWheelieResponse> _parser = new pb::MessageParser<PopAWheelieResponse>(() => new PopAWheelieResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PopAWheelieResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[98]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PopAWheelieResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PopAWheelieResponse(PopAWheelieResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PopAWheelieResponse Clone() {
+      return new PopAWheelieResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.ActionResult result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ActionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PopAWheelieResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PopAWheelieResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Result, other.Result)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (result_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PopAWheelieResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 18: {
+            if (result_ == null) {
+              result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+            }
+            input.ReadMessage(result_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// PickupObject
+  /// </summary>
+  public sealed partial class PickupObjectRequest : pb::IMessage<PickupObjectRequest> {
+    private static readonly pb::MessageParser<PickupObjectRequest> _parser = new pb::MessageParser<PickupObjectRequest>(() => new PickupObjectRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PickupObjectRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[99]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PickupObjectRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PickupObjectRequest(PickupObjectRequest other) : this() {
+      objectId_ = other.objectId_;
+      motionProf_ = other.motionProf_ != null ? other.motionProf_.Clone() : null;
+      approachAngleRad_ = other.approachAngleRad_;
+      useApproachAngle_ = other.useApproachAngle_;
+      usePreDockPose_ = other.usePreDockPose_;
+      idTag_ = other.idTag_;
+      numRetries_ = other.numRetries_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PickupObjectRequest Clone() {
+      return new PickupObjectRequest(this);
+    }
+
+    /// <summary>Field number for the "object_id" field.</summary>
+    public const int ObjectIdFieldNumber = 1;
+    private int objectId_;
+    /// <summary>
+    /// negative value means "currently selected object"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ObjectId {
+      get { return objectId_; }
+      set {
+        objectId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "motion_prof" field.</summary>
+    public const int MotionProfFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.PathMotionProfile motionProf_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.PathMotionProfile MotionProf {
+      get { return motionProf_; }
+      set {
+        motionProf_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "approach_angle_rad" field.</summary>
+    public const int ApproachAngleRadFieldNumber = 3;
+    private float approachAngleRad_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ApproachAngleRad {
+      get { return approachAngleRad_; }
+      set {
+        approachAngleRad_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_approach_angle" field.</summary>
+    public const int UseApproachAngleFieldNumber = 4;
+    private bool useApproachAngle_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UseApproachAngle {
+      get { return useApproachAngle_; }
+      set {
+        useApproachAngle_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_pre_dock_pose" field.</summary>
+    public const int UsePreDockPoseFieldNumber = 5;
+    private bool usePreDockPose_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UsePreDockPose {
+      get { return usePreDockPose_; }
+      set {
+        usePreDockPose_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id_tag" field.</summary>
+    public const int IdTagFieldNumber = 6;
+    private int idTag_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int IdTag {
+      get { return idTag_; }
+      set {
+        idTag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "num_retries" field.</summary>
+    public const int NumRetriesFieldNumber = 7;
+    private int numRetries_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumRetries {
+      get { return numRetries_; }
+      set {
+        numRetries_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PickupObjectRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PickupObjectRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ObjectId != other.ObjectId) return false;
+      if (!object.Equals(MotionProf, other.MotionProf)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ApproachAngleRad, other.ApproachAngleRad)) return false;
+      if (UseApproachAngle != other.UseApproachAngle) return false;
+      if (UsePreDockPose != other.UsePreDockPose) return false;
+      if (IdTag != other.IdTag) return false;
+      if (NumRetries != other.NumRetries) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ObjectId != 0) hash ^= ObjectId.GetHashCode();
+      if (motionProf_ != null) hash ^= MotionProf.GetHashCode();
+      if (ApproachAngleRad != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ApproachAngleRad);
+      if (UseApproachAngle != false) hash ^= UseApproachAngle.GetHashCode();
+      if (UsePreDockPose != false) hash ^= UsePreDockPose.GetHashCode();
+      if (IdTag != 0) hash ^= IdTag.GetHashCode();
+      if (NumRetries != 0) hash ^= NumRetries.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ObjectId);
+      }
+      if (motionProf_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MotionProf);
+      }
+      if (ApproachAngleRad != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(ApproachAngleRad);
+      }
+      if (UseApproachAngle != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(UseApproachAngle);
+      }
+      if (UsePreDockPose != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(UsePreDockPose);
+      }
+      if (IdTag != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(IdTag);
+      }
+      if (NumRetries != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(NumRetries);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ObjectId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ObjectId);
+      }
+      if (motionProf_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MotionProf);
+      }
+      if (ApproachAngleRad != 0F) {
+        size += 1 + 4;
+      }
+      if (UseApproachAngle != false) {
+        size += 1 + 1;
+      }
+      if (UsePreDockPose != false) {
+        size += 1 + 1;
+      }
+      if (IdTag != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdTag);
+      }
+      if (NumRetries != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumRetries);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PickupObjectRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ObjectId != 0) {
+        ObjectId = other.ObjectId;
+      }
+      if (other.motionProf_ != null) {
+        if (motionProf_ == null) {
+          motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+        }
+        MotionProf.MergeFrom(other.MotionProf);
+      }
+      if (other.ApproachAngleRad != 0F) {
+        ApproachAngleRad = other.ApproachAngleRad;
+      }
+      if (other.UseApproachAngle != false) {
+        UseApproachAngle = other.UseApproachAngle;
+      }
+      if (other.UsePreDockPose != false) {
+        UsePreDockPose = other.UsePreDockPose;
+      }
+      if (other.IdTag != 0) {
+        IdTag = other.IdTag;
+      }
+      if (other.NumRetries != 0) {
+        NumRetries = other.NumRetries;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ObjectId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (motionProf_ == null) {
+              motionProf_ = new global::Anki.Vector.ExternalInterface.PathMotionProfile();
+            }
+            input.ReadMessage(motionProf_);
+            break;
+          }
+          case 29: {
+            ApproachAngleRad = input.ReadFloat();
+            break;
+          }
+          case 32: {
+            UseApproachAngle = input.ReadBool();
+            break;
+          }
+          case 40: {
+            UsePreDockPose = input.ReadBool();
+            break;
+          }
+          case 48: {
+            IdTag = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            NumRetries = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PickupObjectResponse : pb::IMessage<PickupObjectResponse> {
+    private static readonly pb::MessageParser<PickupObjectResponse> _parser = new pb::MessageParser<PickupObjectResponse>(() => new PickupObjectResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PickupObjectResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[100]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PickupObjectResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PickupObjectResponse(PickupObjectResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PickupObjectResponse Clone() {
+      return new PickupObjectResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.ActionResult result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ActionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PickupObjectResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PickupObjectResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Result, other.Result)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (result_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PickupObjectResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 18: {
+            if (result_ == null) {
+              result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+            }
+            input.ReadMessage(result_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// PlaceObjectOnGroundHere
+  /// </summary>
+  public sealed partial class PlaceObjectOnGroundHereRequest : pb::IMessage<PlaceObjectOnGroundHereRequest> {
+    private static readonly pb::MessageParser<PlaceObjectOnGroundHereRequest> _parser = new pb::MessageParser<PlaceObjectOnGroundHereRequest>(() => new PlaceObjectOnGroundHereRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PlaceObjectOnGroundHereRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[101]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlaceObjectOnGroundHereRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlaceObjectOnGroundHereRequest(PlaceObjectOnGroundHereRequest other) : this() {
+      idTag_ = other.idTag_;
+      numRetries_ = other.numRetries_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlaceObjectOnGroundHereRequest Clone() {
+      return new PlaceObjectOnGroundHereRequest(this);
+    }
+
+    /// <summary>Field number for the "id_tag" field.</summary>
+    public const int IdTagFieldNumber = 1;
+    private int idTag_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int IdTag {
+      get { return idTag_; }
+      set {
+        idTag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "num_retries" field.</summary>
+    public const int NumRetriesFieldNumber = 2;
+    private int numRetries_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumRetries {
+      get { return numRetries_; }
+      set {
+        numRetries_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PlaceObjectOnGroundHereRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PlaceObjectOnGroundHereRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IdTag != other.IdTag) return false;
+      if (NumRetries != other.NumRetries) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IdTag != 0) hash ^= IdTag.GetHashCode();
+      if (NumRetries != 0) hash ^= NumRetries.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IdTag != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(IdTag);
+      }
+      if (NumRetries != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(NumRetries);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IdTag != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdTag);
+      }
+      if (NumRetries != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumRetries);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PlaceObjectOnGroundHereRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IdTag != 0) {
+        IdTag = other.IdTag;
+      }
+      if (other.NumRetries != 0) {
+        NumRetries = other.NumRetries;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            IdTag = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            NumRetries = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PlaceObjectOnGroundHereResponse : pb::IMessage<PlaceObjectOnGroundHereResponse> {
+    private static readonly pb::MessageParser<PlaceObjectOnGroundHereResponse> _parser = new pb::MessageParser<PlaceObjectOnGroundHereResponse>(() => new PlaceObjectOnGroundHereResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PlaceObjectOnGroundHereResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[102]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlaceObjectOnGroundHereResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlaceObjectOnGroundHereResponse(PlaceObjectOnGroundHereResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlaceObjectOnGroundHereResponse Clone() {
+      return new PlaceObjectOnGroundHereResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 2;
+    private global::Anki.Vector.ExternalInterface.ActionResult result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ActionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PlaceObjectOnGroundHereResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PlaceObjectOnGroundHereResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Result, other.Result)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (result_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PlaceObjectOnGroundHereResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 18: {
+            if (result_ == null) {
+              result_ = new global::Anki.Vector.ExternalInterface.ActionResult();
+            }
+            input.ReadMessage(result_);
             break;
           }
         }
@@ -15452,7 +19775,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[80]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[103]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15553,7 +19876,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[81]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[104]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15862,7 +20185,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[82]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[105]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16087,7 +20410,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[83]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[106]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16188,7 +20511,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[84]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[107]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16371,276 +20694,6 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
-  public sealed partial class NetworkStateRequest : pb::IMessage<NetworkStateRequest> {
-    private static readonly pb::MessageParser<NetworkStateRequest> _parser = new pb::MessageParser<NetworkStateRequest>(() => new NetworkStateRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<NetworkStateRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[85]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStateRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStateRequest(NetworkStateRequest other) : this() {
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStateRequest Clone() {
-      return new NetworkStateRequest(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as NetworkStateRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(NetworkStateRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(NetworkStateRequest other) {
-      if (other == null) {
-        return;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class NetworkStateResponse : pb::IMessage<NetworkStateResponse> {
-    private static readonly pb::MessageParser<NetworkStateResponse> _parser = new pb::MessageParser<NetworkStateResponse>(() => new NetworkStateResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<NetworkStateResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[86]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStateResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStateResponse(NetworkStateResponse other) : this() {
-      status_ = other.status_ != null ? other.status_.Clone() : null;
-      networkStats_ = other.networkStats_ != null ? other.networkStats_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public NetworkStateResponse Clone() {
-      return new NetworkStateResponse(this);
-    }
-
-    /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 1;
-    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
-      get { return status_; }
-      set {
-        status_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "network_stats" field.</summary>
-    public const int NetworkStatsFieldNumber = 2;
-    private global::Anki.Vector.ExternalInterface.NetworkStats networkStats_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Anki.Vector.ExternalInterface.NetworkStats NetworkStats {
-      get { return networkStats_; }
-      set {
-        networkStats_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as NetworkStateResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(NetworkStateResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Status, other.Status)) return false;
-      if (!object.Equals(NetworkStats, other.NetworkStats)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (status_ != null) hash ^= Status.GetHashCode();
-      if (networkStats_ != null) hash ^= NetworkStats.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (status_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Status);
-      }
-      if (networkStats_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(NetworkStats);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (status_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
-      }
-      if (networkStats_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NetworkStats);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(NetworkStateResponse other) {
-      if (other == null) {
-        return;
-      }
-      if (other.status_ != null) {
-        if (status_ == null) {
-          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
-        }
-        Status.MergeFrom(other.Status);
-      }
-      if (other.networkStats_ != null) {
-        if (networkStats_ == null) {
-          networkStats_ = new global::Anki.Vector.ExternalInterface.NetworkStats();
-        }
-        NetworkStats.MergeFrom(other.NetworkStats);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (status_ == null) {
-              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
-            }
-            input.ReadMessage(status_);
-            break;
-          }
-          case 18: {
-            if (networkStats_ == null) {
-              networkStats_ = new global::Anki.Vector.ExternalInterface.NetworkStats();
-            }
-            input.ReadMessage(networkStats_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class SayTextRequest : pb::IMessage<SayTextRequest> {
     private static readonly pb::MessageParser<SayTextRequest> _parser = new pb::MessageParser<SayTextRequest>(() => new SayTextRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -16649,7 +20702,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[87]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[108]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16834,7 +20887,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[88]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[109]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17012,7 +21065,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[89]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[110]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17316,7 +21369,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[90]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[111]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17448,7 +21501,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[91]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[112]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17570,7 +21623,7 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
-  /// One frame of audio data and associated metadata
+  /// One frame of robot audio data and associated metadata
   /// </summary>
   public sealed partial class AudioChunk : pb::IMessage<AudioChunk> {
     private static readonly pb::MessageParser<AudioChunk> _parser = new pb::MessageParser<AudioChunk>(() => new AudioChunk());
@@ -17580,7 +21633,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[92]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[113]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17963,7 +22016,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[93]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[114]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18067,7 +22120,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[94]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[115]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18378,6 +22431,1709 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
+  /// Preflight and initialization for audio streaming to robot
+  /// </summary>
+  public sealed partial class ExternalAudioStreamPrepare : pb::IMessage<ExternalAudioStreamPrepare> {
+    private static readonly pb::MessageParser<ExternalAudioStreamPrepare> _parser = new pb::MessageParser<ExternalAudioStreamPrepare>(() => new ExternalAudioStreamPrepare());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamPrepare> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[116]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPrepare() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPrepare(ExternalAudioStreamPrepare other) : this() {
+      audioFrameRate_ = other.audioFrameRate_;
+      audioVolume_ = other.audioVolume_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPrepare Clone() {
+      return new ExternalAudioStreamPrepare(this);
+    }
+
+    /// <summary>Field number for the "audio_frame_rate" field.</summary>
+    public const int AudioFrameRateFieldNumber = 1;
+    private uint audioFrameRate_;
+    /// <summary>
+    /// 8000 - 16025
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint AudioFrameRate {
+      get { return audioFrameRate_; }
+      set {
+        audioFrameRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "audio_volume" field.</summary>
+    public const int AudioVolumeFieldNumber = 2;
+    private uint audioVolume_;
+    /// <summary>
+    /// 0 - 100
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint AudioVolume {
+      get { return audioVolume_; }
+      set {
+        audioVolume_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamPrepare);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamPrepare other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AudioFrameRate != other.AudioFrameRate) return false;
+      if (AudioVolume != other.AudioVolume) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AudioFrameRate != 0) hash ^= AudioFrameRate.GetHashCode();
+      if (AudioVolume != 0) hash ^= AudioVolume.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (AudioFrameRate != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(AudioFrameRate);
+      }
+      if (AudioVolume != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(AudioVolume);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (AudioFrameRate != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AudioFrameRate);
+      }
+      if (AudioVolume != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AudioVolume);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamPrepare other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AudioFrameRate != 0) {
+        AudioFrameRate = other.AudioFrameRate;
+      }
+      if (other.AudioVolume != 0) {
+        AudioVolume = other.AudioVolume;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AudioFrameRate = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            AudioVolume = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Send chunk of audio data to stream on robot
+  /// </summary>
+  public sealed partial class ExternalAudioStreamChunk : pb::IMessage<ExternalAudioStreamChunk> {
+    private static readonly pb::MessageParser<ExternalAudioStreamChunk> _parser = new pb::MessageParser<ExternalAudioStreamChunk>(() => new ExternalAudioStreamChunk());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamChunk> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[117]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamChunk() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamChunk(ExternalAudioStreamChunk other) : this() {
+      audioChunkSizeBytes_ = other.audioChunkSizeBytes_;
+      audioChunkSamples_ = other.audioChunkSamples_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamChunk Clone() {
+      return new ExternalAudioStreamChunk(this);
+    }
+
+    /// <summary>Field number for the "audio_chunk_size_bytes" field.</summary>
+    public const int AudioChunkSizeBytesFieldNumber = 1;
+    private uint audioChunkSizeBytes_;
+    /// <summary>
+    ///current engine maximum of 1024 bytes
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint AudioChunkSizeBytes {
+      get { return audioChunkSizeBytes_; }
+      set {
+        audioChunkSizeBytes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "audio_chunk_samples" field.</summary>
+    public const int AudioChunkSamplesFieldNumber = 2;
+    private pb::ByteString audioChunkSamples_ = pb::ByteString.Empty;
+    /// <summary>
+    ///16-bit little-endian PCM audio data
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString AudioChunkSamples {
+      get { return audioChunkSamples_; }
+      set {
+        audioChunkSamples_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamChunk);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamChunk other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AudioChunkSizeBytes != other.AudioChunkSizeBytes) return false;
+      if (AudioChunkSamples != other.AudioChunkSamples) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AudioChunkSizeBytes != 0) hash ^= AudioChunkSizeBytes.GetHashCode();
+      if (AudioChunkSamples.Length != 0) hash ^= AudioChunkSamples.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (AudioChunkSizeBytes != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(AudioChunkSizeBytes);
+      }
+      if (AudioChunkSamples.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(AudioChunkSamples);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (AudioChunkSizeBytes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AudioChunkSizeBytes);
+      }
+      if (AudioChunkSamples.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(AudioChunkSamples);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamChunk other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AudioChunkSizeBytes != 0) {
+        AudioChunkSizeBytes = other.AudioChunkSizeBytes;
+      }
+      if (other.AudioChunkSamples.Length != 0) {
+        AudioChunkSamples = other.AudioChunkSamples;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AudioChunkSizeBytes = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            AudioChunkSamples = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Send notification of last chunk of audio sent to robot
+  /// </summary>
+  public sealed partial class ExternalAudioStreamComplete : pb::IMessage<ExternalAudioStreamComplete> {
+    private static readonly pb::MessageParser<ExternalAudioStreamComplete> _parser = new pb::MessageParser<ExternalAudioStreamComplete>(() => new ExternalAudioStreamComplete());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamComplete> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[118]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamComplete() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamComplete(ExternalAudioStreamComplete other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamComplete Clone() {
+      return new ExternalAudioStreamComplete(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamComplete);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamComplete other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamComplete other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Cancel a playing external robot audio stream
+  /// </summary>
+  public sealed partial class ExternalAudioStreamCancel : pb::IMessage<ExternalAudioStreamCancel> {
+    private static readonly pb::MessageParser<ExternalAudioStreamCancel> _parser = new pb::MessageParser<ExternalAudioStreamCancel>(() => new ExternalAudioStreamCancel());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamCancel> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[119]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamCancel() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamCancel(ExternalAudioStreamCancel other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamCancel Clone() {
+      return new ExternalAudioStreamCancel(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamCancel);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamCancel other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamCancel other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request to stream audio to the robot
+  /// </summary>
+  public sealed partial class ExternalAudioStreamRequest : pb::IMessage<ExternalAudioStreamRequest> {
+    private static readonly pb::MessageParser<ExternalAudioStreamRequest> _parser = new pb::MessageParser<ExternalAudioStreamRequest>(() => new ExternalAudioStreamRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[120]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamRequest(ExternalAudioStreamRequest other) : this() {
+      switch (other.AudioRequestTypeCase) {
+        case AudioRequestTypeOneofCase.AudioStreamPrepare:
+          AudioStreamPrepare = other.AudioStreamPrepare.Clone();
+          break;
+        case AudioRequestTypeOneofCase.AudioStreamChunk:
+          AudioStreamChunk = other.AudioStreamChunk.Clone();
+          break;
+        case AudioRequestTypeOneofCase.AudioStreamComplete:
+          AudioStreamComplete = other.AudioStreamComplete.Clone();
+          break;
+        case AudioRequestTypeOneofCase.AudioStreamCancel:
+          AudioStreamCancel = other.AudioStreamCancel.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamRequest Clone() {
+      return new ExternalAudioStreamRequest(this);
+    }
+
+    /// <summary>Field number for the "audio_stream_prepare" field.</summary>
+    public const int AudioStreamPrepareFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ExternalAudioStreamPrepare AudioStreamPrepare {
+      get { return audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamPrepare ? (global::Anki.Vector.ExternalInterface.ExternalAudioStreamPrepare) audioRequestType_ : null; }
+      set {
+        audioRequestType_ = value;
+        audioRequestTypeCase_ = value == null ? AudioRequestTypeOneofCase.None : AudioRequestTypeOneofCase.AudioStreamPrepare;
+      }
+    }
+
+    /// <summary>Field number for the "audio_stream_chunk" field.</summary>
+    public const int AudioStreamChunkFieldNumber = 2;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ExternalAudioStreamChunk AudioStreamChunk {
+      get { return audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamChunk ? (global::Anki.Vector.ExternalInterface.ExternalAudioStreamChunk) audioRequestType_ : null; }
+      set {
+        audioRequestType_ = value;
+        audioRequestTypeCase_ = value == null ? AudioRequestTypeOneofCase.None : AudioRequestTypeOneofCase.AudioStreamChunk;
+      }
+    }
+
+    /// <summary>Field number for the "audio_stream_complete" field.</summary>
+    public const int AudioStreamCompleteFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ExternalAudioStreamComplete AudioStreamComplete {
+      get { return audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamComplete ? (global::Anki.Vector.ExternalInterface.ExternalAudioStreamComplete) audioRequestType_ : null; }
+      set {
+        audioRequestType_ = value;
+        audioRequestTypeCase_ = value == null ? AudioRequestTypeOneofCase.None : AudioRequestTypeOneofCase.AudioStreamComplete;
+      }
+    }
+
+    /// <summary>Field number for the "audio_stream_cancel" field.</summary>
+    public const int AudioStreamCancelFieldNumber = 4;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ExternalAudioStreamCancel AudioStreamCancel {
+      get { return audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamCancel ? (global::Anki.Vector.ExternalInterface.ExternalAudioStreamCancel) audioRequestType_ : null; }
+      set {
+        audioRequestType_ = value;
+        audioRequestTypeCase_ = value == null ? AudioRequestTypeOneofCase.None : AudioRequestTypeOneofCase.AudioStreamCancel;
+      }
+    }
+
+    private object audioRequestType_;
+    /// <summary>Enum of possible cases for the "audio_request_type" oneof.</summary>
+    public enum AudioRequestTypeOneofCase {
+      None = 0,
+      AudioStreamPrepare = 1,
+      AudioStreamChunk = 2,
+      AudioStreamComplete = 3,
+      AudioStreamCancel = 4,
+    }
+    private AudioRequestTypeOneofCase audioRequestTypeCase_ = AudioRequestTypeOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AudioRequestTypeOneofCase AudioRequestTypeCase {
+      get { return audioRequestTypeCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearAudioRequestType() {
+      audioRequestTypeCase_ = AudioRequestTypeOneofCase.None;
+      audioRequestType_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(AudioStreamPrepare, other.AudioStreamPrepare)) return false;
+      if (!object.Equals(AudioStreamChunk, other.AudioStreamChunk)) return false;
+      if (!object.Equals(AudioStreamComplete, other.AudioStreamComplete)) return false;
+      if (!object.Equals(AudioStreamCancel, other.AudioStreamCancel)) return false;
+      if (AudioRequestTypeCase != other.AudioRequestTypeCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamPrepare) hash ^= AudioStreamPrepare.GetHashCode();
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamChunk) hash ^= AudioStreamChunk.GetHashCode();
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamComplete) hash ^= AudioStreamComplete.GetHashCode();
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamCancel) hash ^= AudioStreamCancel.GetHashCode();
+      hash ^= (int) audioRequestTypeCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamPrepare) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AudioStreamPrepare);
+      }
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamChunk) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AudioStreamChunk);
+      }
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamComplete) {
+        output.WriteRawTag(26);
+        output.WriteMessage(AudioStreamComplete);
+      }
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamCancel) {
+        output.WriteRawTag(34);
+        output.WriteMessage(AudioStreamCancel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamPrepare) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioStreamPrepare);
+      }
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamChunk) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioStreamChunk);
+      }
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamComplete) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioStreamComplete);
+      }
+      if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamCancel) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioStreamCancel);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamRequest other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.AudioRequestTypeCase) {
+        case AudioRequestTypeOneofCase.AudioStreamPrepare:
+          if (AudioStreamPrepare == null) {
+            AudioStreamPrepare = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamPrepare();
+          }
+          AudioStreamPrepare.MergeFrom(other.AudioStreamPrepare);
+          break;
+        case AudioRequestTypeOneofCase.AudioStreamChunk:
+          if (AudioStreamChunk == null) {
+            AudioStreamChunk = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamChunk();
+          }
+          AudioStreamChunk.MergeFrom(other.AudioStreamChunk);
+          break;
+        case AudioRequestTypeOneofCase.AudioStreamComplete:
+          if (AudioStreamComplete == null) {
+            AudioStreamComplete = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamComplete();
+          }
+          AudioStreamComplete.MergeFrom(other.AudioStreamComplete);
+          break;
+        case AudioRequestTypeOneofCase.AudioStreamCancel:
+          if (AudioStreamCancel == null) {
+            AudioStreamCancel = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamCancel();
+          }
+          AudioStreamCancel.MergeFrom(other.AudioStreamCancel);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Anki.Vector.ExternalInterface.ExternalAudioStreamPrepare subBuilder = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamPrepare();
+            if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamPrepare) {
+              subBuilder.MergeFrom(AudioStreamPrepare);
+            }
+            input.ReadMessage(subBuilder);
+            AudioStreamPrepare = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Anki.Vector.ExternalInterface.ExternalAudioStreamChunk subBuilder = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamChunk();
+            if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamChunk) {
+              subBuilder.MergeFrom(AudioStreamChunk);
+            }
+            input.ReadMessage(subBuilder);
+            AudioStreamChunk = subBuilder;
+            break;
+          }
+          case 26: {
+            global::Anki.Vector.ExternalInterface.ExternalAudioStreamComplete subBuilder = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamComplete();
+            if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamComplete) {
+              subBuilder.MergeFrom(AudioStreamComplete);
+            }
+            input.ReadMessage(subBuilder);
+            AudioStreamComplete = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Anki.Vector.ExternalInterface.ExternalAudioStreamCancel subBuilder = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamCancel();
+            if (audioRequestTypeCase_ == AudioRequestTypeOneofCase.AudioStreamCancel) {
+              subBuilder.MergeFrom(AudioStreamCancel);
+            }
+            input.ReadMessage(subBuilder);
+            AudioStreamCancel = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Audio has been played on the Robot
+  /// </summary>
+  public sealed partial class ExternalAudioStreamPlaybackComplete : pb::IMessage<ExternalAudioStreamPlaybackComplete> {
+    private static readonly pb::MessageParser<ExternalAudioStreamPlaybackComplete> _parser = new pb::MessageParser<ExternalAudioStreamPlaybackComplete>(() => new ExternalAudioStreamPlaybackComplete());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamPlaybackComplete> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[121]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPlaybackComplete() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPlaybackComplete(ExternalAudioStreamPlaybackComplete other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPlaybackComplete Clone() {
+      return new ExternalAudioStreamPlaybackComplete(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamPlaybackComplete);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamPlaybackComplete other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamPlaybackComplete other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Audio playback failure
+  /// </summary>
+  public sealed partial class ExternalAudioStreamPlaybackFailure : pb::IMessage<ExternalAudioStreamPlaybackFailure> {
+    private static readonly pb::MessageParser<ExternalAudioStreamPlaybackFailure> _parser = new pb::MessageParser<ExternalAudioStreamPlaybackFailure>(() => new ExternalAudioStreamPlaybackFailure());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamPlaybackFailure> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[122]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPlaybackFailure() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPlaybackFailure(ExternalAudioStreamPlaybackFailure other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamPlaybackFailure Clone() {
+      return new ExternalAudioStreamPlaybackFailure(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamPlaybackFailure);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamPlaybackFailure other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamPlaybackFailure other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Audio has been sent to robot that would overrun the memory buffer
+  /// </summary>
+  public sealed partial class ExternalAudioStreamBufferOverrun : pb::IMessage<ExternalAudioStreamBufferOverrun> {
+    private static readonly pb::MessageParser<ExternalAudioStreamBufferOverrun> _parser = new pb::MessageParser<ExternalAudioStreamBufferOverrun>(() => new ExternalAudioStreamBufferOverrun());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamBufferOverrun> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[123]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamBufferOverrun() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamBufferOverrun(ExternalAudioStreamBufferOverrun other) : this() {
+      audioSamplesSent_ = other.audioSamplesSent_;
+      audioSamplesPlayed_ = other.audioSamplesPlayed_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamBufferOverrun Clone() {
+      return new ExternalAudioStreamBufferOverrun(this);
+    }
+
+    /// <summary>Field number for the "audio_samples_sent" field.</summary>
+    public const int AudioSamplesSentFieldNumber = 1;
+    private uint audioSamplesSent_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint AudioSamplesSent {
+      get { return audioSamplesSent_; }
+      set {
+        audioSamplesSent_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "audio_samples_played" field.</summary>
+    public const int AudioSamplesPlayedFieldNumber = 2;
+    private uint audioSamplesPlayed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint AudioSamplesPlayed {
+      get { return audioSamplesPlayed_; }
+      set {
+        audioSamplesPlayed_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamBufferOverrun);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamBufferOverrun other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AudioSamplesSent != other.AudioSamplesSent) return false;
+      if (AudioSamplesPlayed != other.AudioSamplesPlayed) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AudioSamplesSent != 0) hash ^= AudioSamplesSent.GetHashCode();
+      if (AudioSamplesPlayed != 0) hash ^= AudioSamplesPlayed.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (AudioSamplesSent != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(AudioSamplesSent);
+      }
+      if (AudioSamplesPlayed != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(AudioSamplesPlayed);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (AudioSamplesSent != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AudioSamplesSent);
+      }
+      if (AudioSamplesPlayed != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AudioSamplesPlayed);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamBufferOverrun other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AudioSamplesSent != 0) {
+        AudioSamplesSent = other.AudioSamplesSent;
+      }
+      if (other.AudioSamplesPlayed != 0) {
+        AudioSamplesPlayed = other.AudioSamplesPlayed;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AudioSamplesSent = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            AudioSamplesPlayed = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response from streaming audio to robot
+  /// </summary>
+  public sealed partial class ExternalAudioStreamResponse : pb::IMessage<ExternalAudioStreamResponse> {
+    private static readonly pb::MessageParser<ExternalAudioStreamResponse> _parser = new pb::MessageParser<ExternalAudioStreamResponse>(() => new ExternalAudioStreamResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExternalAudioStreamResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[124]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamResponse(ExternalAudioStreamResponse other) : this() {
+      switch (other.AudioResponseTypeCase) {
+        case AudioResponseTypeOneofCase.AudioStreamPlaybackComplete:
+          AudioStreamPlaybackComplete = other.AudioStreamPlaybackComplete.Clone();
+          break;
+        case AudioResponseTypeOneofCase.AudioStreamBufferOverrun:
+          AudioStreamBufferOverrun = other.AudioStreamBufferOverrun.Clone();
+          break;
+        case AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer:
+          AudioStreamPlaybackFailyer = other.AudioStreamPlaybackFailyer.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExternalAudioStreamResponse Clone() {
+      return new ExternalAudioStreamResponse(this);
+    }
+
+    /// <summary>Field number for the "audio_stream_playback_complete" field.</summary>
+    public const int AudioStreamPlaybackCompleteFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackComplete AudioStreamPlaybackComplete {
+      get { return audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackComplete ? (global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackComplete) audioResponseType_ : null; }
+      set {
+        audioResponseType_ = value;
+        audioResponseTypeCase_ = value == null ? AudioResponseTypeOneofCase.None : AudioResponseTypeOneofCase.AudioStreamPlaybackComplete;
+      }
+    }
+
+    /// <summary>Field number for the "audio_stream_buffer_overrun" field.</summary>
+    public const int AudioStreamBufferOverrunFieldNumber = 2;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ExternalAudioStreamBufferOverrun AudioStreamBufferOverrun {
+      get { return audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamBufferOverrun ? (global::Anki.Vector.ExternalInterface.ExternalAudioStreamBufferOverrun) audioResponseType_ : null; }
+      set {
+        audioResponseType_ = value;
+        audioResponseTypeCase_ = value == null ? AudioResponseTypeOneofCase.None : AudioResponseTypeOneofCase.AudioStreamBufferOverrun;
+      }
+    }
+
+    /// <summary>Field number for the "audio_stream_playback_failyer" field.</summary>
+    public const int AudioStreamPlaybackFailyerFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackFailure AudioStreamPlaybackFailyer {
+      get { return audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer ? (global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackFailure) audioResponseType_ : null; }
+      set {
+        audioResponseType_ = value;
+        audioResponseTypeCase_ = value == null ? AudioResponseTypeOneofCase.None : AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer;
+      }
+    }
+
+    private object audioResponseType_;
+    /// <summary>Enum of possible cases for the "audio_response_type" oneof.</summary>
+    public enum AudioResponseTypeOneofCase {
+      None = 0,
+      AudioStreamPlaybackComplete = 1,
+      AudioStreamBufferOverrun = 2,
+      AudioStreamPlaybackFailyer = 3,
+    }
+    private AudioResponseTypeOneofCase audioResponseTypeCase_ = AudioResponseTypeOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AudioResponseTypeOneofCase AudioResponseTypeCase {
+      get { return audioResponseTypeCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearAudioResponseType() {
+      audioResponseTypeCase_ = AudioResponseTypeOneofCase.None;
+      audioResponseType_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalAudioStreamResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExternalAudioStreamResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(AudioStreamPlaybackComplete, other.AudioStreamPlaybackComplete)) return false;
+      if (!object.Equals(AudioStreamBufferOverrun, other.AudioStreamBufferOverrun)) return false;
+      if (!object.Equals(AudioStreamPlaybackFailyer, other.AudioStreamPlaybackFailyer)) return false;
+      if (AudioResponseTypeCase != other.AudioResponseTypeCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackComplete) hash ^= AudioStreamPlaybackComplete.GetHashCode();
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamBufferOverrun) hash ^= AudioStreamBufferOverrun.GetHashCode();
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer) hash ^= AudioStreamPlaybackFailyer.GetHashCode();
+      hash ^= (int) audioResponseTypeCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackComplete) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AudioStreamPlaybackComplete);
+      }
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamBufferOverrun) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AudioStreamBufferOverrun);
+      }
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer) {
+        output.WriteRawTag(26);
+        output.WriteMessage(AudioStreamPlaybackFailyer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackComplete) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioStreamPlaybackComplete);
+      }
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamBufferOverrun) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioStreamBufferOverrun);
+      }
+      if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioStreamPlaybackFailyer);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExternalAudioStreamResponse other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.AudioResponseTypeCase) {
+        case AudioResponseTypeOneofCase.AudioStreamPlaybackComplete:
+          if (AudioStreamPlaybackComplete == null) {
+            AudioStreamPlaybackComplete = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackComplete();
+          }
+          AudioStreamPlaybackComplete.MergeFrom(other.AudioStreamPlaybackComplete);
+          break;
+        case AudioResponseTypeOneofCase.AudioStreamBufferOverrun:
+          if (AudioStreamBufferOverrun == null) {
+            AudioStreamBufferOverrun = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamBufferOverrun();
+          }
+          AudioStreamBufferOverrun.MergeFrom(other.AudioStreamBufferOverrun);
+          break;
+        case AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer:
+          if (AudioStreamPlaybackFailyer == null) {
+            AudioStreamPlaybackFailyer = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackFailure();
+          }
+          AudioStreamPlaybackFailyer.MergeFrom(other.AudioStreamPlaybackFailyer);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackComplete subBuilder = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackComplete();
+            if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackComplete) {
+              subBuilder.MergeFrom(AudioStreamPlaybackComplete);
+            }
+            input.ReadMessage(subBuilder);
+            AudioStreamPlaybackComplete = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Anki.Vector.ExternalInterface.ExternalAudioStreamBufferOverrun subBuilder = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamBufferOverrun();
+            if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamBufferOverrun) {
+              subBuilder.MergeFrom(AudioStreamBufferOverrun);
+            }
+            input.ReadMessage(subBuilder);
+            AudioStreamBufferOverrun = subBuilder;
+            break;
+          }
+          case 26: {
+            global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackFailure subBuilder = new global::Anki.Vector.ExternalInterface.ExternalAudioStreamPlaybackFailure();
+            if (audioResponseTypeCase_ == AudioResponseTypeOneofCase.AudioStreamPlaybackFailyer) {
+              subBuilder.MergeFrom(AudioStreamPlaybackFailyer);
+            }
+            input.ReadMessage(subBuilder);
+            AudioStreamPlaybackFailyer = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class MasterVolumeRequest : pb::IMessage<MasterVolumeRequest> {
+    private static readonly pb::MessageParser<MasterVolumeRequest> _parser = new pb::MessageParser<MasterVolumeRequest>(() => new MasterVolumeRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MasterVolumeRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[125]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterVolumeRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterVolumeRequest(MasterVolumeRequest other) : this() {
+      volumeLevel_ = other.volumeLevel_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterVolumeRequest Clone() {
+      return new MasterVolumeRequest(this);
+    }
+
+    /// <summary>Field number for the "volume_level" field.</summary>
+    public const int VolumeLevelFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.MasterVolumeLevel volumeLevel_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.MasterVolumeLevel VolumeLevel {
+      get { return volumeLevel_; }
+      set {
+        volumeLevel_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MasterVolumeRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MasterVolumeRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (VolumeLevel != other.VolumeLevel) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (VolumeLevel != 0) hash ^= VolumeLevel.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (VolumeLevel != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) VolumeLevel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (VolumeLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VolumeLevel);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MasterVolumeRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.VolumeLevel != 0) {
+        VolumeLevel = other.VolumeLevel;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            volumeLevel_ = (global::Anki.Vector.ExternalInterface.MasterVolumeLevel) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class MasterVolumeResponse : pb::IMessage<MasterVolumeResponse> {
+    private static readonly pb::MessageParser<MasterVolumeResponse> _parser = new pb::MessageParser<MasterVolumeResponse>(() => new MasterVolumeResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MasterVolumeResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[126]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterVolumeResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterVolumeResponse(MasterVolumeResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterVolumeResponse Clone() {
+      return new MasterVolumeResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MasterVolumeResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MasterVolumeResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MasterVolumeResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// When enabled, RobotObservedObject messages will be produced
   /// </summary>
   public sealed partial class EnableMarkerDetectionRequest : pb::IMessage<EnableMarkerDetectionRequest> {
@@ -18388,7 +24144,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[95]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[127]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18517,7 +24273,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[96]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[128]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18655,7 +24411,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[97]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[129]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18896,7 +24652,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[98]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[130]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19034,7 +24790,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[99]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[131]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19163,7 +24919,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[100]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[132]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19302,7 +25058,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[101]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[133]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19431,7 +25187,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[102]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[134]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19570,7 +25326,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[103]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[135]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19674,7 +25430,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[104]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[136]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19803,7 +25559,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[105]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[137]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19931,6 +25687,242 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
+  /// Request whether or not image streaming is enabled on the robot
+  /// </summary>
+  public sealed partial class IsImageStreamingEnabledRequest : pb::IMessage<IsImageStreamingEnabledRequest> {
+    private static readonly pb::MessageParser<IsImageStreamingEnabledRequest> _parser = new pb::MessageParser<IsImageStreamingEnabledRequest>(() => new IsImageStreamingEnabledRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsImageStreamingEnabledRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[138]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsImageStreamingEnabledRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsImageStreamingEnabledRequest(IsImageStreamingEnabledRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsImageStreamingEnabledRequest Clone() {
+      return new IsImageStreamingEnabledRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsImageStreamingEnabledRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsImageStreamingEnabledRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsImageStreamingEnabledRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Indicates whether or not image streaming is enabled on the robot
+  /// </summary>
+  public sealed partial class IsImageStreamingEnabledResponse : pb::IMessage<IsImageStreamingEnabledResponse> {
+    private static readonly pb::MessageParser<IsImageStreamingEnabledResponse> _parser = new pb::MessageParser<IsImageStreamingEnabledResponse>(() => new IsImageStreamingEnabledResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsImageStreamingEnabledResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[139]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsImageStreamingEnabledResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsImageStreamingEnabledResponse(IsImageStreamingEnabledResponse other) : this() {
+      isImageStreamingEnabled_ = other.isImageStreamingEnabled_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsImageStreamingEnabledResponse Clone() {
+      return new IsImageStreamingEnabledResponse(this);
+    }
+
+    /// <summary>Field number for the "is_image_streaming_enabled" field.</summary>
+    public const int IsImageStreamingEnabledFieldNumber = 1;
+    private bool isImageStreamingEnabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsImageStreamingEnabled {
+      get { return isImageStreamingEnabled_; }
+      set {
+        isImageStreamingEnabled_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsImageStreamingEnabledResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsImageStreamingEnabledResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsImageStreamingEnabled != other.IsImageStreamingEnabled) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsImageStreamingEnabled != false) hash ^= IsImageStreamingEnabled.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsImageStreamingEnabled != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsImageStreamingEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsImageStreamingEnabled != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsImageStreamingEnabledResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsImageStreamingEnabled != false) {
+        IsImageStreamingEnabled = other.IsImageStreamingEnabled;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            IsImageStreamingEnabled = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Sent when vision modes are automatically disabled due to the SDK no longer having control
   /// of the robot
   /// </summary>
@@ -19942,7 +25934,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[106]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[140]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20046,7 +26038,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[107]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[141]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20432,7 +26424,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[108]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[142]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20533,7 +26525,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[109]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[143]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20738,6 +26730,354 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  public sealed partial class CaptureSingleImageRequest : pb::IMessage<CaptureSingleImageRequest> {
+    private static readonly pb::MessageParser<CaptureSingleImageRequest> _parser = new pb::MessageParser<CaptureSingleImageRequest>(() => new CaptureSingleImageRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CaptureSingleImageRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[144]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CaptureSingleImageRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CaptureSingleImageRequest(CaptureSingleImageRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CaptureSingleImageRequest Clone() {
+      return new CaptureSingleImageRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CaptureSingleImageRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CaptureSingleImageRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CaptureSingleImageRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CaptureSingleImageResponse : pb::IMessage<CaptureSingleImageResponse> {
+    private static readonly pb::MessageParser<CaptureSingleImageResponse> _parser = new pb::MessageParser<CaptureSingleImageResponse>(() => new CaptureSingleImageResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CaptureSingleImageResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[145]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CaptureSingleImageResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CaptureSingleImageResponse(CaptureSingleImageResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      frameTimeStamp_ = other.frameTimeStamp_;
+      imageId_ = other.imageId_;
+      imageEncoding_ = other.imageEncoding_;
+      data_ = other.data_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CaptureSingleImageResponse Clone() {
+      return new CaptureSingleImageResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frame_time_stamp" field.</summary>
+    public const int FrameTimeStampFieldNumber = 2;
+    private uint frameTimeStamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint FrameTimeStamp {
+      get { return frameTimeStamp_; }
+      set {
+        frameTimeStamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "image_id" field.</summary>
+    public const int ImageIdFieldNumber = 3;
+    private uint imageId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ImageId {
+      get { return imageId_; }
+      set {
+        imageId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "image_encoding" field.</summary>
+    public const int ImageEncodingFieldNumber = 4;
+    private global::Anki.Vector.ExternalInterface.ImageChunk.Types.ImageEncoding imageEncoding_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ImageChunk.Types.ImageEncoding ImageEncoding {
+      get { return imageEncoding_; }
+      set {
+        imageEncoding_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "data" field.</summary>
+    public const int DataFieldNumber = 5;
+    private pb::ByteString data_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Data {
+      get { return data_; }
+      set {
+        data_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CaptureSingleImageResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CaptureSingleImageResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      if (FrameTimeStamp != other.FrameTimeStamp) return false;
+      if (ImageId != other.ImageId) return false;
+      if (ImageEncoding != other.ImageEncoding) return false;
+      if (Data != other.Data) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (FrameTimeStamp != 0) hash ^= FrameTimeStamp.GetHashCode();
+      if (ImageId != 0) hash ^= ImageId.GetHashCode();
+      if (ImageEncoding != 0) hash ^= ImageEncoding.GetHashCode();
+      if (Data.Length != 0) hash ^= Data.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (FrameTimeStamp != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FrameTimeStamp);
+      }
+      if (ImageId != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(ImageId);
+      }
+      if (ImageEncoding != 0) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) ImageEncoding);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteBytes(Data);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (FrameTimeStamp != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameTimeStamp);
+      }
+      if (ImageId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ImageId);
+      }
+      if (ImageEncoding != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ImageEncoding);
+      }
+      if (Data.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CaptureSingleImageResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.FrameTimeStamp != 0) {
+        FrameTimeStamp = other.FrameTimeStamp;
+      }
+      if (other.ImageId != 0) {
+        ImageId = other.ImageId;
+      }
+      if (other.ImageEncoding != 0) {
+        ImageEncoding = other.ImageEncoding;
+      }
+      if (other.Data.Length != 0) {
+        Data = other.Data;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+          case 16: {
+            FrameTimeStamp = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            ImageId = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            imageEncoding_ = (global::Anki.Vector.ExternalInterface.ImageChunk.Types.ImageEncoding) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            Data = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class SetEyeColorRequest : pb::IMessage<SetEyeColorRequest> {
     private static readonly pb::MessageParser<SetEyeColorRequest> _parser = new pb::MessageParser<SetEyeColorRequest>(() => new SetEyeColorRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -20746,7 +27086,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[110]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[146]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20903,7 +27243,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[111]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[147]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21038,7 +27378,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[112]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[148]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21279,7 +27619,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[113]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[149]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

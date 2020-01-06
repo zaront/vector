@@ -1,6 +1,6 @@
 # Control your Anki Vector with .NET
 
-This API matches the Alpha 0.5.1 release for Python found [here](https://github.com/anki/vector-python-sdk)\
+This API matches the Alpha 0.6.0 release for Python found [here](https://github.com/anki/vector-python-sdk)\
 ![Vector](https://raw.githubusercontent.com/anki/vector-python-sdk/master/docs/source/images/vector-sdk-alpha.jpg)
 
 ## Getting Started

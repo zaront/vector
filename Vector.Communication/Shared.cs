@@ -38,7 +38,7 @@ namespace Anki.Vector.ExternalInterface {
             "ZXJzaW9uGAIgASgDIiYKBlJlc3VsdBIPCgtVTlNVUFBPUlRFRBAAEgsKB1NV",
             "Q0NFU1MQASJoChJDb25uZWN0aW9uUmVzcG9uc2USPgoGc3RhdHVzGAEgASgL",
             "Mi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3Rh",
-            "dHVzEhIKCmlzX3ByaW1hcnkYAiABKAgihggKBUV2ZW50ElAKE3RpbWVfc3Rh",
+            "dHVzEhIKCmlzX3ByaW1hcnkYAiABKAgiyQgKBUV2ZW50ElAKE3RpbWVfc3Rh",
             "bXBlZF9zdGF0dXMYASABKAsyMS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
             "cmZhY2UuVGltZVN0YW1wZWRTdGF0dXNIABI9Cgl3YWtlX3dvcmQYAyABKAsy",
             "KC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuV2FrZVdvcmRIABJQ",
@@ -61,29 +61,31 @@ namespace Anki.Vector.ExternalInterface {
             "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuTWlycm9yTW9kZURpc2FibGVk",
             "SAASXQoadmlzaW9uX21vZGVzX2F1dG9fZGlzYWJsZWQYESABKAsyNy5Bbmtp",
             "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuVmlzaW9uTW9kZXNBdXRvRGlz",
-            "YWJsZWRIAEIMCgpldmVudF90eXBlIhoKCkZpbHRlckxpc3QSDAoEbGlzdBgB",
-            "IAMoCSK2AQoMRXZlbnRSZXF1ZXN0EkAKCndoaXRlX2xpc3QYASABKAsyKi5B",
-            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuRmlsdGVyTGlzdEgAEkAK",
-            "CmJsYWNrX2xpc3QYAiABKAsyKi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
-            "cmZhY2UuRmlsdGVyTGlzdEgAEhUKDWNvbm5lY3Rpb25faWQYAyABKAlCCwoJ",
-            "bGlzdF90eXBlIosBCg1FdmVudFJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIu",
-            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1",
-            "cxI0CgVldmVudBgCIAEoCzIlLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVy",
-            "ZmFjZS5FdmVudDoEgKYdASJJChlVc2VyQXV0aGVudGljYXRpb25SZXF1ZXN0",
-            "EhcKD3VzZXJfc2Vzc2lvbl9pZBgBIAEoDBITCgtjbGllbnRfbmFtZRgCIAEo",
-            "DCLwAQoaVXNlckF1dGhlbnRpY2F0aW9uUmVzcG9uc2USPgoGc3RhdHVzGAEg",
-            "ASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNl",
-            "U3RhdHVzEk0KBGNvZGUYAiABKA4yPy5BbmtpLlZlY3Rvci5leHRlcm5hbF9p",
-            "bnRlcmZhY2UuVXNlckF1dGhlbnRpY2F0aW9uUmVzcG9uc2UuQ29kZRIZChFj",
-            "bGllbnRfdG9rZW5fZ3VpZBgDIAEoDCIoCgRDb2RlEhAKDFVOQVVUSE9SSVpF",
-            "RBAAEg4KCkFVVEhPUklaRUQQAWIGcHJvdG8z"));
+            "YWJsZWRIABJBCgt1c2VyX2ludGVudBgTIAEoCzIqLkFua2kuVmVjdG9yLmV4",
+            "dGVybmFsX2ludGVyZmFjZS5Vc2VySW50ZW50SABCDAoKZXZlbnRfdHlwZSIa",
+            "CgpGaWx0ZXJMaXN0EgwKBGxpc3QYASADKAkitgEKDEV2ZW50UmVxdWVzdBJA",
+            "Cgp3aGl0ZV9saXN0GAEgASgLMiouQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50",
+            "ZXJmYWNlLkZpbHRlckxpc3RIABJACgpibGFja19saXN0GAIgASgLMiouQW5r",
+            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkZpbHRlckxpc3RIABIVCg1j",
+            "b25uZWN0aW9uX2lkGAMgASgJQgsKCWxpc3RfdHlwZSKLAQoNRXZlbnRSZXNw",
+            "b25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9p",
+            "bnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSNAoFZXZlbnQYAiABKAsyJS5Bbmtp",
+            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuRXZlbnQ6BICmHQEiSQoZVXNl",
+            "ckF1dGhlbnRpY2F0aW9uUmVxdWVzdBIXCg91c2VyX3Nlc3Npb25faWQYASAB",
+            "KAwSEwoLY2xpZW50X25hbWUYAiABKAwi8AEKGlVzZXJBdXRoZW50aWNhdGlv",
+            "blJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVy",
+            "bmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxJNCgRjb2RlGAIgASgOMj8u",
+            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlVzZXJBdXRoZW50aWNh",
+            "dGlvblJlc3BvbnNlLkNvZGUSGQoRY2xpZW50X3Rva2VuX2d1aWQYAyABKAwi",
+            "KAoEQ29kZRIQCgxVTkFVVEhPUklaRUQQABIOCgpBVVRIT1JJWkVEEAFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.BehaviorReflection.Descriptor, global::Anki.Vector.ExternalInterface.CubeReflection.Descriptor, global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor, global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor, global::Anki.Vector.ExternalInterface.ExtensionsReflection.Descriptor, global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ProtocolVersionRequest), global::Anki.Vector.ExternalInterface.ProtocolVersionRequest.Parser, new[]{ "ClientVersion", "MinHostVersion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ProtocolVersionResponse), global::Anki.Vector.ExternalInterface.ProtocolVersionResponse.Parser, new[]{ "Result", "HostVersion" }, null, new[]{ typeof(global::Anki.Vector.ExternalInterface.ProtocolVersionResponse.Types.Result) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ConnectionResponse), global::Anki.Vector.ExternalInterface.ConnectionResponse.Parser, new[]{ "Status", "IsPrimary" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.Event), global::Anki.Vector.ExternalInterface.Event.Parser, new[]{ "TimeStampedStatus", "WakeWord", "RobotObservedFace", "RobotChangedObservedFaceId", "ObjectEvent", "StimulationInfo", "PhotoTaken", "RobotState", "CubeBattery", "KeepAlive", "ConnectionResponse", "MirrorModeDisabled", "VisionModesAutoDisabled" }, new[]{ "EventType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.Event), global::Anki.Vector.ExternalInterface.Event.Parser, new[]{ "TimeStampedStatus", "WakeWord", "RobotObservedFace", "RobotChangedObservedFaceId", "ObjectEvent", "StimulationInfo", "PhotoTaken", "RobotState", "CubeBattery", "KeepAlive", "ConnectionResponse", "MirrorModeDisabled", "VisionModesAutoDisabled", "UserIntent" }, new[]{ "EventType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.FilterList), global::Anki.Vector.ExternalInterface.FilterList.Parser, new[]{ "List" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EventRequest), global::Anki.Vector.ExternalInterface.EventRequest.Parser, new[]{ "WhiteList", "BlackList", "ConnectionId" }, new[]{ "ListType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EventResponse), global::Anki.Vector.ExternalInterface.EventResponse.Parser, new[]{ "Status", "Event" }, null, null, null),
@@ -652,6 +654,9 @@ namespace Anki.Vector.ExternalInterface {
         case EventTypeOneofCase.VisionModesAutoDisabled:
           VisionModesAutoDisabled = other.VisionModesAutoDisabled.Clone();
           break;
+        case EventTypeOneofCase.UserIntent:
+          UserIntent = other.UserIntent.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -763,6 +768,9 @@ namespace Anki.Vector.ExternalInterface {
 
     /// <summary>Field number for the "keep_alive" field.</summary>
     public const int KeepAliveFieldNumber = 12;
+    /// <summary>
+    /// Used by Vector to verify the connection is still alive.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.KeepAlivePing KeepAlive {
       get { return eventTypeCase_ == EventTypeOneofCase.KeepAlive ? (global::Anki.Vector.ExternalInterface.KeepAlivePing) eventType_ : null; }
@@ -805,6 +813,17 @@ namespace Anki.Vector.ExternalInterface {
       }
     }
 
+    /// <summary>Field number for the "user_intent" field.</summary>
+    public const int UserIntentFieldNumber = 19;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.UserIntent UserIntent {
+      get { return eventTypeCase_ == EventTypeOneofCase.UserIntent ? (global::Anki.Vector.ExternalInterface.UserIntent) eventType_ : null; }
+      set {
+        eventType_ = value;
+        eventTypeCase_ = value == null ? EventTypeOneofCase.None : EventTypeOneofCase.UserIntent;
+      }
+    }
+
     private object eventType_;
     /// <summary>Enum of possible cases for the "event_type" oneof.</summary>
     public enum EventTypeOneofCase {
@@ -822,6 +841,7 @@ namespace Anki.Vector.ExternalInterface {
       ConnectionResponse = 13,
       MirrorModeDisabled = 16,
       VisionModesAutoDisabled = 17,
+      UserIntent = 19,
     }
     private EventTypeOneofCase eventTypeCase_ = EventTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -861,6 +881,7 @@ namespace Anki.Vector.ExternalInterface {
       if (!object.Equals(ConnectionResponse, other.ConnectionResponse)) return false;
       if (!object.Equals(MirrorModeDisabled, other.MirrorModeDisabled)) return false;
       if (!object.Equals(VisionModesAutoDisabled, other.VisionModesAutoDisabled)) return false;
+      if (!object.Equals(UserIntent, other.UserIntent)) return false;
       if (EventTypeCase != other.EventTypeCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -881,6 +902,7 @@ namespace Anki.Vector.ExternalInterface {
       if (eventTypeCase_ == EventTypeOneofCase.ConnectionResponse) hash ^= ConnectionResponse.GetHashCode();
       if (eventTypeCase_ == EventTypeOneofCase.MirrorModeDisabled) hash ^= MirrorModeDisabled.GetHashCode();
       if (eventTypeCase_ == EventTypeOneofCase.VisionModesAutoDisabled) hash ^= VisionModesAutoDisabled.GetHashCode();
+      if (eventTypeCase_ == EventTypeOneofCase.UserIntent) hash ^= UserIntent.GetHashCode();
       hash ^= (int) eventTypeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -947,6 +969,10 @@ namespace Anki.Vector.ExternalInterface {
         output.WriteRawTag(138, 1);
         output.WriteMessage(VisionModesAutoDisabled);
       }
+      if (eventTypeCase_ == EventTypeOneofCase.UserIntent) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(UserIntent);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -993,6 +1019,9 @@ namespace Anki.Vector.ExternalInterface {
       }
       if (eventTypeCase_ == EventTypeOneofCase.VisionModesAutoDisabled) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(VisionModesAutoDisabled);
+      }
+      if (eventTypeCase_ == EventTypeOneofCase.UserIntent) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(UserIntent);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1083,6 +1112,12 @@ namespace Anki.Vector.ExternalInterface {
             VisionModesAutoDisabled = new global::Anki.Vector.ExternalInterface.VisionModesAutoDisabled();
           }
           VisionModesAutoDisabled.MergeFrom(other.VisionModesAutoDisabled);
+          break;
+        case EventTypeOneofCase.UserIntent:
+          if (UserIntent == null) {
+            UserIntent = new global::Anki.Vector.ExternalInterface.UserIntent();
+          }
+          UserIntent.MergeFrom(other.UserIntent);
           break;
       }
 
@@ -1212,6 +1247,15 @@ namespace Anki.Vector.ExternalInterface {
             }
             input.ReadMessage(subBuilder);
             VisionModesAutoDisabled = subBuilder;
+            break;
+          }
+          case 154: {
+            global::Anki.Vector.ExternalInterface.UserIntent subBuilder = new global::Anki.Vector.ExternalInterface.UserIntent();
+            if (eventTypeCase_ == EventTypeOneofCase.UserIntent) {
+              subBuilder.MergeFrom(UserIntent);
+            }
+            input.ReadMessage(subBuilder);
+            UserIntent = subBuilder;
             break;
           }
         }

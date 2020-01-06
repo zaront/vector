@@ -38,8 +38,6 @@ namespace Vector
 
 					i.CreateMap<Ank.BatteryStateResponse, BatteryState>();
 
-					i.CreateMap<Ank.NetworkStateResponse, NetworkState>();
-
 					i.CreateMap<Ank.VersionStateResponse, VersionState>();
 
 					i.CreateMap<Ank.WakeWord, WakeWord>()

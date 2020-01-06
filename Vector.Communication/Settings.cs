@@ -25,34 +25,14 @@ namespace Anki.Vector.ExternalInterface {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiRhbmtpX3ZlY3Rvci9tZXNzYWdpbmcvc2V0dGluZ3MucHJvdG8SHkFua2ku",
-            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZSolCgpBcGlWZXJzaW9uEgsKB0lO",
-            "VkFMSUQQABIKCgZMQVRFU1QQASpSCgZWb2x1bWUSCAoETVVURRAAEgcKA0xP",
-            "VxABEg4KCk1FRElVTV9MT1cQAhIKCgZNRURJVU0QAxIPCgtNRURJVU1fSElH",
-            "SBAEEggKBEhJR0gQBWIGcHJvdG8z"));
+            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.ApiVersion), typeof(global::Anki.Vector.ExternalInterface.Volume), }, null));
+          new pbr::GeneratedClrTypeInfo(null, null));
     }
     #endregion
 
   }
-  #region Enums
-  public enum ApiVersion {
-    [pbr::OriginalName("INVALID")] Invalid = 0,
-    [pbr::OriginalName("LATEST")] Latest = 1,
-  }
-
-  public enum Volume {
-    [pbr::OriginalName("MUTE")] Mute = 0,
-    [pbr::OriginalName("LOW")] Low = 1,
-    [pbr::OriginalName("MEDIUM_LOW")] MediumLow = 2,
-    [pbr::OriginalName("MEDIUM")] Medium = 3,
-    [pbr::OriginalName("MEDIUM_HIGH")] MediumHigh = 4,
-    [pbr::OriginalName("HIGH")] High = 5,
-  }
-
-  #endregion
-
 }
 
 #endregion Designer generated code

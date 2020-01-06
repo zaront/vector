@@ -26,23 +26,26 @@ namespace Anki.Vector.ExternalInterface {
           string.Concat(
             "CiRhbmtpX3ZlY3Rvci9tZXNzYWdpbmcvYmVoYXZpb3IucHJvdG8SHkFua2ku",
             "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZRokYW5raV92ZWN0b3IvbWVzc2Fn",
-            "aW5nL21lc3NhZ2VzLnByb3RvIhAKDkNvbnRyb2xSZWxlYXNlIpsBCg5Db250",
+            "aW5nL21lc3NhZ2VzLnByb3RvIhAKDkNvbnRyb2xSZWxlYXNlIq4BCg5Db250",
             "cm9sUmVxdWVzdBJJCghwcmlvcml0eRgBIAEoDjI3LkFua2kuVmVjdG9yLmV4",
-            "dGVybmFsX2ludGVyZmFjZS5Db250cm9sUmVxdWVzdC5Qcmlvcml0eSI+CghQ",
-            "cmlvcml0eRILCgdVTktOT1dOEAASEAoMT1ZFUlJJREVfQUxMEAoSEwoPVE9Q",
-            "X1BSSU9SSVRZX0FJEBQivgEKFkJlaGF2aW9yQ29udHJvbFJlcXVlc3QSSQoP",
-            "Y29udHJvbF9yZWxlYXNlGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
-            "aW50ZXJmYWNlLkNvbnRyb2xSZWxlYXNlSAASSQoPY29udHJvbF9yZXF1ZXN0",
-            "GAIgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkNvbnRy",
-            "b2xSZXF1ZXN0SABCDgoMcmVxdWVzdF90eXBlIhgKFkNvbnRyb2xHcmFudGVk",
-            "UmVzcG9uc2UiFQoTQ29udHJvbExvc3RSZXNwb25zZSKeAgoXQmVoYXZpb3JD",
-            "b250cm9sUmVzcG9uc2USWgoYY29udHJvbF9ncmFudGVkX3Jlc3BvbnNlGAEg",
-            "ASgLMjYuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkNvbnRyb2xH",
-            "cmFudGVkUmVzcG9uc2VIABJRChJjb250cm9sX2xvc3RfZXZlbnQYAiABKAsy",
-            "My5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQ29udHJvbExvc3RS",
-            "ZXNwb25zZUgAEkMKCmtlZXBfYWxpdmUYAyABKAsyLS5BbmtpLlZlY3Rvci5l",
-            "eHRlcm5hbF9pbnRlcmZhY2UuS2VlcEFsaXZlUGluZ0gAQg8KDXJlc3BvbnNl",
-            "X3R5cGViBnByb3RvMw=="));
+            "dGVybmFsX2ludGVyZmFjZS5Db250cm9sUmVxdWVzdC5Qcmlvcml0eSJRCghQ",
+            "cmlvcml0eRILCgdVTktOT1dOEAASFgoST1ZFUlJJREVfQkVIQVZJT1JTEAoS",
+            "CwoHREVGQVVMVBAUEhMKD1JFU0VSVkVfQ09OVFJPTBAeIr4BChZCZWhhdmlv",
+            "ckNvbnRyb2xSZXF1ZXN0EkkKD2NvbnRyb2xfcmVsZWFzZRgBIAEoCzIuLkFu",
+            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Db250cm9sUmVsZWFzZUgA",
+            "EkkKD2NvbnRyb2xfcmVxdWVzdBgCIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVy",
+            "bmFsX2ludGVyZmFjZS5Db250cm9sUmVxdWVzdEgAQg4KDHJlcXVlc3RfdHlw",
+            "ZSIYChZDb250cm9sR3JhbnRlZFJlc3BvbnNlIhUKE0NvbnRyb2xMb3N0UmVz",
+            "cG9uc2UiHQobUmVzZXJ2ZWRDb250cm9sTG9zdFJlc3BvbnNlIoIDChdCZWhh",
+            "dmlvckNvbnRyb2xSZXNwb25zZRJaChhjb250cm9sX2dyYW50ZWRfcmVzcG9u",
+            "c2UYASABKAsyNi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQ29u",
+            "dHJvbEdyYW50ZWRSZXNwb25zZUgAElEKEmNvbnRyb2xfbG9zdF9ldmVudBgC",
+            "IAEoCzIzLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Db250cm9s",
+            "TG9zdFJlc3BvbnNlSAASQwoKa2VlcF9hbGl2ZRgDIAEoCzItLkFua2kuVmVj",
+            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5LZWVwQWxpdmVQaW5nSAASYgobcmVz",
+            "ZXJ2ZWRfY29udHJvbF9sb3N0X2V2ZW50GAQgASgLMjsuQW5raS5WZWN0b3Iu",
+            "ZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc2VydmVkQ29udHJvbExvc3RSZXNwb25z",
+            "ZUgAQg8KDXJlc3BvbnNlX3R5cGViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -51,13 +54,19 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.BehaviorControlRequest), global::Anki.Vector.ExternalInterface.BehaviorControlRequest.Parser, new[]{ "ControlRelease", "ControlRequest" }, new[]{ "RequestType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ControlGrantedResponse), global::Anki.Vector.ExternalInterface.ControlGrantedResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ControlLostResponse), global::Anki.Vector.ExternalInterface.ControlLostResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.BehaviorControlResponse), global::Anki.Vector.ExternalInterface.BehaviorControlResponse.Parser, new[]{ "ControlGrantedResponse", "ControlLostEvent", "KeepAlive" }, new[]{ "ResponseType" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ReservedControlLostResponse), global::Anki.Vector.ExternalInterface.ReservedControlLostResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.BehaviorControlResponse), global::Anki.Vector.ExternalInterface.BehaviorControlResponse.Parser, new[]{ "ControlGrantedResponse", "ControlLostEvent", "KeepAlive", "ReservedControlLostEvent" }, new[]{ "ResponseType" }, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  /// <summary>
+  /// Tell the behavior stream to release control from the SDK.
+  /// The stream may stay alive, but Vector will be allowed to run
+  /// his normal behaviors.
+  /// </summary>
   public sealed partial class ControlRelease : pb::IMessage<ControlRelease> {
     private static readonly pb::MessageParser<ControlRelease> _parser = new pb::MessageParser<ControlRelease>(() => new ControlRelease());
     private pb::UnknownFieldSet _unknownFields;
@@ -160,7 +169,8 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
-  /// Request control of the behavior system at a given priority
+  /// Request control of the behavior system at a given priority.
+  /// Currently there is only one priority level.
   /// </summary>
   public sealed partial class ControlRequest : pb::IMessage<ControlRequest> {
     private static readonly pb::MessageParser<ControlRequest> _parser = new pb::MessageParser<ControlRequest>(() => new ControlRequest());
@@ -199,6 +209,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "priority" field.</summary>
     public const int PriorityFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ControlRequest.Types.Priority priority_ = 0;
+    /// <summary>
+    /// Where in the behavior tree the SDK code should be executed.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ControlRequest.Types.Priority Priority {
       get { return priority_; }
@@ -293,16 +306,26 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Container for nested types declared in the ControlRequest message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
+      /// <summary>
+      /// Where in the behavior tree the SDK code should be executed.
+      /// </summary>
       public enum Priority {
+        /// <summary>
+        /// Unknown priority. Used for versions that don't understand old priority levels.
+        /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 0,
         /// <summary>
-        /// Request control above mandatory physical reactions. Not recommended.
+        /// Highest priority level. Suppresses most automatic physical reactions, use with caution. 
         /// </summary>
-        [pbr::OriginalName("OVERRIDE_ALL")] OverrideAll = 10,
+        [pbr::OriginalName("OVERRIDE_BEHAVIORS")] OverrideBehaviors = 10,
         /// <summary>
-        /// Highest priority level. Directly under mandatory physical reactions.
+        /// Normal priority level. Directly under mandatory physical reactions.
         /// </summary>
-        [pbr::OriginalName("TOP_PRIORITY_AI")] TopPriorityAi = 20,
+        [pbr::OriginalName("DEFAULT")] Default = 20,
+        /// <summary>
+        /// Enable long-running SDK control between script execution.  Not to be used for regular behavior control.
+        /// </summary>
+        [pbr::OriginalName("RESERVE_CONTROL")] ReserveControl = 30,
       }
 
     }
@@ -358,6 +381,9 @@ namespace Anki.Vector.ExternalInterface {
 
     /// <summary>Field number for the "control_release" field.</summary>
     public const int ControlReleaseFieldNumber = 1;
+    /// <summary>
+    /// Release control of the behavior system back to Vector.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ControlRelease ControlRelease {
       get { return requestTypeCase_ == RequestTypeOneofCase.ControlRelease ? (global::Anki.Vector.ExternalInterface.ControlRelease) requestType_ : null; }
@@ -369,6 +395,9 @@ namespace Anki.Vector.ExternalInterface {
 
     /// <summary>Field number for the "control_request" field.</summary>
     public const int ControlRequestFieldNumber = 2;
+    /// <summary>
+    /// Request control of the behavior system for the SDK.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ControlRequest ControlRequest {
       get { return requestTypeCase_ == RequestTypeOneofCase.ControlRequest ? (global::Anki.Vector.ExternalInterface.ControlRequest) requestType_ : null; }
@@ -732,6 +761,111 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
+  /// The ability to reserve control before/after SDK scripts has been lost.  
+  /// This control can be regained through another ControlRequest.
+  /// </summary>
+  public sealed partial class ReservedControlLostResponse : pb::IMessage<ReservedControlLostResponse> {
+    private static readonly pb::MessageParser<ReservedControlLostResponse> _parser = new pb::MessageParser<ReservedControlLostResponse>(() => new ReservedControlLostResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ReservedControlLostResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.BehaviorReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservedControlLostResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservedControlLostResponse(ReservedControlLostResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservedControlLostResponse Clone() {
+      return new ReservedControlLostResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ReservedControlLostResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ReservedControlLostResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ReservedControlLostResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Responses from the behavior stream.
   /// </summary>
   public sealed partial class BehaviorControlResponse : pb::IMessage<BehaviorControlResponse> {
@@ -742,7 +876,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.BehaviorReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Anki.Vector.ExternalInterface.BehaviorReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -769,6 +903,9 @@ namespace Anki.Vector.ExternalInterface {
         case ResponseTypeOneofCase.KeepAlive:
           KeepAlive = other.KeepAlive.Clone();
           break;
+        case ResponseTypeOneofCase.ReservedControlLostEvent:
+          ReservedControlLostEvent = other.ReservedControlLostEvent.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -781,6 +918,9 @@ namespace Anki.Vector.ExternalInterface {
 
     /// <summary>Field number for the "control_granted_response" field.</summary>
     public const int ControlGrantedResponseFieldNumber = 1;
+    /// <summary>
+    /// The SDK user is now free to directly control Vector.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ControlGrantedResponse ControlGrantedResponse {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ControlGrantedResponse ? (global::Anki.Vector.ExternalInterface.ControlGrantedResponse) responseType_ : null; }
@@ -792,6 +932,9 @@ namespace Anki.Vector.ExternalInterface {
 
     /// <summary>Field number for the "control_lost_event" field.</summary>
     public const int ControlLostEventFieldNumber = 2;
+    /// <summary>
+    /// Control of the behavior system has been lost to a higher priority behavior.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ControlLostResponse ControlLostEvent {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ControlLostEvent ? (global::Anki.Vector.ExternalInterface.ControlLostResponse) responseType_ : null; }
@@ -803,12 +946,29 @@ namespace Anki.Vector.ExternalInterface {
 
     /// <summary>Field number for the "keep_alive" field.</summary>
     public const int KeepAliveFieldNumber = 3;
+    /// <summary>
+    /// Used by Vector to verify the connection is still alive.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.KeepAlivePing KeepAlive {
       get { return responseTypeCase_ == ResponseTypeOneofCase.KeepAlive ? (global::Anki.Vector.ExternalInterface.KeepAlivePing) responseType_ : null; }
       set {
         responseType_ = value;
         responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.KeepAlive;
+      }
+    }
+
+    /// <summary>Field number for the "reserved_control_lost_event" field.</summary>
+    public const int ReservedControlLostEventFieldNumber = 4;
+    /// <summary>
+    /// Behavior system lock has been lost to another connection
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ReservedControlLostResponse ReservedControlLostEvent {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ReservedControlLostEvent ? (global::Anki.Vector.ExternalInterface.ReservedControlLostResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ReservedControlLostEvent;
       }
     }
 
@@ -819,6 +979,7 @@ namespace Anki.Vector.ExternalInterface {
       ControlGrantedResponse = 1,
       ControlLostEvent = 2,
       KeepAlive = 3,
+      ReservedControlLostEvent = 4,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -848,6 +1009,7 @@ namespace Anki.Vector.ExternalInterface {
       if (!object.Equals(ControlGrantedResponse, other.ControlGrantedResponse)) return false;
       if (!object.Equals(ControlLostEvent, other.ControlLostEvent)) return false;
       if (!object.Equals(KeepAlive, other.KeepAlive)) return false;
+      if (!object.Equals(ReservedControlLostEvent, other.ReservedControlLostEvent)) return false;
       if (ResponseTypeCase != other.ResponseTypeCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -858,6 +1020,7 @@ namespace Anki.Vector.ExternalInterface {
       if (responseTypeCase_ == ResponseTypeOneofCase.ControlGrantedResponse) hash ^= ControlGrantedResponse.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ControlLostEvent) hash ^= ControlLostEvent.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.KeepAlive) hash ^= KeepAlive.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ReservedControlLostEvent) hash ^= ReservedControlLostEvent.GetHashCode();
       hash ^= (int) responseTypeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -884,6 +1047,10 @@ namespace Anki.Vector.ExternalInterface {
         output.WriteRawTag(26);
         output.WriteMessage(KeepAlive);
       }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ReservedControlLostEvent) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ReservedControlLostEvent);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -900,6 +1067,9 @@ namespace Anki.Vector.ExternalInterface {
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.KeepAlive) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(KeepAlive);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ReservedControlLostEvent) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReservedControlLostEvent);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -930,6 +1100,12 @@ namespace Anki.Vector.ExternalInterface {
             KeepAlive = new global::Anki.Vector.ExternalInterface.KeepAlivePing();
           }
           KeepAlive.MergeFrom(other.KeepAlive);
+          break;
+        case ResponseTypeOneofCase.ReservedControlLostEvent:
+          if (ReservedControlLostEvent == null) {
+            ReservedControlLostEvent = new global::Anki.Vector.ExternalInterface.ReservedControlLostResponse();
+          }
+          ReservedControlLostEvent.MergeFrom(other.ReservedControlLostEvent);
           break;
       }
 
@@ -969,6 +1145,15 @@ namespace Anki.Vector.ExternalInterface {
             }
             input.ReadMessage(subBuilder);
             KeepAlive = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Anki.Vector.ExternalInterface.ReservedControlLostResponse subBuilder = new global::Anki.Vector.ExternalInterface.ReservedControlLostResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ReservedControlLostEvent) {
+              subBuilder.MergeFrom(ReservedControlLostEvent);
+            }
+            input.ReadMessage(subBuilder);
+            ReservedControlLostEvent = subBuilder;
             break;
           }
         }

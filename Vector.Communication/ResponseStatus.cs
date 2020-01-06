@@ -42,6 +42,10 @@ namespace Anki.Vector.ExternalInterface {
 
   }
   #region Messages
+  /// <summary>
+  /// A shared response message sent back as part of most requests.
+  /// This will indicate the generic state of the request.
+  /// </summary>
   public sealed partial class ResponseStatus : pb::IMessage<ResponseStatus> {
     private static readonly pb::MessageParser<ResponseStatus> _parser = new pb::MessageParser<ResponseStatus>(() => new ResponseStatus());
     private pb::UnknownFieldSet _unknownFields;
@@ -79,6 +83,9 @@ namespace Anki.Vector.ExternalInterface {
     /// <summary>Field number for the "code" field.</summary>
     public const int CodeFieldNumber = 1;
     private global::Anki.Vector.ExternalInterface.ResponseStatus.Types.StatusCode code_ = 0;
+    /// <summary>
+    /// The generic status code to give high-level insight into the progress of a given message.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ResponseStatus.Types.StatusCode Code {
       get { return code_; }
@@ -176,24 +183,27 @@ namespace Anki.Vector.ExternalInterface {
       public enum StatusCode {
         [pbr::OriginalName("UNKNOWN")] Unknown = 0,
         /// <summary>
-        /// The message has completed as expected
+        /// The message has completed as expected.
         /// </summary>
         [pbr::OriginalName("RESPONSE_RECEIVED")] ResponseReceived = 1,
         /// <summary>
-        /// The message has been sent to the robot
+        /// The message has been sent to the robot.
         /// </summary>
         [pbr::OriginalName("REQUEST_PROCESSING")] RequestProcessing = 2,
+        /// <summary>
+        /// The message has been handled successfully at the interface level.
+        /// </summary>
         [pbr::OriginalName("OK")] Ok = 3,
         /// <summary>
-        /// The user was not authorizied
+        /// The user was not authorizied.
         /// </summary>
         [pbr::OriginalName("FORBIDDEN")] Forbidden = 100,
         /// <summary>
-        /// The requested attribute was not found
+        /// The requested attribute was not found.
         /// </summary>
         [pbr::OriginalName("NOT_FOUND")] NotFound = 101,
         /// <summary>
-        /// Currently updating values from another call
+        /// Currently updating values from another call.
         /// </summary>
         [pbr::OriginalName("ERROR_UPDATE_IN_PROGRESS")] ErrorUpdateInProgress = 102,
       }

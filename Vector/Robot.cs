@@ -119,14 +119,6 @@ namespace Vector
 			return Map<BatteryState>(result);
 		}
 
-		[Obsolete("doesn't appear fully implimented yet")]
-		public async Task<NetworkState> GetNetworkStateAsync(CancellationToken cancellationToken = default(CancellationToken))
-		{
-			var result = await Client.NetworkStateAsync(new NetworkStateRequest(), cancellationToken: cancellationToken);
-			ValidateStatus(result.Status);
-			return Map<NetworkState>(result);
-		}
-
 		public async Task<VersionState> GetVersionStateAsync(CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var result = await Client.VersionStateAsync(new VersionStateRequest(), cancellationToken: cancellationToken);
@@ -154,7 +146,7 @@ namespace Vector
 		public async Task SuppressPersonalityAsync(bool overrideSafty = false, CancellationToken cancellationToken = default(CancellationToken))
 		{
 			var stream = Client.BehaviorControl();
-			var priority = overrideSafty ? ControlRequest.Types.Priority.OverrideAll : ControlRequest.Types.Priority.TopPriorityAi;
+			var priority = overrideSafty ? ControlRequest.Types.Priority.OverrideBehaviors : ControlRequest.Types.Priority.Default;
 			await stream.RequestStream.WriteAsync(new BehaviorControlRequest() { ControlRequest = new ControlRequest() { Priority = priority } });
 			while(await stream.ResponseStream.MoveNext(cancellationToken))
 			{
