@@ -155,6 +155,22 @@ images are automaticly resized
 robot.Screen.SetScreenImage(@"c:\mycoolimage.jpg");
 ```
 
+## Download and play a gif on the screen
+```cs
+var client = new WebClient();
+client.DownloadFile("https://media1.giphy.com/media/5kq0GCjHA8Rwc/giphy.gif", "video.gif");
+var video = Image.FromFile("video.gif");
+var dimension = new FrameDimension(video.FrameDimensionsList[0]);
+for (int loop = 0; loop < 5; loop++)
+{
+	for (int frame = 0; frame < video.GetFrameCount(dimension); frame++)
+	{
+		video.SelectActiveFrame(dimension, frame);
+		await robot.Screen.SetScreenImage(video);
+	}
+}
+```
+
 ## Recognize custom markers
 You size and print these [custom markers](https://github.com/anki/vector-python-sdk/tree/master/docs/source/images/custom_markers) then you can tell vector to recognize them.  here is how:
 ```cs
