@@ -198,3 +198,6 @@ Next, in the same parent directory that you have cloned this repository, also cl
 
 Now you can run the following script to regenerate the files in the **Vector.Communication** project\
 `GenerateRPC.bat`
+
+## I'm always happy to accept pull requests or Fix issues
+enjoy!
